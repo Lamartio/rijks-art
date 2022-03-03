@@ -20,9 +20,10 @@
 | ---- | ----- | ---- |
 | | | Discover the Rijksmuseum API: https://runkit.com/lamartio/621f1d2429367b00081238a4 (I will delete this a week after delivering)
 | | | Setup a networking module
-| Add a request basic
-| Write an integration test
-| Improve the returning value
+| | | Add a basic request
+| | | Write an integration test
+| | | Improve the returning value
+| | | Get the details from Rijksmuseum
 | See what I can do to log networking issues
 | Clarify the domain
 | Clarify about Dependencies

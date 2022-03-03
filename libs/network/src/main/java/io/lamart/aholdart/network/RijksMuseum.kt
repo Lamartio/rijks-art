@@ -11,7 +11,6 @@ import retrofit2.http.Query
 
 interface RijksMuseum {
 
-    // ({method: 'get', url: 'collection', params: { p: 0, ps: 10, q: undefined}})
     @GET("collection")
     suspend fun getCollection(
         @Query("p") page: Int = 0,
