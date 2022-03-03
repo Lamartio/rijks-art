@@ -19,7 +19,15 @@
 | TODO | DOING | DONE |
 | ---- | ----- | ---- |
 | | | Discover the Rijksmuseum API: https://runkit.com/lamartio/621f1d2429367b00081238a4 (I will delete this a week after delivering)
-| Setup a networking module
+| | | Setup a networking module
+| Add a request basic
 | Write an integration test
+| Improve the returning value
+| See what I can do to log networking issues
+| Clarify the domain
+| Clarify about Dependencies
+| Clarify the network package
 | Catch the network result for mock data
-| 
+| URL in build config
+| Centralize dependencies in BuildSrc (or Composite build)
+| Add query to the collections API and UI
