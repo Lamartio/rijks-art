@@ -17,6 +17,9 @@ import java.util.*
 @RunWith(AndroidJUnit4::class)
 class PersistenceTests {
 
+    /**
+     * With randomization we are ensured that we assert a new value instead of the previously persisted value.
+     */
     private val id = UUID.randomUUID().toString()
     private val details = ArtDetails(
         artObject = ArtDetails.ArtObject(
@@ -33,8 +36,8 @@ class PersistenceTests {
         val context = InstrumentationRegistry.getInstrumentation().targetContext
         val services = servicesOf(context)
 
-        services.setDetails(details)
-        assertEquals(details, services.getDetails())
+        services.storage.setDetails(details)
+        assertEquals(details, services.storage.getDetails())
     }
 
 }

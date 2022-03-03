@@ -28,9 +28,9 @@
 | | | Add datastore
 | | | Add a getter and setter for data
 | | | Add a domain module for sharing unambiguous entities
-| Persist something serializable
-| Persist the collection and details
-| Clarify the domain
+| | | Persist something serializable
+| | | Persist the collection and details
+| Clarify the domainr
 | Clarify about Dependencies
 | Clarify the network package
 | Catch the network result for mock data
