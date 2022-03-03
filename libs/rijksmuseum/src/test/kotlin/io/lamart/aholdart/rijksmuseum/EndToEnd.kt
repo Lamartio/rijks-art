@@ -1,10 +1,9 @@
-package io.lamart.aholdart.network
+package io.lamart.aholdart.rijksmuseum
 
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertNotNull
 import org.junit.Before
 import org.junit.Test
-
 
 class EndToEnd {
 
@@ -12,7 +11,7 @@ class EndToEnd {
 
     @Before
     fun setup() {
-        rijksMuseum = RijksMuseum(key = "0fiuZFh4")
+        rijksMuseum = rijksMuseumOf(key = "0fiuZFh4")
     }
 
     @Test

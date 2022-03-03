@@ -1,4 +1,4 @@
-package io.lamart.aholdart.network.types
+package io.lamart.aholdart.rijksmuseum.types
 
 data class ArtCollection(
     val artObjects: List<ArtObject>,
