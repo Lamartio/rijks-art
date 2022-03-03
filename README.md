@@ -24,7 +24,10 @@
 | | | Write an integration test
 | | | Improve the returning value
 | | | Get the details from Rijksmuseum
-| See what I can do to log networking issues
+| | | Add a services module
+| | | Add datastore
+| | | Add a getter and setter for data
+| | Add a domain module for sharing unambiguous entities
 | Clarify the domain
 | Clarify about Dependencies
 | Clarify the network package
@@ -32,3 +35,4 @@
 | URL in build config
 | Centralize dependencies in BuildSrc (or Composite build)
 | Add query to the collections API and UI
+| See what I can do to log networking issues

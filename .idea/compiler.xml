@@ -3,6 +3,8 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.8">
       <module name="ahold-art.app" target="11" />
+      <module name="ahold-art.libs.services" target="11" />
+      <module name="ahold-art.libs.servies" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
