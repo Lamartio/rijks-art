@@ -16,3 +16,4 @@ rootProject.name = "ahold-art"
 include ':app'
 include ':libs:rijksmuseum'
 include ':libs:services'
+include ':libs:domain'
