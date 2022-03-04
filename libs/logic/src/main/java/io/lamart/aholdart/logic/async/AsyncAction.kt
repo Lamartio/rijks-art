@@ -1,57 +1,47 @@
 package io.lamart.aholdart.logic
 
 import io.lamart.aholdart.logic.async.Async
-import io.lamart.aholdart.logic.async.executingOf
+import io.lamart.aholdart.logic.async.executing
 import io.lamart.aholdart.logic.async.failureOf
 import io.lamart.aholdart.logic.async.successOf
 import io.lamart.aholdart.optics.OptionalSource
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.channels.trySendBlocking
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
-
-suspend fun <P : Any, T : Any> CoroutineScope.asyncActionOf(
-    source: OptionalSource<Async<P, T>>,
-    transform: suspend (payload: P) -> Flow<T>,
-    strategy: AsyncStrategy<P, T> = latest(),
-    count: Int? = null,
+fun <P, T : Any> OptionalSource<Async<T>>.toAsyncAction(
+    strategy: AsyncStrategy<P, T>,
+    scope: CoroutineScope,
 ): (payload: P) -> Unit {
-    val channel = Channel<P>()
-    val flow = channel
-        .receiveAsFlow()
-        .strategy(asyncFlowOf(transform))
+    val flow = MutableSharedFlow<P>(1)
 
-    launch {
-        flow
-            .let {
-                when (count) {
-                    null -> it
-                    else -> it.take(count.toInt())
-                }
-            }
-            .collect(source::set)
-    }
+    flow
+        .strategy()
+        .collectOn(scope, this@toAsyncAction::set)
 
-    return { payload ->
-        channel.trySendBlocking(payload)
+    return {
+        flow.tryEmit(it)
     }
 }
 
-fun <P, T> ofSuspending(transform: suspend (payload: P) -> T): suspend (payload: P) -> Flow<T> =
+private fun <T> Flow<T>.collectOn(scope: CoroutineScope, next: (value: T) -> Unit): Job {
+    return scope.launch {
+        collect(next)
+    }
+}
+
+fun <P, T> flowOfSuspending(transform: suspend (payload: P) -> T): suspend (payload: P) -> Flow<T> =
     { payload ->
         flow {
-            payload
-                .let { transform(it) }
-                .let { emit(it) }
+            emit(transform(payload))
         }
     }
 
-private fun <P : Any, T : Any> asyncFlowOf(transform: suspend (payload: P) -> Flow<T>): suspend (payload: P) -> Flow<Async<P, T>> =
+fun <P, T> asyncFlowOf(transform: suspend (payload: P) -> Flow<T>): suspend (payload: P) -> Flow<Async<T>> =
     { payload ->
         transform(payload)
-            .map { result -> successOf(payload, result) }
-            .catch { reason -> emit(failureOf(payload, reason)) }
-            .onStart { emit(executingOf(payload)) }
+            .map { result -> successOf(result) }
+            .catch { reason -> emit(failureOf(reason)) }
+            .onStart { emit(executing()) }
     }

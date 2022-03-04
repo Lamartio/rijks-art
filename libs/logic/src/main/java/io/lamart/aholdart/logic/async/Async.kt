@@ -1,33 +1,28 @@
 package io.lamart.aholdart.logic.async
 
-sealed class Async<P : Any, T : Any>(
-    open val payload: P?,
+sealed class Async<T>(
     open val reason: Throwable?,
     open val result: T?,
 ) {
-    // needs to be data class for supporting '=='
-    data class Initial<P : Any, T : Any>(private val none: Unit = Unit) :
-        Async<P, T>(null, null, null)
 
-    data class Executing<P : Any, T : Any>(override val payload: P) :
-        Async<P, T>(payload, null, null)
+    class Initial<T> : Async<T>(null, null)
 
-    data class Failure<P : Any, T : Any>(override val payload: P, override val reason: Throwable) :
-        Async<P, T>(payload, reason, null)
+    class Executing<T> : Async<T>(null, null)
 
-    data class Success<P : Any, T : Any>(override val payload: P, override val result: T) :
-        Async<P, T>(payload, null, result)
+    data class Failure<T>(override val reason: Throwable) : Async<T>(reason, null)
+
+    data class Success<T>(override val result: T) : Async<T>(null, result)
 
 }
 
-fun <P : Any, T : Any> initial(): Async<P, T> =
+fun <T> initial(): Async<T> =
     Async.Initial()
 
-fun <P : Any, T : Any> executingOf(payload: P): Async<P, T> =
-    Async.Executing(payload)
+fun <T> executing(): Async<T> =
+    Async.Executing()
 
-fun <P : Any, T : Any> failureOf(payload: P, reason: Throwable): Async<P, T> =
-    Async.Failure(payload, reason)
+fun <T> failureOf(reason: Throwable): Async<T> =
+    Async.Failure(reason)
 
-fun <P : Any, T : Any> successOf(payload: P, result: T): Async<P, T> =
-    Async.Success(payload, result)
+fun <T> successOf(result: T): Async<T> =
+    Async.Success(result)
