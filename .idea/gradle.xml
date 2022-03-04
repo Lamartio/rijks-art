@@ -13,6 +13,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/libs" />
             <option value="$PROJECT_DIR$/libs/domain" />
+            <option value="$PROJECT_DIR$/libs/logic" />
+            <option value="$PROJECT_DIR$/libs/optics" />
             <option value="$PROJECT_DIR$/libs/rijksmuseum" />
             <option value="$PROJECT_DIR$/libs/services" />
           </set>
