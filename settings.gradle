@@ -13,9 +13,10 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "ahold-art"
-include ':app'
+
+include ':libs:optics'
+include ':libs:domain'
 include ':libs:rijksmuseum'
 include ':libs:services'
-include ':libs:domain'
 include ':libs:logic'
-include ':libs:optics'
+include ':app'

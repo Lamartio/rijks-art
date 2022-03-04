@@ -33,8 +33,10 @@
 | | | Persist something serializable
 | | | Persist the collection and details
 | | | Create a logic module
-| Write a state composable mutation util based on Arrow-KT.
-| Create a test suite that explains it's working
+| | | Write a state composable mutation util based on Arrow-KT.
+| | | Create a test suite that explains it's working
+| Write some Async logic within a test
+| Let Retrofit work with kotlinx.serialization: https://github.com/JakeWharton/retrofit2-kotlinx-serialization-converter
 | Clarify the domain
 | Clarify about Dependencies
 | Clarify the network package
@@ -42,3 +44,6 @@
 | Centralize dependencies in BuildSrc (or Composite build)
 | Add query to the collections API and UI
 | See what I can do to log networking issues
+
+/ Mutable can be improved to support, merging, concatting and exhausting | Logic test are dependant
+on delay! Can not happen
