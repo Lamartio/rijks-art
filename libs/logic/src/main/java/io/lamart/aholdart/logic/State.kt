@@ -2,8 +2,8 @@ package io.lamart.aholdart.logic
 
 import io.lamart.aholdart.domain.ArtCollection
 import io.lamart.aholdart.domain.ArtDetails
-import io.lamart.aholdart.logic.async.Async
-import io.lamart.aholdart.logic.async.initial
+import io.lamart.aholdart.optics.async.Async
+import io.lamart.aholdart.optics.async.initial
 
 data class State(
     val collection: Async<ArtCollection> = initial(),

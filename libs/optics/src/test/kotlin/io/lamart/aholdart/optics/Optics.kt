@@ -21,16 +21,18 @@ class Optics {
         val source = sourceOf({ values.last() }, values::add)
 
         source
-            .compose(lensOf({ this.company },
-                { company -> this.copy(company = company) })) // composition allows to work with sub-states
-            .compose(lensOf({ address },
-                { copy(address = it) })) // same as the line above, but than in shorthand
-            .compose(maskOf({ street },
-                { copy(street = it) })) // mask is different than lens, since street is an optional. Meaning that setting the editing the street can fail.
+            // composition allows to work with sub-states
+            .compose(lensOf({ this.company }, { company -> this.copy(company = company) }))
+            // same as the line above, but than in shorthand
+            .compose(lensOf({ address }, { copy(address = it) }))
+            // mask is different than lens, since street is an optional. Meaning that setting the editing the street can sometimes not happen.
+            .compose(maskOf({ street }, { copy(street = it) }))
             .compose(maskOf({ door }, { copy(door = it) }))
-            .compose(prismOf { this as? Door.Open }) // a shorthand to work with diverging states (sealed classes, enums)
+            // a shorthand to work with diverging states (sealed classes, enums)
+            .compose(prismOf { this as? Door.Open })
             .compose(maskOf({ message }, { copy(message = it) }))
-            .modify { message -> "$message!!!" } // get, set or modify the composed state
+            // get, set or modify the composed state
+            .modify { message -> "$message!!!" }
 
         assertThat(values.first().company.address.street?.door?.message)
             .isEqualTo("welcome")

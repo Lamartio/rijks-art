@@ -2,9 +2,19 @@ package io.lamart.aholdart.optics
 
 
 interface Source<T : Any> : OptionalSource<T> {
+
     override fun get(): T
 
 }
+
+fun <T : Any> sourceOf(get: () -> T, set: (value: T) -> Unit): Source<T> =
+    object : Source<T> {
+
+        override fun get(): T = get()
+
+        override fun set(value: T) = set(value)
+
+    }
 
 fun <T : Any, R : Any> Source<T>.compose(lens: Lens<T, R>): Source<R> {
     return sourceOf(
@@ -16,12 +26,3 @@ fun <T : Any, R : Any> Source<T>.compose(lens: Lens<T, R>): Source<R> {
         }
     )
 }
-
-fun <T : Any> sourceOf(get: () -> T, set: (value: T) -> Unit): Source<T> =
-    object : Source<T> {
-
-        override fun get(): T = get()
-
-        override fun set(value: T) = set(value)
-
-    }

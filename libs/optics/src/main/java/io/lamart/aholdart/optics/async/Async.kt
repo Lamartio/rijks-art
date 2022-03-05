@@ -1,4 +1,4 @@
-package io.lamart.aholdart.logic.async
+package io.lamart.aholdart.optics.async
 
 sealed class Async<T>(
     open val reason: Throwable?,

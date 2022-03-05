@@ -1,4 +1,4 @@
-package io.lamart.aholdart.logic
+package io.lamart.aholdart.logic.utils
 
 import kotlinx.coroutines.flow.*
 
