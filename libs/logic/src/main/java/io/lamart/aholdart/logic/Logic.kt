@@ -19,7 +19,7 @@ fun logicOf(museum: RijksMuseum, services: Services, scope: CoroutineScope): Log
     val state = MutableStateFlow(State())
     val source = sourceOf(
         get = { state.value },
-        set = { state.tryEmit(it) }
+        set = state::tryEmit
     )
     val dependencies = dependenciesOf(source, museum, services, scope)
 

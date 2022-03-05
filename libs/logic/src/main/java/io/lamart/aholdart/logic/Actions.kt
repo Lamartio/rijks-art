@@ -7,10 +7,6 @@ import io.lamart.aholdart.optics.compose
 import io.lamart.aholdart.optics.lensOf
 
 interface Actions {
-    /**
-     * Will get the latest results from persistence and loads it into the state
-     */
-    fun initialize()
 
     val getAndFetchCollection: (payload: CollectionPayload) -> Unit
     val getAndFetchDetails: (objectNumber: String) -> Unit
@@ -19,7 +15,7 @@ interface Actions {
 internal fun Dependencies.toActions(): Actions =
     object : Actions {
 
-        override val getAndFetchCollection: (CollectionPayload) -> Unit =
+        override val getAndFetchCollection: (payload: CollectionPayload) -> Unit =
             source
                 .compose(lensOf({ collection }, { copy(collection = it) }))
                 .toAsyncAction(
@@ -31,7 +27,7 @@ internal fun Dependencies.toActions(): Actions =
                     scope
                 )
 
-        override val getAndFetchDetails: (String) -> Unit =
+        override val getAndFetchDetails: (objectNumber: String) -> Unit =
             source
                 .compose(lensOf({ details }, { copy(details = it) }))
                 .toAsyncAction(
@@ -42,9 +38,5 @@ internal fun Dependencies.toActions(): Actions =
                     )),
                     scope
                 )
-
-        override fun initialize() {
-            getAndFetchCollection(CollectionPayload())
-        }
 
     }
