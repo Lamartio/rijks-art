@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import io.lamart.aholdart.logic.CollectionPayload
 import io.lamart.aholdart.logic.Logic
 import io.lamart.aholdart.main.MainViewModel
+import kotlinx.coroutines.flow.map
 
 class AholdViewModelProviderFactory(
     private val defaultFactory: ViewModelProvider.Factory,
@@ -20,7 +21,7 @@ class AholdViewModelProviderFactory(
             AholdViewModel::class.java -> AholdViewModel(
                 initialize = { logic.actions.getAndFetchCollection(CollectionPayload()) }
             )
-            MainViewModel::class.java -> MainViewModel()
+            MainViewModel::class.java -> MainViewModel(logic.state.map { it.collection })
             else -> defaultFactory.create(modelClass)
         } as T
 }

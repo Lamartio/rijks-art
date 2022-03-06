@@ -39,8 +39,8 @@
 | | | Let Retrofit work with kotlinx.serialization: https://github.com/JakeWharton/retrofit2-kotlinx-serialization-converter
 | | | Mutable can be improved to support, merging, concatting and exhausting
 | | | Logic tests are dependant delay! Can not happen
-| Add a viewModel
-| Instantiate through ViewModelFactory
+| | | Add a viewModel
+| | | Instantiate through ViewModelFactory
 | Add some UI
 | Clarify the domain
 | Clarify about Dependencies
