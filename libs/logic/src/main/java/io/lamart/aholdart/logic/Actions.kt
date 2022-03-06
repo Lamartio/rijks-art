@@ -7,7 +7,6 @@ import io.lamart.aholdart.optics.compose
 import io.lamart.aholdart.optics.lensOf
 
 interface Actions {
-
     val getAndFetchCollection: (payload: CollectionPayload) -> Unit
     val getAndFetchDetails: (objectNumber: String) -> Unit
 }

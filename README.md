@@ -37,7 +37,10 @@
 | | | Create a test suite that explains it's working
 | | | Write some Async logic within a test
 | | | Let Retrofit work with kotlinx.serialization: https://github.com/JakeWharton/retrofit2-kotlinx-serialization-converter
-| | | Mutable can be improved to support, merging, concatting and exhausting | Logic test are dependanton delay! Can not happen
+| | | Mutable can be improved to support, merging, concatting and exhausting
+| | | Logic tests are dependant delay! Can not happen
+| Add a viewModel
+| Instantiate through ViewModelFactory
 | Add some UI
 | Clarify the domain
 | Clarify about Dependencies
@@ -48,3 +51,4 @@
 | See what I can do to log networking issues
 | Test cases for strategy
 | Test cases for actions
+| KTlint
