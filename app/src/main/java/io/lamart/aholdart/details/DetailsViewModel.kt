@@ -1,7 +1,7 @@
 package io.lamart.aholdart.details
 
 import androidx.lifecycle.ViewModel
-import io.lamart.aholdart.domain.ArtDetails
+import io.lamart.rijksart.domain.ArtDetails
 import io.lamart.aholdart.toStateDelegate
 import kotlinx.coroutines.flow.Flow
 

@@ -1,7 +1,7 @@
 package io.lamart.aholdart.main
 
 import androidx.lifecycle.ViewModel
-import io.lamart.aholdart.domain.ArtCollection
+import io.lamart.rijksart.domain.ArtCollection
 import io.lamart.aholdart.logic.State
 import io.lamart.aholdart.optics.async.Async
 import io.lamart.aholdart.toStateDelegate

@@ -3,8 +3,8 @@ package io.lamart.aholdart.services
 import android.content.Context
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.stringPreferencesKey
-import io.lamart.aholdart.domain.ArtCollection
-import io.lamart.aholdart.domain.ArtDetails
+import io.lamart.rijksart.domain.ArtCollection
+import io.lamart.rijksart.domain.ArtDetails
 
 interface Storage {
 

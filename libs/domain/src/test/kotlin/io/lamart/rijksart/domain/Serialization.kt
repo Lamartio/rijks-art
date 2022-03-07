@@ -1,5 +1,6 @@
-package io.lamart.aholdart.domain
+package io.lamart.rijksart.domain
 
+import io.lamart.rijksart.domain.ArtCollection
 import kotlinx.serialization.json.Json
 import org.junit.Assert.assertEquals
 import org.junit.Test

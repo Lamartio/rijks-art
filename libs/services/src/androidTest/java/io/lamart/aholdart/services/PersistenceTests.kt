@@ -2,7 +2,7 @@ package io.lamart.aholdart.services
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import io.lamart.aholdart.domain.ArtDetails
+import io.lamart.rijksart.domain.ArtDetails
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Test

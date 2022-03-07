@@ -1,4 +1,4 @@
-package io.lamart.aholdart.domain
+package io.lamart.rijksart.domain
 
 import kotlinx.serialization.Serializable
 

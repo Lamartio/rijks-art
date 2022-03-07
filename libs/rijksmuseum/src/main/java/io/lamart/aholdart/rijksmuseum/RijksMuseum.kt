@@ -1,7 +1,7 @@
 package io.lamart.aholdart.rijksmuseum
 
-import io.lamart.aholdart.domain.ArtCollection
-import io.lamart.aholdart.domain.ArtDetails
+import io.lamart.rijksart.domain.ArtCollection
+import io.lamart.rijksart.domain.ArtDetails
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

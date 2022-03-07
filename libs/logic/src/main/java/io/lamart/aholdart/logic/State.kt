@@ -1,7 +1,7 @@
 package io.lamart.aholdart.logic
 
-import io.lamart.aholdart.domain.ArtCollection
-import io.lamart.aholdart.domain.ArtDetails
+import io.lamart.rijksart.domain.ArtCollection
+import io.lamart.rijksart.domain.ArtDetails
 import io.lamart.aholdart.optics.async.Async
 import io.lamart.aholdart.optics.async.initial
 
