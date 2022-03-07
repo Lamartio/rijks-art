@@ -69,7 +69,7 @@ state. The state gets shared through a flow and updated through actions.
 
 ## :app
 
-The actual compilable application. In it entry-point `AholdApplication` it instantiates all the
+The actual compilable application. In it entry-point `RijksApplication` it instantiates all the
 above. By this point, the application is only displaying State, calling actions and mapping State
 into models that fit the UI.
 

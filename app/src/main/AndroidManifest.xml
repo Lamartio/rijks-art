@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.lamart.aholdart">
+    package="io.lamart.rijksart">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <application
@@ -9,11 +9,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".AholdApplication"
+        android:name=".RijksApplication"
         android:theme="@style/Theme.MyApplication">
         <activity
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
-            android:name="io.lamart.aholdart.AholdActivity"
+            android:name=".RijksActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
