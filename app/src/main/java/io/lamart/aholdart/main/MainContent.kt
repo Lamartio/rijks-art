@@ -23,7 +23,7 @@ fun MainContent(viewModel: MainViewModel) =
     with(viewModel) {
         MdcTheme {
             LazyColumn {
-                val items = art.value
+                val items = collection.value
 
                 items(items.size, { items[it].key }) { index ->
                     val item = items[index]
@@ -31,6 +31,7 @@ fun MainContent(viewModel: MainViewModel) =
                     when (item) {
                         is Item.Header -> HeaderItem(item.text)
                         is Item.Art -> ArtItem(item) { }
+                        is Item.More -> MoreButton(loadMore)
                     }
                 }
             }
@@ -38,6 +39,15 @@ fun MainContent(viewModel: MainViewModel) =
             Loader(isLoading = isLoading.value)
         }
     }
+
+@Composable
+fun MoreButton(loadMore: () -> Unit) {
+    Row(horizontalArrangement = Arrangement.Center, modifier = Modifier.fillMaxWidth()) {
+        OutlinedButton(onClick = { loadMore() }) {
+            Text(text = "Load more...")
+        }
+    }
+}
 
 @Composable
 fun Loader(isLoading: Boolean) =
@@ -61,13 +71,13 @@ fun Loader(isLoading: Boolean) =
 @Composable
 fun HeaderItem(text: String) =
     Column {
-        Divider()
         Text(
             text = AnnotatedString(text),
             fontWeight = FontWeight.Bold,
             fontSize = 10.sp,
             maxLines = 1,
-            overflow = TextOverflow.Ellipsis
+            overflow = TextOverflow.Ellipsis,
+            modifier = Modifier.padding(horizontal = 8.dp)
         )
         Divider()
     }

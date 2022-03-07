@@ -4,7 +4,7 @@ import kotlinx.coroutines.flow.*
 
 fun <P, T : Any> getAndFetch(
     get: suspend (payload: P) -> T?,
-    set: suspend (value: T) -> Unit,
+    set: suspend (payload: P, value: T) -> Unit,
     fetch: suspend (payload: P) -> T,
     onError: suspend (error: Throwable) -> Unit = {},
 ): (payload: P) -> Flow<T> =
@@ -13,7 +13,7 @@ fun <P, T : Any> getAndFetch(
             .flatMapConcat { (type, payload) ->
                 when (type) {
                     Type.Get -> resultFlowOf(type, payload, get)
-                    Type.Fetch -> resultFlowOf(type, payload, fetch).onEachSuccess(set)
+                    Type.Fetch -> resultFlowOf(type, payload, fetch).onEachSuccess(payload, set)
                 }
             }
             .throwWhenAllFailed()
@@ -48,8 +48,11 @@ private fun <P, T : Any> resultFlowOf(
         }
         .catch { emit(type to Result.failure(it)) }
 
-private fun <T> ResultFlow<T>.onEachSuccess(set: suspend (value: T) -> Unit): ResultFlow<T> =
-    onEach { (_, result) -> result.onSuccess { runCatching { set(it) } } }
+private fun <P, T> ResultFlow<T>.onEachSuccess(
+    payload: P,
+    set: suspend (payload: P, value: T) -> Unit,
+): ResultFlow<T> =
+    onEach { (_, result) -> result.onSuccess { runCatching { set(payload, it) } } }
 
 private fun <T> ResultFlow<T>.throwWhenAllFailed(): ResultFlow<T> =
     this

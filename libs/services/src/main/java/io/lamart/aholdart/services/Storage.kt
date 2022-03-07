@@ -7,9 +7,9 @@ import io.lamart.aholdart.domain.ArtDetails
 
 interface Storage {
 
-    suspend fun getCollection(): ArtCollection?
+    suspend fun getCollection(page: Int): ArtCollection?
 
-    suspend fun setCollection(collection: ArtCollection)
+    suspend fun setCollection(page: Int, collection: ArtCollection)
 
     suspend fun getDetails(): ArtDetails?
 
@@ -19,19 +19,19 @@ interface Storage {
 internal fun storageOf(context: Context): Storage =
     object : Storage, StorageMixin by storageMixinOf(context, "data") {
 
-        val COLLECTION = stringPreferencesKey("collection")
         val DETAILS = stringPreferencesKey("details")
 
-        override suspend fun getCollection(): ArtCollection? =
-            get(COLLECTION, ArtCollection.serializer())
+        override suspend fun getCollection(page: Int): ArtCollection? =
+            get(collectionKeyOf(page), ArtCollection.serializer())
 
-        override suspend fun setCollection(collection: ArtCollection) =
-            set(COLLECTION, ArtCollection.serializer(), collection)
+        override suspend fun setCollection(page: Int, collection: ArtCollection) =
+            set(collectionKeyOf(page), ArtCollection.serializer(), collection)
 
         override suspend fun getDetails(): ArtDetails? =
             get(DETAILS, ArtDetails.serializer())
 
         override suspend fun setDetails(details: ArtDetails) =
             set(DETAILS, ArtDetails.serializer(), details)
+
 
     }

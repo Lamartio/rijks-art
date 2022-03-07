@@ -6,8 +6,6 @@ import io.lamart.aholdart.optics.async.Async
 import io.lamart.aholdart.optics.async.initial
 
 data class State(
-    val collection: Async<ArtCollection> = initial(),
+    val collections: Map<Int, Async<ArtCollection>> = emptyMap(),
     val details: Async<ArtDetails> = initial(),
 )
-
-data class CollectionPayload(val page: Int = 0, val pageSize: Int = 10)
