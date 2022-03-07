@@ -38,7 +38,7 @@ sealed class Item(open val key: String) {
         override val key: String,
         val text: String,
         val description: String,
-        val icon: String,
+        val icon: String?,
         val objectNumber: String,
     ) : Item(key)
 
@@ -46,7 +46,7 @@ sealed class Item(open val key: String) {
         fun headerOf(text: String): Item = Header(text, text)
         fun artOf(o: ArtCollection.ArtObject): Item =
             with(o) {
-                Art(id, title, longTitle, webImage.url, objectNumber)
+                Art(id, title, longTitle, webImage?.url, objectNumber)
             }
     }
 }

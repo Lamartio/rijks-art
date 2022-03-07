@@ -20,7 +20,7 @@ data class ArtCollection(
         val productionPlaces: List<String>,
         val showImage: Boolean,
         val title: String,
-        val webImage: WebImage
+        val webImage: WebImage?,
     )
 
     @Serializable
