@@ -25,9 +25,20 @@ class PersistenceTests {
         artObject = ArtDetails.ArtObject(
             id = id,
             labelText = "",
-            language = "",
-            links = ArtDetails.Links(search = ""),
-            location = ""
+            location = "",
+            plaqueDescriptionEnglish = "",
+            webImage = null,
+            description = null,
+            principalMaker = null,
+            longTitle = null,
+            subTitle = null,
+
+            ),
+        artObjectPage = ArtDetails.ArtObjectPage(
+            id = "",
+            lang = "",
+            objectNumber = "",
+            plaqueDescription = null
         )
     )
 
@@ -36,8 +47,8 @@ class PersistenceTests {
         val context = InstrumentationRegistry.getInstrumentation().targetContext
         val services = servicesOf(context)
 
-        services.storage.setDetails(details)
-        assertEquals(details, services.storage.getDetails())
+        services.storage.setDetails("1", details)
+        assertEquals(details, services.storage.getDetails("1"))
     }
 
 }
