@@ -105,4 +105,5 @@ into models that fit the UI.
 | Test cases for strategy
 | Test cases for actions
 | Test cases for the mappers of MainViewModel & .toStateDelegate()
-| KTlint
+| Standardize test naming to (Given...) When...Then
+| Integrate KTlint, Detekt and/or Spotless 
