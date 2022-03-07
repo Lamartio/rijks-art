@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="specs">specifications</string>
+    <string name="description">description</string>
 </resources>

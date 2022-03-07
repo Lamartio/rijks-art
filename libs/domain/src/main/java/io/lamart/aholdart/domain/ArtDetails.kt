@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class ArtDetails(
     val artObject: ArtObject,
-//    val artObjectPage: ArtObjectPage,
+    val artObjectPage: ArtObjectPage?,
 //    val elapsedMilliseconds: Int
 ) {
 
@@ -13,19 +13,21 @@ data class ArtDetails(
     data class ArtObject(
         val id: String,
         val labelText: String?,
-        val language: String,
-        val links: Links,
+        val plaqueDescriptionEnglish: String?,
         val location: String,
+        val webImage: WebImage?,
+        val description: String?,
+        val principalMaker: String?,
+        val longTitle: String?,
+        val subTitle: String?,
     )
 
     @Serializable
     data class ArtObjectPage(
-        val createdOn: String,
         val id: String,
         val lang: String,
         val objectNumber: String,
-        val plaqueDescription: String,
-        val updatedOn: String
+        val plaqueDescription: String?,
     )
 
     @Serializable

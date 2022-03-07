@@ -8,13 +8,16 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import io.lamart.aholdart.R
 
 @Composable
 fun DetailsContent(viewModel: DetailsViewModel) {
+    val art = viewModel.details.value?.artObject
     Column(modifier = Modifier.fillMaxSize()) {
         BoxWithConstraints {
             Surface {
@@ -22,14 +25,17 @@ fun DetailsContent(viewModel: DetailsViewModel) {
                     modifier = Modifier.fillMaxSize(),
                 ) {
                     Header(
-                        viewModel.details.value?.artObject?.labelText ?: "",
+                        art?.webImage?.url,
                         this@BoxWithConstraints.maxWidth
                     )
-                    Title(viewModel.details.value?.artObject?.labelText ?: "")
-                    Property(
-                        label = "Test",
-                        value = viewModel.details.value?.artObject?.labelText ?: ""
-                    )
+                    Title(art?.longTitle ?: "")
+                    art?.plaqueDescriptionEnglish?.let {
+                        Property(
+                            label = stringResource(R.string.description),
+                            value = it
+                        )
+                    }
+                    art?.subTitle?.let { Property(stringResource(R.string.specs), it) }
                 }
             }
         }
@@ -40,7 +46,7 @@ fun DetailsContent(viewModel: DetailsViewModel) {
 private fun Header(
     model: String?,
     width: Dp,
-    ratio: Float = 9f / 16,
+    ratio: Float = 9f / 16f,
 ) {
     AsyncImage(
         model = model,

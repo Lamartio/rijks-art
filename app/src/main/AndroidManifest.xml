@@ -12,6 +12,7 @@
         android:name=".AholdApplication"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             android:name="io.lamart.aholdart.AholdActivity"
             android:exported="true">
             <intent-filter>
