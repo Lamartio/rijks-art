@@ -16,14 +16,14 @@ class EndToEnd {
 
     @Test
     fun getCollection() = runBlocking {
-        val collection = rijksMuseum.getCollection()
+        val collection = rijksMuseum.getCollection(0)
 
         assertNotNull(collection.artObjects)
     }
 
     @Test
     fun getDetails() = runBlocking {
-        val collection = rijksMuseum.getCollection()
+        val collection = rijksMuseum.getCollection(0)
         val objectNumber = collection.artObjects.first().objectNumber
         val details = rijksMuseum.getDetails(objectNumber)
 

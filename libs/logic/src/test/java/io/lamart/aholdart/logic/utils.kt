@@ -17,3 +17,14 @@ fun <A, R> suspendingLambdaSpy1(block: suspend (A) -> R): Pair<List<Pair<A, Resu
 
     return list to lambda
 }
+
+fun <A, B, R> suspendingLambdaSpy2(block: suspend (A, B) -> R): Pair<List<Triple<A, B, Result<R>>>, suspend (A, B) -> R> {
+    val list = mutableListOf<Triple<A, B, Result<R>>>()
+    val lambda: suspend (A, B) -> R = { a, b ->
+        runCatching { block(a, b) }
+            .also { list.add(Triple(a, b, it)) }
+            .getOrThrow()
+    }
+
+    return list to lambda
+}

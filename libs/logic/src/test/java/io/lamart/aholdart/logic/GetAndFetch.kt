@@ -12,7 +12,7 @@ class GetAndFetch {
     fun `When getting and fetching fails, then it should throw`() = runBlocking {
         // Arrange
         val (getCalls, get) = suspendingLambdaSpy1<Int, String> { throw Throwable("Disk exploded") }
-        val (setCalls, set) = suspendingLambdaSpy1<String, Unit> { }
+        val (setCalls, set) = suspendingLambdaSpy2<Int, String, Unit> { _, _ -> }
         val (fetchCalls, fetch) = suspendingLambdaSpy1<Int, String> { throw Throwable("Network exploded") }
         val getAndFetchString = getAndFetch(get, set, fetch)
         // Act
@@ -28,7 +28,7 @@ class GetAndFetch {
     fun `When getting succeeds with null and fetching fails, then it should throw`() = runBlocking {
         // Arrange
         val (getCalls, get) = suspendingLambdaSpy1<Int, String?> { null }
-        val (setCalls, set) = suspendingLambdaSpy1<String, Unit> { }
+        val (setCalls, set) = suspendingLambdaSpy2<Int, String, Unit> { _, _ -> }
         val (fetchCalls, fetch) = suspendingLambdaSpy1<Int, String> { throw Throwable("Network exploded") }
         val getAndFetchString = getAndFetch(get, set, fetch)
         // Act
@@ -45,7 +45,7 @@ class GetAndFetch {
         runBlocking {
             // Arrange
             val (getCalls, get) = suspendingLambdaSpy1<Int, String> { it.toString() }
-            val (setCalls, set) = suspendingLambdaSpy1<String, Unit> { }
+            val (setCalls, set) = suspendingLambdaSpy2<Int, String, Unit> { _, _ -> }
             val (fetchCalls, fetch) = suspendingLambdaSpy1<Int, String> { throw Throwable("Network exploded") }
             val getAndFetchString = getAndFetch(get, set, fetch)
             // Act
@@ -62,7 +62,7 @@ class GetAndFetch {
         runBlocking {
             // Arrange
             val (getCalls, get) = suspendingLambdaSpy1<Int, String> { throw Throwable("Disk exploded") }
-            val (setCalls, set) = suspendingLambdaSpy1<String, Unit> { }
+            val (setCalls, set) = suspendingLambdaSpy2<Int, String, Unit> { _, _ -> }
             val (fetchCalls, fetch) = suspendingLambdaSpy1<Int, String> { it.toString() }
             val getAndFetchString = getAndFetch(get, set, fetch)
             // Act
@@ -78,7 +78,7 @@ class GetAndFetch {
     fun `When getting and fetching succeeds, then is should emit both values`() = runBlocking {
         // Arrange
         val (getCalls, get) = suspendingLambdaSpy1<Int, String> { it.toString() }
-        val (setCalls, set) = suspendingLambdaSpy1<String, Unit> { }
+        val (setCalls, set) = suspendingLambdaSpy2<Int, String, Unit> { _, _ -> }
         val (fetchCalls, fetch) = suspendingLambdaSpy1<Int, String> { it.toString() }
         val getAndFetchString = getAndFetch(get, set, fetch)
         // Act
