@@ -4,11 +4,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentWidth
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material.Icon
+import androidx.compose.material.ListItem
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -34,14 +41,48 @@ class MainFragment : Fragment() {
     ): View =
         inflater.inflate(R.layout.main_fragment, container, false)
 
+    @OptIn(ExperimentalFoundationApi::class,
+        androidx.compose.material.ExperimentalMaterialApi::class)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view
-            .findViewById<ComposeView>(R.id.content)
+            .let { it as ComposeView }
             .setContent {
-                MdcTheme { // or AppCompatTheme
-                    Greeting(viewModel)
-                    Loading(viewModel)
+                MdcTheme {
+                    LazyColumn {
+                        // Add a single item
+
+                        stickyHeader {
+                            Text(text = "Header")
+                        }
+
+                        val items = viewModel.art.value
+
+                        // Add 5 items
+                        items(items.size, { items[it].key }) { index ->
+                            val item = items[index]
+
+                            when (item) {
+                                is Item.Header -> with(this@LazyColumn) {
+                                    stickyHeader(item.key) {
+                                        Text(text = item.text)
+                                    }
+                                }
+                                is Item.Art -> ListItem(
+                                    icon = {
+                                        Icon(
+                                            Icons.Filled.Favorite,
+                                            contentDescription = null,
+                                            modifier = Modifier.size(40.dp)
+                                        )
+                                    },
+                                    text = { Text(item.text) },
+                                    secondaryText = { Text(item.description) },
+                                    singleLineSecondaryText = true
+                                )
+                            }
+                        }
+                    }
                 }
             }
     }

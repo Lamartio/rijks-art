@@ -12,8 +12,41 @@ class MainViewModel(collection: Flow<Async<ArtCollection>>) : ViewModel() {
     val title by collection
         .map { it.result?.artObjects?.size?.toString() }
         .toStateDelegate("")
+
     val isLoading by collection
         .map { it is Async.Executing }
         .toStateDelegate(false)
 
+    val art by collection
+        .map {
+            it
+                .result
+                ?.artObjects
+                ?.groupBy { it.principalOrFirstMaker }
+                ?.flatMap { (maker, art) ->
+                    listOf(Item.headerOf(maker)) + art.map(Item.Companion::artOf)
+                }
+                ?: emptyList()
+        }
+        .toStateDelegate(emptyList<Item>())
+
+}
+
+sealed class Item(open val key: String) {
+    data class Header(override val key: String, val text: String) : Item(key)
+    data class Art(
+        override val key: String,
+        val text: String,
+        val description: String,
+        val icon: String,
+        val objectNumber: String,
+    ) : Item(key)
+
+    companion object {
+        fun headerOf(text: String): Item = Header(text, text)
+        fun artOf(o: ArtCollection.ArtObject): Item =
+            with(o) {
+                Art(id, title, longTitle, webImage.url, objectNumber)
+            }
+    }
 }

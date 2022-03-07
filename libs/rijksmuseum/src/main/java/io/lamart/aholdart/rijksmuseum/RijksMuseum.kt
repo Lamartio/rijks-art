@@ -13,8 +13,8 @@ interface RijksMuseum {
 
     @GET("collection")
     suspend fun getCollection(
-        @Query("p") page: Int = 0,
-        @Query("ps") pageSize: Int = 10
+        @Query("p") page: Int,
+        @Query("ps") pageSize: Int = 100,
     ): ArtCollection
 
     @GET("collection/{objectNumber}")
