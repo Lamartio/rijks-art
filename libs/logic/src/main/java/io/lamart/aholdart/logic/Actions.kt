@@ -11,12 +11,12 @@ import io.lamart.aholdart.optics.lensOf
 interface Actions {
     fun appendCollection()
     fun getAndFetchCollection(page: Int)
+    fun resetDetails()
     val getAndFetchDetails: (objectNumber: String) -> Unit
 }
 
 internal fun Dependencies.toActions(): Actions =
     object : Actions {
-
 
         override fun getAndFetchCollection(page: Int) {
             val collectionSource = source
@@ -42,12 +42,20 @@ internal fun Dependencies.toActions(): Actions =
                 .compose(lensOf({ details }, { copy(details = it) }))
                 .toAsyncAction(
                     strategy = latest(getAndFetch(
-                        get = { storage.getDetails() },
-                        set = { _, value -> storage.setDetails(value) },
+                        get = { objectNumber -> storage.getDetails(objectNumber) },
+                        set = { objectNumber, value -> storage.setDetails(objectNumber, value) },
                         fetch = museum::getDetails
                     )),
                     scope
                 )
+
+        override fun resetDetails() {
+            val details = source.compose(lensOf({ details }, { copy(details = it) }))
+
+            if (details.get() !is Async.Executing) {
+                details.set(initial())
+            }
+        }
 
         override fun appendCollection() {
             val collections = source

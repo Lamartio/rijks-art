@@ -12,6 +12,7 @@ class MainViewModel(
     collection: Flow<List<Item>>,
     isLoading: Flow<Boolean>,
     val loadMore: () -> Unit,
+    val loadDetails: (objectNumber: String) -> Unit,
 ) : ViewModel() {
 
     val isLoading by isLoading.toStateDelegate(false)

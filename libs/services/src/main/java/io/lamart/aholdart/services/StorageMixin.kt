@@ -4,7 +4,6 @@ import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
-import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
@@ -28,8 +27,6 @@ internal interface StorageMixin {
         serializer: SerializationStrategy<T>,
         value: T,
     )
-
-    fun collectionKeyOf(page: Int): Preferences.Key<String>
 
 }
 
@@ -58,8 +55,5 @@ internal fun storageMixinOf(context: Context, name: String): StorageMixin =
                 .store
                 .edit { settings -> settings[key] = Json.encodeToString(serializer, value) }
         }
-
-        override fun collectionKeyOf(page: Int): Preferences.Key<String> =
-            stringPreferencesKey("collection_$page")
 
     }

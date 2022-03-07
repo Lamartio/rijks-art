@@ -18,6 +18,8 @@ class AholdApplication : Application() {
         val services = servicesOf(this)
 
         logic = logicOf(museum, services, scope)
+
+        logic.actions.appendCollection()
     }
 
 }

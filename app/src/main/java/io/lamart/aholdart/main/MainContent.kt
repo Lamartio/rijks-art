@@ -10,16 +10,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.text.AnnotatedString
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.google.android.material.composethemeadapter.MdcTheme
 
 @Composable
-fun MainContent(viewModel: MainViewModel) =
+fun MainContent(viewModel: MainViewModel, showDetails: (item: Item.Art) -> Unit) =
     with(viewModel) {
         MdcTheme {
             LazyColumn {
@@ -30,7 +27,7 @@ fun MainContent(viewModel: MainViewModel) =
 
                     when (item) {
                         is Item.Header -> HeaderItem(item.text)
-                        is Item.Art -> ArtItem(item) { }
+                        is Item.Art -> ArtItem(item, showDetails)
                         is Item.More -> MoreButton(loadMore)
                     }
                 }
@@ -72,9 +69,8 @@ fun Loader(isLoading: Boolean) =
 fun HeaderItem(text: String) =
     Column {
         Text(
-            text = AnnotatedString(text),
-            fontWeight = FontWeight.Bold,
-            fontSize = 10.sp,
+            text = text,
+            style = MaterialTheme.typography.caption,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
             modifier = Modifier.padding(horizontal = 8.dp)
@@ -84,9 +80,9 @@ fun HeaderItem(text: String) =
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
-fun ArtItem(item: Item.Art, clicks: (item: Item.Art) -> Unit) =
+fun ArtItem(item: Item.Art, showDetails: (item: Item.Art) -> Unit) =
     with(item) {
-        Column(Modifier.clickable { clicks(item) }) {
+        Column(Modifier.clickable { showDetails(item) }) {
             ListItem(
                 icon = {
                     AsyncImage(

@@ -3,8 +3,11 @@ package io.lamart.aholdart
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.navigation.NavDirections
+import androidx.navigation.fragment.NavHostFragment
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -21,3 +24,12 @@ fun <T> Flow<T>.toMutableStateDelegate(initial: T): ReadOnlyProperty<ViewModel, 
                 .launchIn(viewModel.viewModelScope)
         }
     }
+
+fun Fragment.navigate(directions: NavDirections) =
+    this
+        .requireActivity()
+        .supportFragmentManager
+        .findFragmentById(R.id.nav_host_fragment)
+        .let { it as NavHostFragment }
+        .navController
+        .navigate(directions)
