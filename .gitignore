@@ -15,3 +15,5 @@
 local.properties
 /app2/androidApp/build/
 /app2/shared/build/
+/app-shared/build/
+/app-android/build/
