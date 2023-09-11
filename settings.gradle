@@ -14,11 +14,11 @@ dependencyResolutionManagement {
 }
 rootProject.name = "rijks-art"
 
-include ':libs:optics'
-include ':libs:domain'
-include ':libs:rijksmuseum'
-include ':libs:services'
-include ':libs:logic'
+//include ':libs:optics'
+//include ':libs:domain'
+//include ':libs:rijksmuseum'
+//include ':libs:services'
+//include ':libs:logic'
 //include ':app'
 //include(":androidApp")
 //include(":shared")

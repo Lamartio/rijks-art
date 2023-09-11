@@ -30,7 +30,8 @@ android {
 }
 
 dependencies {
-    implementation(project(":libs:optics"))
+//    implementation(project(":libs:optics"))
+    implementation("io.lamart:lux:0.5.0")
     implementation(project(":libs:domain"))
     implementation(project(":libs:rijksmuseum"))
     implementation(project(":libs:services"))

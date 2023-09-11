@@ -1,5 +1,6 @@
 package io.lamart.rijksart.app
 
+import com.liftric.kvault.KVault
 import platform.UIKit.UIDevice
 
 class IOSPlatform: Platform {
@@ -7,3 +8,7 @@ class IOSPlatform: Platform {
 }
 
 actual fun getPlatform(): Platform = IOSPlatform()
+
+private fun test(): KVault {
+    return KVault()
+}

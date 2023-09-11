@@ -14,6 +14,7 @@ kotlin {
             }
         }
     }
+
     ios {
         binaries.framework {
             baseName = "shared"
@@ -23,7 +24,8 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                //put your multiplatform dependencies here
+                api("io.lamart:lux:0.5.0")
+                api("com.liftric:kvault:1.10.0")
             }
         }
         val commonTest by getting {

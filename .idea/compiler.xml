@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.8">
+    <bytecodeTargetLevel target="17">
       <module name="ahold-art.app" target="11" />
       <module name="ahold-art.libs.logic" target="11" />
       <module name="ahold-art.libs.services" target="11" />
       <module name="logic" target="11" />
       <module name="rijks-art.app" target="17" />
-      <module name="rijks-art.app-android" target="17" />
-      <module name="rijks-art.app-shared" target="17" />
       <module name="rijks-art.app2.androidApp" target="17" />
       <module name="rijks-art.app2.shared" target="17" />
       <module name="rijks-art.app4.androidApp" target="17" />

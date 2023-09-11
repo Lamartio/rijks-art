@@ -13,12 +13,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app-android" />
             <option value="$PROJECT_DIR$/app-shared" />
-            <option value="$PROJECT_DIR$/libs" />
-            <option value="$PROJECT_DIR$/libs/domain" />
-            <option value="$PROJECT_DIR$/libs/logic" />
-            <option value="$PROJECT_DIR$/libs/optics" />
-            <option value="$PROJECT_DIR$/libs/rijksmuseum" />
-            <option value="$PROJECT_DIR$/libs/services" />
           </set>
         </option>
       </GradleProjectSettings>

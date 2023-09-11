@@ -1,12 +1,9 @@
 package io.lamart.rijksart.logic
 
+import io.lamart.lux.Async
+import io.lamart.lux.Behavior.Companion.switching
+import io.lamart.lux.focus.lensOf
 import io.lamart.rijksart.logic.utils.getAndFetch
-import io.lamart.rijksart.optics.async.Async
-import io.lamart.rijksart.optics.async.initial
-import io.lamart.rijksart.optics.async.latest
-import io.lamart.rijksart.optics.async.toAsyncAction
-import io.lamart.rijksart.optics.compose
-import io.lamart.rijksart.optics.lensOf
 
 interface Actions {
     fun appendCollection()
@@ -26,7 +23,7 @@ internal fun Dependencies.toActions(): Actions =
                     copy = { collection -> plus(page to collection) }
                 ))
             val action = collectionSource.toAsyncAction(
-                strategy = latest(getAndFetch(
+                behavior = switching(getAndFetch(
                     get = storage::getCollection,
                     set = { page, collection -> storage.setCollection(page, collection) },
                     fetch = museum::getCollection
@@ -50,7 +47,7 @@ internal fun Dependencies.toActions(): Actions =
                 )
 
         override fun resetDetails() {
-            val details = source.compose(lensOf({ details }, { copy(details = it) }))
+            val details = source.lens.compose(lensOf({ details }, { copy(details = it) }))
 
             if (details.get() !is Async.Executing) {
                 details.set(initial())
