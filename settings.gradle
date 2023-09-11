@@ -19,5 +19,7 @@ include ':libs:domain'
 include ':libs:rijksmuseum'
 include ':libs:services'
 include ':libs:logic'
-include ':app'
+//include ':app'
 include ':app2'
+include("app2:androidApp")
+include("app2:shared")

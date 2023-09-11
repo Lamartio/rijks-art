@@ -11,8 +11,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app2" />
+            <option value="$PROJECT_DIR$/app2/androidApp" />
+            <option value="$PROJECT_DIR$/app2/shared" />
             <option value="$PROJECT_DIR$/libs" />
             <option value="$PROJECT_DIR$/libs/domain" />
             <option value="$PROJECT_DIR$/libs/logic" />

@@ -7,6 +7,8 @@
       <module name="ahold-art.libs.services" target="11" />
       <module name="logic" target="11" />
       <module name="rijks-art.app" target="17" />
+      <module name="rijks-art.app2.androidApp" target="17" />
+      <module name="rijks-art.app2.shared" target="17" />
       <module name="rijks-art.libs.logic" target="17" />
       <module name="rijks-art.libs.services" target="17" />
     </bytecodeTargetLevel>
