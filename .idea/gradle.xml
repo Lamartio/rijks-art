@@ -11,8 +11,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app-android" />
-            <option value="$PROJECT_DIR$/app-shared" />
+            <option value="$PROJECT_DIR$/appx" />
+            <option value="$PROJECT_DIR$/appx/androidApp" />
+            <option value="$PROJECT_DIR$/appx/shared" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -10,6 +10,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+//        mavenLocal()
     }
 }
 rootProject.name = "rijks-art"
@@ -19,9 +20,7 @@ rootProject.name = "rijks-art"
 //include ':libs:rijksmuseum'
 //include ':libs:services'
 //include ':libs:logic'
-//include ':app'
-//include(":androidApp")
-//include(":shared")
-//include ':app4'
-include(':app-shared')
-include(':app-android')
+
+include(":appx")
+include(":appx:androidApp")
+include(":appx:shared")
