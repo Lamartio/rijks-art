@@ -14,7 +14,7 @@ struct ArtCollectionView: View {
         self.state = machine.value
         self.selection = Binding(
             get: { machine.value.selection },
-            set: { id in machine.actions.select(id: id) }
+            set: machine.actions.select
         )
     }
     
@@ -36,7 +36,6 @@ struct ArtCollectionView: View {
         }
         .navigationTitle("Rijksmuseum")
         .onReceive(publisher(of: machine), perform: { state = $0 })
-        .onChange(of: state.selection, perform: machine.actions.select(id:))
     }
 }
 

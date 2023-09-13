@@ -46,3 +46,5 @@ fun <S> transaction(block: (focus: FocusedLens<*, S>) -> Unit): (S) -> S =
             .apply { block(lens) }
             .get()
     }
+
+internal fun <T, R> it(transform: T.() -> R): (T) -> R = transform

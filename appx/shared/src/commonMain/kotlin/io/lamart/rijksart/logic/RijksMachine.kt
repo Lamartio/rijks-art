@@ -1,15 +1,14 @@
 package io.lamart.rijksart.logic
 
-import io.lamart.lux.Async
 import io.lamart.lux.Machine
 import io.lamart.lux.Mutable
 import io.lamart.rijksart.Platform
 import io.lamart.rijksart.PlatformDependencies
 import io.lamart.rijksart.httpEngineFactory
 import io.lamart.rijksart.logic.details.DetailsMachine
-import io.lamart.rijksart.logic.details.DetailsState
+import io.lamart.rijksart.logic.details.toDetailsState
 import io.lamart.rijksart.logic.overview.OverviewMachine
-import io.lamart.rijksart.logic.overview.OverviewState
+import io.lamart.rijksart.logic.overview.toOverviewState
 import io.lamart.rijksart.network.RijksMuseum
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -21,34 +20,17 @@ fun Platform.toMachine(): RijksMachine = RijksMachine(this)
 class RijksMachine(platform: Platform) : Machine<RijksState, RijksActions>(initialize(platform)) {
     val overview = this
         .compose(
-            actions = RijksActions::overview,
-            state = it {
-                OverviewState(
-                    isFetching = fetchingCollection.state is Async.Executing,
-                    selection = this.selection.selected?.id,
-                    items = collectionItems.map(it {
-                        OverviewState.Item(id, title, headerImage.url)
-                    })
-                )
-            }
+            state = RijksState::toOverviewState,
+            actions = RijksActions::overview
         )
         .let(::OverviewMachine)
     val details = this
         .compose(
-            actions = RijksActions::details,
-            state = it {
-                DetailsState(
-                    title = selection.selected?.title ?: "",
-                    imageUrl = selection.selected?.webImage?.url,
-                    description = selection.details?.artObjectPage?.plaqueDescription ?: "",
-                    isFetching = selection.fetchingDetails.state is Async.Executing
-                )
-            }
+            state = { it.selection.toDetailsState() },
+            actions = RijksActions::details
         )
         .let(::DetailsMachine)
 }
-
-fun <T, R> it(transform: T.() -> R): (T) -> R = transform
 
 private fun initialize(platform: PlatformDependencies): Machine<RijksState, RijksActions> {
     val scope = CoroutineScope(Dispatchers.Main + SupervisorJob())

@@ -15,9 +15,10 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.runningFold
 
-internal class FetchCollectionsActions(deps: RijksDepedencies) : Actions<Int> by deps.run({
+internal class FetchCollectionActions(deps: RijksDepedencies) : Actions<Int> by deps.run({
     focus
-        .compose(RijksState.fetchingCollection)
+        .compose(RijksState.overview)
+        .compose(Overview.fetchingPage)
         .toStreamActions(
             scope,
             Behavior.exhausting(flow = dataFlowOf(
@@ -36,10 +37,9 @@ internal class FetchCollectionsActions(deps: RijksDepedencies) : Actions<Int> by
 
                         if (page != null && collection != null) {
                             focus
-                                .compose(RijksState.collections)
-                                .modify { collections ->
-                                    collections.plus(page to collection)
-                                }
+                                .compose(RijksState.overview)
+                                .compose(Overview.pages)
+                                .modify { it + (page to collection) }
                         }
                     }
             }

@@ -15,14 +15,14 @@ import kotlinx.serialization.json.Json
 
 class RijksMuseum(httpFactory: HttpClientEngineFactory<*> = httpEngineFactory) {
 
-    internal val httpClient: HttpClient = httpClientOf(httpFactory)
+    internal val client: HttpClient = httpClientOf(httpFactory)
 
     suspend fun getCollection(
         page: Int,
         pageSize: Int? = null,
         sort: String? = null
     ): ArtCollection =
-        httpClient
+        client
             .get("collection") {
                 parameter("p", page)
                 pageSize?.let { parameter("ps", it) }
@@ -31,7 +31,7 @@ class RijksMuseum(httpFactory: HttpClientEngineFactory<*> = httpEngineFactory) {
             .body()
 
     suspend fun getDetails(objectNumber: String): ArtDetails =
-        httpClient
+        client
             .get("collection/${objectNumber}")
             .body()
 

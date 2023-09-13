@@ -3,18 +3,6 @@ import shared
 import Combine
 import Kingfisher
 
-
-/**
- # State
- - imageUrl
- - title
- - description
- - isFetching
- 
- # Actions
- - fetch
- - deselect
- */
 struct ArtDetailsView: View {
     
     let machine: DetailsMachine
@@ -46,6 +34,6 @@ struct ArtDetailsView: View {
             action : { machine.actions.select(id: nil) },
             label: { Image(systemName: "arrow.left") }
         ))
-        .onReceive(publisher(of: machine), perform: { state = $0 })
+        .onReceive(publisher(of: machine).filter(\.isSelected), perform: { state = $0 }) // isSelected hack prevents the page turning blank when the selection became nil and app is transitioning back.
     }
 }

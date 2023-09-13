@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.onEach
 internal class FetchDetailsActions(deps: RijksDepedencies) : Actions<String> by deps.run({
     focus
         .compose(RijksState.selection)
-        .compose(RijksState.Selection.fetchingDetails)
+        .compose(Selection.fetchingDetails)
         .toStreamActions(
             scope,
             Behavior.switching(flow = dataFlowOf(
@@ -29,7 +29,7 @@ internal class FetchDetailsActions(deps: RijksDepedencies) : Actions<String> by 
                     if (state is Async.Executing || state is Async.Success) {
                         focus
                             .compose(RijksState.selection)
-                            .compose(RijksState.Selection.details)
+                            .compose(Selection.details)
                             .set(result)
                     }
                 }

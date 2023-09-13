@@ -5,16 +5,14 @@ import io.lamart.rijksart.logic.RijksState
 
 class OverviewActions internal constructor(
     private val deps: RijksDepedencies,
-    private val selectDetail: (id: String?) -> Unit
+    val select: (id: String?) -> Unit
 ) {
-    private val fetchCollectionActions = FetchCollectionsActions(deps)
-
-    fun select(id: String?) =
-        selectDetail(id)
+    private val fetchCollectionActions = FetchCollectionActions(deps)
 
     fun loadNextPage() =
         deps.focus
-            .compose(RijksState.collections)
+            .compose(RijksState.overview)
+            .compose(Overview.pages)
             .get()
             .keys
             .maxOrNull()
