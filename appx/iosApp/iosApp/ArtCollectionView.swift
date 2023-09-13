@@ -5,52 +5,65 @@ import Kingfisher
 
 struct ArtCollectionView: View {
     
-    @Environment(\.machine) var machine: RijksMachine
-    @State var items: [ArtCollection.ArtObject] = []
-    @State var isRefreshing: Bool = false
-    @State var selection: String?
+    let machine: OverviewMachine
+    @State var state: OverviewState
+    let selection: Binding<String?>
+    
+    init(machine: OverviewMachine) {
+        self.machine = machine
+        self.state = machine.value
+        self.selection = Binding(
+            get: { machine.value.selection },
+            set: { id in machine.actions.select(id: id) }
+        )
+    }
     
     var body: some View {
-        List(selection: $selection) {
+        List(selection: selection) {
             Section(
                 content: {
-                    ForEach(items, id: \.id) { item in
-                        ZStack(alignment: .bottomLeading) {
-                            KFImage(item.headerImage.url.flatMap(URL.init(string:)))
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(maxWidth: .infinity, maxHeight: 56)
-                                .clipped()
-                                .opacity(0.2)
-                            
-                            Text(item.title)
-                                .lineLimit(1)
-                                .truncationMode(.tail)
-                                .font(.caption)
-                                .padding(8)
-                            
-                            Text("").hidden() // workaround for instetting the divider. Default aligns to .lastTextBaseline
-                        }
-                    }
-                    .listRowInsets(.init())
+                    ForEach(state.items, id: \.id, content: ItemView.init(item:))
                 },
                 footer: {
                     HStack(alignment: .center) {
                         Spacer()
-                        Button("load more", action: machine.actions.appendCollection)
-                            .disabled(isRefreshing)
+                        Button("load more", action: machine.actions.loadNextPage)
+                            .disabled(state.isFetching)
                         Spacer()
                     }
                 }
             )
         }
-        .navigationTitle("Hey! \(selection ?? "")")
-        .onReceive(publisher(of: machine).map(\.collections.items), perform: { items = $0 })
-        .onReceive(publisher(of: machine).map(\.fetchingCollection.state), perform: { isRefreshing = $0 is LuxAsyncExecuting })
-        .onReceive(publisher(of: machine).map(\.selection), perform: { selection = $0 })
-        .onChange(of: selection, perform: machine.actions.select(id:))
+        .navigationTitle("Rijksmuseum")
+        .onReceive(publisher(of: machine), perform: { state = $0 })
+        .onChange(of: state.selection, perform: machine.actions.select(id:))
     }
 }
 
-extension ArtCollection.ArtObject : Identifiable {
+extension OverviewState.Item : Identifiable {
+}
+
+fileprivate struct ItemView: View {
+    
+    let item: OverviewState.Item
+    
+    var body: some View {
+        ZStack(alignment: .bottomLeading) {
+            KFImage(item.imageUrl.flatMap(URL.init(string:)))
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(maxWidth: .infinity, maxHeight: 88)
+                .clipped()
+                .opacity(0.2)
+            
+            Text(item.title)
+                .lineLimit(1)
+                .truncationMode(.tail)
+                .font(.caption)
+                .padding(8)
+            
+            Text("").hidden() // workaround for insetting the divider. Default aligns to .lastTextBaseline
+        }
+        .listRowInsets(.init())
+    }
 }

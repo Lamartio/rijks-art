@@ -14,15 +14,8 @@ struct iOSApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ZStack {
-                    NavigationLink(destination: ArtDetailsView(), isActive: $isShowingDetailView) { EmptyView() }
-                    ArtCollectionView()
-                    
-                }
-            }
+            AppView()
             .environment(\.machine, machine)
-            .onReceive(publisher(of: machine).map(\.selection).map { $0 != nil }, perform: { isShowingDetailView = $0 })
         }
     }
 }

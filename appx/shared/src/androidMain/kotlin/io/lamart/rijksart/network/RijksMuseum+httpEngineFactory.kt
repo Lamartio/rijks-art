@@ -3,4 +3,6 @@ package io.lamart.rijksart.network
 import io.ktor.client.engine.HttpClientEngineFactory
 import io.ktor.client.engine.okhttp.OkHttp
 
-internal actual val httpFactory: HttpClientEngineFactory<*> get() = OkHttp
+internal actual val RijksMuseum.Companion.httpEngineFactory: HttpClientEngineFactory<*>
+    get() = OkHttp
+

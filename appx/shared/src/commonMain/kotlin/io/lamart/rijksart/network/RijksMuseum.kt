@@ -11,14 +11,12 @@ import io.ktor.client.request.parameter
 import io.ktor.http.ContentType
 import io.ktor.http.contentType
 import io.ktor.serialization.kotlinx.json.json
-import kotlinx.coroutines.delay
 import kotlinx.serialization.json.Json
-import kotlin.time.DurationUnit
-import kotlin.time.toDuration
 
-interface RijksMuseum {
 
-    val httpClient: HttpClient
+class RijksMuseum(httpFactory: HttpClientEngineFactory<*>) {
+
+    private val httpClient: HttpClient = httpClientOf(httpFactory)
 
     suspend fun getCollection(
         page: Int,
@@ -33,18 +31,16 @@ interface RijksMuseum {
             }
             .body()
 
-//    suspend fun getDetails(objectNumber: String): ArtDetails
+    suspend fun getDetails(objectNumber: String): ArtDetails =
+        httpClient
+            .get("collection/${objectNumber}")
+            .body()
 
-    companion object : () -> RijksMuseum {
-        override operator fun invoke(): RijksMuseum =
-            object : RijksMuseum {
-                override val httpClient = httpFactory.toClient()
-            }
-    }
+    companion object
 }
 
-private fun HttpClientEngineFactory<*>.toClient() =
-    HttpClient(this) {
+private fun httpClientOf(httpFactory: HttpClientEngineFactory<*>): HttpClient =
+    HttpClient(httpFactory) {
         install(ContentNegotiation) {
             json(Json { ignoreUnknownKeys = true })
         }

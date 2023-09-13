@@ -1,0 +1,2844 @@
+[
+  {
+    "elapsedMilliseconds": 131,
+    "artObject": {
+      "links": {
+        "search": "http://www.rijksmuseum.nl/api/nl/collection"
+      },
+      "id": "en-BK-AM-33-C",
+      "priref": "24244",
+      "objectNumber": "BK-AM-33-C",
+      "language": "en",
+      "title": "Ten weepers from the tomb of Isabella of Bourbon",
+      "copyrightHolder": null,
+      "webImage": {
+        "guid": "b0e1c132-8ba4-4796-a12a-e351adb594d1",
+        "offsetPercentageX": 35,
+        "offsetPercentageY": 9,
+        "width": 1656,
+        "height": 2500,
+        "url": "https://lh5.ggpht.com/EHhJDrv4IB_89m9w9VlcYRYHYOuvU72iwD11oZ1HL3J5QcCMfmAD48CVxAtUwts9RT55W4lWSPI19wb1lSRZ9zecKMA=s0"
+      },
+      "colors": [
+        {
+          "percentage": 53,
+          "hex": "#DBD9D9"
+        },
+        {
+          "percentage": 1,
+          "hex": " #8C8887"
+        },
+        {
+          "percentage": 4,
+          "hex": " #716D6B"
+        },
+        {
+          "percentage": 13,
+          "hex": " #4E4843"
+        },
+        {
+          "percentage": 15,
+          "hex": " #AEACAC"
+        },
+        {
+          "percentage": 10,
+          "hex": " #1F1D1B"
+        }
+      ],
+      "colorsWithNormalization": [
+        {
+          "originalHex": "#DBD9D9",
+          "normalizedHex": "#F6ECF3"
+        },
+        {
+          "originalHex": " #8C8887",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #716D6B",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #4E4843",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #AEACAC",
+          "normalizedHex": "#B5BFCC"
+        },
+        {
+          "originalHex": " #1F1D1B",
+          "normalizedHex": "#000000"
+        }
+      ],
+      "normalizedColors": [
+        {
+          "percentage": 53,
+          "hex": "#DCDCDC"
+        },
+        {
+          "percentage": 18,
+          "hex": " #696969"
+        },
+        {
+          "percentage": 15,
+          "hex": " #A9A9A9"
+        },
+        {
+          "percentage": 10,
+          "hex": " #000000"
+        },
+        {
+          "percentage": 1,
+          "hex": " #808080"
+        }
+      ],
+      "normalized32Colors": [
+        {
+          "percentage": 53,
+          "hex": "#F6ECF3"
+        },
+        {
+          "percentage": 19,
+          "hex": " #737C84"
+        },
+        {
+          "percentage": 15,
+          "hex": " #B5BFCC"
+        },
+        {
+          "percentage": 10,
+          "hex": " #000000"
+        }
+      ],
+      "materialsThesaurus": [],
+      "techniquesThesaurus": [],
+      "productionPlacesThesaurus": [],
+      "titles": [
+        "Male Weeper Dressed in a Cloak, with a Fur Hat and Crown, from the Tomb of Isabella of Bourbon (1436-1465)"
+      ],
+      "description": "Hij heeft het linkerbeen naar voren geplaatst en houdt de rechterarm schuin van zich af. Over een kort, tot even over de knieën reikend, onderaan met een bontrand afgezet gewaad met mouwen, draagt hij een op de linkerschouder sluitende mantel met hermelijnen kraag van het Gulden Vlies. Op de bonthoed een kroon en tegen de opgeslagen klep een kleinood; hij draagt hozen.",
+      "labelText": null,
+      "objectTypes": [
+        "tomb figure"
+      ],
+      "objectCollection": [
+        "sculptures"
+      ],
+      "makers": [],
+      "principalMakers": [
+        {
+          "name": "Borman workshop",
+          "unFixedName": "Borman workshop",
+          "placeOfBirth": null,
+          "dateOfBirth": null,
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": null,
+          "dateOfDeathPrecision": null,
+          "placeOfDeath": null,
+          "occupation": [],
+          "roles": [
+            "sculptor"
+          ],
+          "nationality": null,
+          "biography": null,
+          "productionPlaces": [],
+          "qualification": "attributed to",
+          "labelDesc": "attributed to Borman workshop"
+        },
+        {
+          "name": "Renier van Thienen (I)",
+          "unFixedName": "Thienen, Renier van (I)",
+          "placeOfBirth": "Tienen",
+          "dateOfBirth": "1465",
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": "1498-06",
+          "dateOfDeathPrecision": "before",
+          "placeOfDeath": null,
+          "occupation": [
+            "caster",
+            "brazier"
+          ],
+          "roles": [
+            "caster"
+          ],
+          "nationality": "Vlaams",
+          "biography": null,
+          "productionPlaces": [
+            "Brussels"
+          ],
+          "qualification": "attributed to",
+          "labelDesc": "attributed to Renier van Thienen (I) (1465 - before jun-1498), Brussels"
+        }
+      ],
+      "plaqueDescriptionDutch": "In 1465 overleed Isabella van Bourbon, de vrouw van Karel de Stoute, hertog van Bourgondië en heerser over Vlaanderen, Holland, Zeeland, Brabant en Limburg. Hij liet voor haar een praalgraf maken in de Michielsabdij in Antwerpen. Om deze tombe stonden 24 beeldjes van rouwende familieleden en voorouders, zogenoemde pleurants. Ze symboliseerden het belang van de Bourgondische dynastie. Deze tien zijn de enige die bewaard zijn gebleven.",
+      "plaqueDescriptionEnglish": "Isabella of Bourbon, wife of Charles the Bold, duke of Burgundy, Brabant and Limburg and count of Flanders, Holland and Zeeland, died in 1465. He had a superb tomb made for her at St Michiel’s Abbey in Antwerp. Around it stood 24 figures of grieving relatives and ancestors - called weepers. They reflect the Burgundian dynasty’s sense of importance. These ten are the only surviving figures. ",
+      "principalMaker": "Borman workshop",
+      "artistRole": null,
+      "associations": [],
+      "acquisition": {
+        "method": "loan",
+        "date": "1887-01-01T00:00:00",
+        "creditLine": "On loan from the City of Amsterdam"
+      },
+      "exhibitions": [],
+      "materials": [
+        "bronze (metal)"
+      ],
+      "techniques": [
+        "casting"
+      ],
+      "productionPlaces": [
+        "Brussels"
+      ],
+      "dating": {
+        "presentingDate": "c. 1475 - c. 1476",
+        "sortingDate": 1475,
+        "period": 15,
+        "yearEarly": 1475,
+        "yearLate": 1476
+      },
+      "classification": {
+        "iconClassIdentifier": [
+          "42E224",
+          "46A12",
+          "41D2(+81)"
+        ],
+        "iconClassDescription": [
+          "'pleurants'",
+          "nobility and patriciate; chivalry, knighthood",
+          "clothes, costume (+ men's clothes)"
+        ],
+        "motifs": [],
+        "events": [],
+        "periods": [
+          "14761476"
+        ],
+        "places": [],
+        "people": [
+          "Bourbon, Isabella de"
+        ],
+        "objectNumbers": [
+          "BK-AM-33-C"
+        ]
+      },
+      "hasImage": true,
+      "historicalPersons": [
+        "Bourbon, Isabella de"
+      ],
+      "inscriptions": [],
+      "documentation": [
+        "Frits Scholten, 'Isabella's pleurants : een Bourgondische stamboom in beeld',  Rijksmuseum Kunstkrant 33 (2007), nr. 2, p. 10-13, afb..",
+        "Zie koepelrecord."
+      ],
+      "catRefRPK": [],
+      "principalOrFirstMaker": "Borman workshop, Renier van Thienen (I)",
+      "dimensions": [
+        {
+          "unit": "cm",
+          "type": "height",
+          "precision": null,
+          "part": null,
+          "value": "54.5"
+        },
+        {
+          "unit": "cm",
+          "type": "width",
+          "precision": null,
+          "part": null,
+          "value": "24.5"
+        },
+        {
+          "unit": "cm",
+          "type": "depth",
+          "precision": null,
+          "part": null,
+          "value": "14"
+        }
+      ],
+      "physicalProperties": [],
+      "physicalMedium": "bronze",
+      "longTitle": "Ten weepers from the tomb of Isabella of Bourbon, Borman workshop (attributed to), Renier van Thienen (I) (attributed to), c. 1475 - c. 1476",
+      "subTitle": "h 54.5cm × w 24.5cm × d 14cm",
+      "scLabelLine": "wooden models: attributed to Jan Borman II (active c. 1475–1520), casting: Renier van Thienen (active c. 1465–1498), Brussels, c. 1475-1476, bronze",
+      "label": {
+        "title": "Ten weepers from the tomb of Isabella of Bourbon",
+        "makerLine": "wooden models: attributed to Jan Borman II (active c. 1475–1520), casting: Renier van Thienen (active c. 1465–1498), Brussels, c. 1475-1476, bronze",
+        "description": "Isabella of Bourbon, wife of Charles the Bold, Duke of Burgundy died in 1465. Their daughter Mary built a funeral monument for her in the abbey of Saint Michael in Antwerp. The tomb was surrounded by 24 figures of mourning family members and ancestors, known as weepers (pleurants). They symbolized the importance of the Burgundy dynasty. These ten figures are all that remain.",
+        "notes": "BK-AM-33-A t/m J",
+        "date": "2013-05-02"
+      },
+      "showImage": true,
+      "location": "HG-0.4"
+    },
+    "artObjectPage": {
+      "id": "en-BK-AM-33-C",
+      "similarPages": [],
+      "lang": "en",
+      "objectNumber": "BK-AM-33-C",
+      "tags": [],
+      "plaqueDescription": "Isabella of Bourbon, wife of Charles the Bold, duke of Burgundy, Brabant and Limburg and count of Flanders, Holland and Zeeland, died in 1465. He had a superb tomb made for her at St Michiel’s Abbey in Antwerp. Around it stood 24 figures of grieving relatives and ancestors - called weepers. They reflect the Burgundian dynasty’s sense of importance. These ten are the only surviving figures. ",
+      "audioFile1": null,
+      "audioFileLabel1": null,
+      "audioFileLabel2": null,
+      "createdOn": "0001-01-01T00:00:00",
+      "updatedOn": "2012-09-18T14:06:42.3323732+00:00",
+      "adlibOverrides": {
+        "titel": null,
+        "maker": null,
+        "etiketText": null
+      }
+    }
+  },
+  {
+    "elapsedMilliseconds": 115,
+    "artObject": {
+      "links": {
+        "search": "http://www.rijksmuseum.nl/api/nl/collection"
+      },
+      "id": "en-BK-AM-33-D",
+      "priref": "24245",
+      "objectNumber": "BK-AM-33-D",
+      "language": "en",
+      "title": "Ten weepers from the tomb of Isabella of Bourbon",
+      "copyrightHolder": null,
+      "webImage": {
+        "guid": "cc0d028f-2bc5-4770-b378-1afa99e1bf77",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 0,
+        "width": 1655,
+        "height": 2500,
+        "url": "https://lh6.ggpht.com/zEY5JwpbGa7M7ueF5Nyqx3N0xeCXrQ_Ck83xIws2OxWScEOdOfxv-jZwRqSoxfz4Kqq4o96XKkIggCx3_JUjpYolsw=s0"
+      },
+      "colors": [
+        {
+          "percentage": 41,
+          "hex": "#B9B8B8"
+        },
+        {
+          "percentage": 19,
+          "hex": " #E2DEDC"
+        },
+        {
+          "percentage": 12,
+          "hex": " #201D1B"
+        },
+        {
+          "percentage": 12,
+          "hex": " #4C453E"
+        },
+        {
+          "percentage": 6,
+          "hex": " #6A6561"
+        },
+        {
+          "percentage": 4,
+          "hex": " #9F9D9C"
+        },
+        {
+          "percentage": 2,
+          "hex": " #84807E"
+        }
+      ],
+      "colorsWithNormalization": [
+        {
+          "originalHex": "#B9B8B8",
+          "normalizedHex": "#B5BFCC"
+        },
+        {
+          "originalHex": " #E2DEDC",
+          "normalizedHex": "#F6ECF3"
+        },
+        {
+          "originalHex": " #201D1B",
+          "normalizedHex": "#000000"
+        },
+        {
+          "originalHex": " #4C453E",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #6A6561",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #9F9D9C",
+          "normalizedHex": "#B5BFCC"
+        },
+        {
+          "originalHex": " #84807E",
+          "normalizedHex": "#737C84"
+        }
+      ],
+      "normalizedColors": [
+        {
+          "percentage": 41,
+          "hex": "#C0C0C0"
+        },
+        {
+          "percentage": 19,
+          "hex": " #DCDCDC"
+        },
+        {
+          "percentage": 19,
+          "hex": " #696969"
+        },
+        {
+          "percentage": 12,
+          "hex": " #000000"
+        },
+        {
+          "percentage": 4,
+          "hex": " #A9A9A9"
+        },
+        {
+          "percentage": 2,
+          "hex": " #808080"
+        }
+      ],
+      "normalized32Colors": [
+        {
+          "percentage": 45,
+          "hex": "#B5BFCC"
+        },
+        {
+          "percentage": 21,
+          "hex": " #737C84"
+        },
+        {
+          "percentage": 19,
+          "hex": " #F6ECF3"
+        },
+        {
+          "percentage": 12,
+          "hex": " #000000"
+        }
+      ],
+      "materialsThesaurus": [],
+      "techniquesThesaurus": [],
+      "productionPlacesThesaurus": [],
+      "titles": [
+        "Male Weeper Dressed in a Cloak, with a Fur Hat and Crown, from the Tomb of Isabella of Bourbon (1436-1465)"
+      ],
+      "description": "Hij staat met het linkerbeen naar voren en heeft het hoofd naar links gewend. Hij draagt een bourrelet met afhangende lap en afhangende lamfer, waarvan hij het onderste deel met de rechterhand vasthoudt. De linker armhoudt hij gebogen naast het lichaam, de hand iets daarvan af. De lange met bont gevoerde houppelande hangt tot op de grond en heeft aan de voorkant een split, waaronder het linkerbeen te voorschijn komt; om het middel een brede riem. De wijde, tot op de grond reikende mouwen eindigen in lobben.",
+      "labelText": null,
+      "objectTypes": [
+        "tomb figure"
+      ],
+      "objectCollection": [
+        "sculptures"
+      ],
+      "makers": [],
+      "principalMakers": [
+        {
+          "name": "Borman workshop",
+          "unFixedName": "Borman workshop",
+          "placeOfBirth": null,
+          "dateOfBirth": null,
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": null,
+          "dateOfDeathPrecision": null,
+          "placeOfDeath": null,
+          "occupation": [],
+          "roles": [
+            "sculptor"
+          ],
+          "nationality": null,
+          "biography": null,
+          "productionPlaces": [],
+          "qualification": "attributed to",
+          "labelDesc": "attributed to Borman workshop"
+        },
+        {
+          "name": "Renier van Thienen (I)",
+          "unFixedName": "Thienen, Renier van (I)",
+          "placeOfBirth": "Tienen",
+          "dateOfBirth": "1465",
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": "1498-06",
+          "dateOfDeathPrecision": "before",
+          "placeOfDeath": null,
+          "occupation": [
+            "caster",
+            "brazier"
+          ],
+          "roles": [
+            "caster"
+          ],
+          "nationality": "Vlaams",
+          "biography": null,
+          "productionPlaces": [
+            "Brussels"
+          ],
+          "qualification": "attributed to",
+          "labelDesc": "attributed to Renier van Thienen (I) (1465 - before jun-1498), Brussels"
+        }
+      ],
+      "plaqueDescriptionDutch": "In 1465 overleed Isabella van Bourbon, de vrouw van Karel de Stoute, hertog van Bourgondië en heerser over Vlaanderen, Holland, Zeeland, Brabant en Limburg. Hij liet voor haar een praalgraf maken in de Michielsabdij in Antwerpen. Om deze tombe stonden 24 beeldjes van rouwende familieleden en voorouders, zogenoemde pleurants. Ze symboliseerden het belang van de Bourgondische dynastie. Deze tien zijn de enige die bewaard zijn gebleven. ",
+      "plaqueDescriptionEnglish": "Isabella of Bourbon, wife of Charles the Bold, duke of Burgundy, Brabant and Limburg and count of Flanders, Holland and Zeeland, died in 1465. He had a superb tomb made for her at St Michiel’s Abbey in Antwerp. Around it stood 24 figures of grieving relatives and ancestors - called weepers. They reflect the Burgundian dynasty’s sense of importance. These ten are the only surviving figures. ",
+      "principalMaker": "Borman workshop",
+      "artistRole": null,
+      "associations": [],
+      "acquisition": {
+        "method": "loan",
+        "date": "1887-01-01T00:00:00",
+        "creditLine": "On loan from the City of Amsterdam"
+      },
+      "exhibitions": [],
+      "materials": [
+        "bronze (metal)"
+      ],
+      "techniques": [
+        "casting"
+      ],
+      "productionPlaces": [
+        "Brussels"
+      ],
+      "dating": {
+        "presentingDate": "c. 1475 - c. 1476",
+        "sortingDate": 1475,
+        "period": 15,
+        "yearEarly": 1475,
+        "yearLate": 1476
+      },
+      "classification": {
+        "iconClassIdentifier": [
+          "42E224",
+          "46A12",
+          "41D2(+81)"
+        ],
+        "iconClassDescription": [
+          "'pleurants'",
+          "nobility and patriciate; chivalry, knighthood",
+          "clothes, costume (+ men's clothes)"
+        ],
+        "motifs": [],
+        "events": [],
+        "periods": [
+          "14761476"
+        ],
+        "places": [],
+        "people": [
+          "Bourbon, Isabella de"
+        ],
+        "objectNumbers": [
+          "BK-AM-33-D"
+        ]
+      },
+      "hasImage": true,
+      "historicalPersons": [
+        "Bourbon, Isabella de"
+      ],
+      "inscriptions": [],
+      "documentation": [
+        "Frits Scholten, 'Isabella's pleurants : een Bourgondische stamboom in beeld',  Rijksmuseum Kunstkrant 33 (2007), nr. 2, p. 10-13, afb..",
+        "Zie koepelrecord."
+      ],
+      "catRefRPK": [],
+      "principalOrFirstMaker": "Borman workshop, Renier van Thienen (I)",
+      "dimensions": [
+        {
+          "unit": "cm",
+          "type": "height",
+          "precision": null,
+          "part": null,
+          "value": "55"
+        },
+        {
+          "unit": "cm",
+          "type": "width",
+          "precision": null,
+          "part": null,
+          "value": "22.5"
+        },
+        {
+          "unit": "cm",
+          "type": "depth",
+          "precision": null,
+          "part": null,
+          "value": "12.5"
+        }
+      ],
+      "physicalProperties": [],
+      "physicalMedium": "bronze",
+      "longTitle": "Ten weepers from the tomb of Isabella of Bourbon, Borman workshop (attributed to), Renier van Thienen (I) (attributed to), c. 1475 - c. 1476",
+      "subTitle": "h 55cm × w 22.5cm × d 12.5cm",
+      "scLabelLine": "wooden models: attributed to Jan Borman II (active c. 1475–1520), casting: Renier van Thienen (active c. 1465–1498), Brussels, c. 1475-1476, bronze",
+      "label": {
+        "title": "Ten weepers from the tomb of Isabella of Bourbon",
+        "makerLine": "wooden models: attributed to Jan Borman II (active c. 1475–1520), casting: Renier van Thienen (active c. 1465–1498), Brussels, c. 1475-1476, bronze",
+        "description": "Isabella of Bourbon, wife of Charles the Bold, Duke of Burgundy died in 1465. Their daughter Mary built a funeral monument for her in the abbey of Saint Michael in Antwerp. The tomb was surrounded by 24 figures of mourning family members and ancestors, known as weepers (pleurants). They symbolized the importance of the Burgundy dynasty. These ten figures are all that remain.",
+        "notes": "BK-AM-33-A t/m J",
+        "date": "2013-05-02"
+      },
+      "showImage": true,
+      "location": "HG-0.4"
+    },
+    "artObjectPage": {
+      "id": "en-BK-AM-33-D",
+      "similarPages": [],
+      "lang": "en",
+      "objectNumber": "BK-AM-33-D",
+      "tags": [],
+      "plaqueDescription": "Isabella of Bourbon, wife of Charles the Bold, duke of Burgundy, Brabant and Limburg and count of Flanders, Holland and Zeeland, died in 1465. He had a superb tomb made for her at St Michiel’s Abbey in Antwerp. Around it stood 24 figures of grieving relatives and ancestors - called weepers. They reflect the Burgundian dynasty’s sense of importance. These ten are the only surviving figures. ",
+      "audioFile1": null,
+      "audioFileLabel1": null,
+      "audioFileLabel2": null,
+      "createdOn": "0001-01-01T00:00:00",
+      "updatedOn": "2012-09-18T14:06:41.9776494+00:00",
+      "adlibOverrides": {
+        "titel": null,
+        "maker": null,
+        "etiketText": null
+      }
+    }
+  },
+  {
+    "elapsedMilliseconds": 166,
+    "artObject": {
+      "links": {
+        "search": "http://www.rijksmuseum.nl/api/nl/collection"
+      },
+      "id": "en-BK-AM-33-E",
+      "priref": "24246",
+      "objectNumber": "BK-AM-33-E",
+      "language": "en",
+      "title": "Ten weepers from the tomb of Isabella of Bourbon",
+      "copyrightHolder": null,
+      "webImage": {
+        "guid": "1a3bc6ce-d516-450b-836c-f4da1eaddefa",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 4,
+        "width": 1655,
+        "height": 2500,
+        "url": "https://lh6.ggpht.com/z37VVIUgOOW4cumA4FvSwyvuMWdk6rjD7CBu1aAL5OGz_-RRuuQ2Xq4jEuHWn7plIwhD4bT2Qp8pnGRqbWPiNPpM0gwE=s0"
+      },
+      "colors": [
+        {
+          "percentage": 34,
+          "hex": "#D8D7D8"
+        },
+        {
+          "percentage": 13,
+          "hex": " #383431"
+        },
+        {
+          "percentage": 9,
+          "hex": " #595654"
+        },
+        {
+          "percentage": 5,
+          "hex": " #8A8786"
+        },
+        {
+          "percentage": 2,
+          "hex": " #181716"
+        },
+        {
+          "percentage": 34,
+          "hex": " #B9B8B8"
+        }
+      ],
+      "colorsWithNormalization": [
+        {
+          "originalHex": "#D8D7D8",
+          "normalizedHex": "#F6ECF3"
+        },
+        {
+          "originalHex": " #383431",
+          "normalizedHex": "#000000"
+        },
+        {
+          "originalHex": " #595654",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #8A8786",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #181716",
+          "normalizedHex": "#000000"
+        },
+        {
+          "originalHex": " #B9B8B8",
+          "normalizedHex": "#B5BFCC"
+        }
+      ],
+      "normalizedColors": [
+        {
+          "percentage": 34,
+          "hex": "#D3D3D3"
+        },
+        {
+          "percentage": 34,
+          "hex": " #C0C0C0"
+        },
+        {
+          "percentage": 23,
+          "hex": " #696969"
+        },
+        {
+          "percentage": 5,
+          "hex": " #808080"
+        },
+        {
+          "percentage": 2,
+          "hex": " #000000"
+        }
+      ],
+      "normalized32Colors": [
+        {
+          "percentage": 34,
+          "hex": "#F6ECF3"
+        },
+        {
+          "percentage": 34,
+          "hex": " #B5BFCC"
+        },
+        {
+          "percentage": 15,
+          "hex": " #000000"
+        },
+        {
+          "percentage": 14,
+          "hex": " #737C84"
+        }
+      ],
+      "materialsThesaurus": [],
+      "techniquesThesaurus": [],
+      "productionPlacesThesaurus": [],
+      "titles": [
+        "Male Weeper Dressed in a Short Houppelande, from the Tomb of Isabella of Bourbon (1436-1465)"
+      ],
+      "description": "Hij staat wat martiaal met gespreide benen, het hoofd iets naar rechts; hij houdt de rechterhand tegen zich aan, de linkerarm omlaag. Een rijk versierde riem plooit de met bont gevoerde houppelande met opstaande kraag; de naar onderen breed uitlopende mouwen zijn, evenals de zoom, kanteelvormig ingesneden. Van de kaproen met hanekam loopt de gekartelde lamfer voor de borst langs over de rechterschouder naar achteren. De benen steken in hozen. Om de hals een ordekruis, waarvan het koord overeenkomt met dat van de Antoniusorde.",
+      "labelText": null,
+      "objectTypes": [
+        "tomb figure"
+      ],
+      "objectCollection": [
+        "sculptures"
+      ],
+      "makers": [],
+      "principalMakers": [
+        {
+          "name": "Borman workshop",
+          "unFixedName": "Borman workshop",
+          "placeOfBirth": null,
+          "dateOfBirth": null,
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": null,
+          "dateOfDeathPrecision": null,
+          "placeOfDeath": null,
+          "occupation": [],
+          "roles": [
+            "sculptor"
+          ],
+          "nationality": null,
+          "biography": null,
+          "productionPlaces": [],
+          "qualification": "attributed to",
+          "labelDesc": "attributed to Borman workshop"
+        },
+        {
+          "name": "Renier van Thienen (I)",
+          "unFixedName": "Thienen, Renier van (I)",
+          "placeOfBirth": "Tienen",
+          "dateOfBirth": "1465",
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": "1498-06",
+          "dateOfDeathPrecision": "before",
+          "placeOfDeath": null,
+          "occupation": [
+            "caster",
+            "brazier"
+          ],
+          "roles": [
+            "caster"
+          ],
+          "nationality": "Vlaams",
+          "biography": null,
+          "productionPlaces": [
+            "Brussels"
+          ],
+          "qualification": "attributed to",
+          "labelDesc": "attributed to Renier van Thienen (I) (1465 - before jun-1498), Brussels"
+        }
+      ],
+      "plaqueDescriptionDutch": "In 1465 overleed Isabella van Bourbon, de vrouw van Karel de Stoute, hertog van Bourgondië en heerser over Vlaanderen, Holland, Zeeland, Brabant en Limburg. Hij liet voor haar een praalgraf maken in de Michielsabdij in Antwerpen. Om deze tombe stonden 24 beeldjes van rouwende familieleden en voorouders, zogenoemde pleurants. Ze symboliseerden het belang van de Bourgondische dynastie. Deze tien zijn de enige die bewaard zijn gebleven. ",
+      "plaqueDescriptionEnglish": "Isabella of Bourbon, wife of Charles the Bold, duke of Burgundy, Brabant and Limburg and count of Flanders, Holland and Zeeland, died in 1465. He had a superb tomb made for her at St Michiel’s Abbey in Antwerp. Around it stood 24 figures of grieving relatives and ancestors - called weepers. They reflect the Burgundian dynasty’s sense of importance. These ten are the only surviving figures. ",
+      "principalMaker": "Borman workshop",
+      "artistRole": null,
+      "associations": [],
+      "acquisition": {
+        "method": "loan",
+        "date": "1887-01-01T00:00:00",
+        "creditLine": "On loan from the City of Amsterdam"
+      },
+      "exhibitions": [],
+      "materials": [
+        "bronze (metal)"
+      ],
+      "techniques": [
+        "casting"
+      ],
+      "productionPlaces": [
+        "Brussels"
+      ],
+      "dating": {
+        "presentingDate": "c. 1475 - c. 1476",
+        "sortingDate": 1475,
+        "period": 15,
+        "yearEarly": 1475,
+        "yearLate": 1476
+      },
+      "classification": {
+        "iconClassIdentifier": [
+          "42E224",
+          "46A12",
+          "41D2(+81)"
+        ],
+        "iconClassDescription": [
+          "'pleurants'",
+          "nobility and patriciate; chivalry, knighthood",
+          "clothes, costume (+ men's clothes)"
+        ],
+        "motifs": [],
+        "events": [],
+        "periods": [
+          "14761476"
+        ],
+        "places": [],
+        "people": [
+          "Bourbon, Isabella de"
+        ],
+        "objectNumbers": [
+          "BK-AM-33-E"
+        ]
+      },
+      "hasImage": true,
+      "historicalPersons": [
+        "Bourbon, Isabella de"
+      ],
+      "inscriptions": [],
+      "documentation": [
+        "Frits Scholten, 'Isabella's pleurants : een Bourgondische stamboom in beeld',  Rijksmuseum Kunstkrant 33 (2007), nr. 2, p. 10-13, afb..",
+        "Zie koepelrecord."
+      ],
+      "catRefRPK": [],
+      "principalOrFirstMaker": "Borman workshop, Renier van Thienen (I)",
+      "dimensions": [
+        {
+          "unit": "cm",
+          "type": "height",
+          "precision": null,
+          "part": null,
+          "value": "55.5"
+        },
+        {
+          "unit": "cm",
+          "type": "width",
+          "precision": null,
+          "part": null,
+          "value": "25.5"
+        },
+        {
+          "unit": "cm",
+          "type": "depth",
+          "precision": null,
+          "part": null,
+          "value": "12.5"
+        }
+      ],
+      "physicalProperties": [],
+      "physicalMedium": "bronze",
+      "longTitle": "Ten weepers from the tomb of Isabella of Bourbon, Borman workshop (attributed to), Renier van Thienen (I) (attributed to), c. 1475 - c. 1476",
+      "subTitle": "h 55.5cm × w 25.5cm × d 12.5cm",
+      "scLabelLine": "wooden models: attributed to Jan Borman II (active c. 1475–1520), casting: Renier van Thienen (active c. 1465–1498), Brussels, c. 1475-1476, bronze",
+      "label": {
+        "title": "Ten weepers from the tomb of Isabella of Bourbon",
+        "makerLine": "wooden models: attributed to Jan Borman II (active c. 1475–1520), casting: Renier van Thienen (active c. 1465–1498), Brussels, c. 1475-1476, bronze",
+        "description": "Isabella of Bourbon, wife of Charles the Bold, Duke of Burgundy died in 1465. Their daughter Mary built a funeral monument for her in the abbey of Saint Michael in Antwerp. The tomb was surrounded by 24 figures of mourning family members and ancestors, known as weepers (pleurants). They symbolized the importance of the Burgundy dynasty. These ten figures are all that remain.",
+        "notes": "BK-AM-33-A t/m J",
+        "date": "2013-05-02"
+      },
+      "showImage": true,
+      "location": "HG-0.4"
+    },
+    "artObjectPage": {
+      "id": "en-BK-AM-33-E",
+      "similarPages": [],
+      "lang": "en",
+      "objectNumber": "BK-AM-33-E",
+      "tags": [],
+      "plaqueDescription": "Isabella of Bourbon, wife of Charles the Bold, duke of Burgundy, Brabant and Limburg and count of Flanders, Holland and Zeeland, died in 1465. He had a superb tomb made for her at St Michiel’s Abbey in Antwerp. Around it stood 24 figures of grieving relatives and ancestors - called weepers. They reflect the Burgundian dynasty’s sense of importance. These ten are the only surviving figures. ",
+      "audioFile1": null,
+      "audioFileLabel1": null,
+      "audioFileLabel2": null,
+      "createdOn": "0001-01-01T00:00:00",
+      "updatedOn": "2012-09-21T13:02:42.7613966+00:00",
+      "adlibOverrides": {
+        "titel": null,
+        "maker": null,
+        "etiketText": null
+      }
+    }
+  },
+  {
+    "elapsedMilliseconds": 114,
+    "artObject": {
+      "links": {
+        "search": "http://www.rijksmuseum.nl/api/nl/collection"
+      },
+      "id": "en-BK-AM-33-H",
+      "priref": "24249",
+      "objectNumber": "BK-AM-33-H",
+      "language": "en",
+      "title": "Ten weepers from the tomb of Isabella of Bourbon",
+      "copyrightHolder": null,
+      "webImage": {
+        "guid": "661b6b6c-0f6d-437e-b786-3c9332036590",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 2,
+        "width": 1656,
+        "height": 2500,
+        "url": "https://lh3.ggpht.com/hWw39CO9_f8Layr6PT_REdtl_nJflH6L_o8jeF3XxmAquB2PKQhWK2kKRCd16TUvhdTl1UrfFC0-Wn1es9LxfdtcZQ=s0"
+      },
+      "colors": [
+        {
+          "percentage": 0,
+          "hex": "#F1EBEA"
+        },
+        {
+          "percentage": 2,
+          "hex": " #7A7673"
+        },
+        {
+          "percentage": 5,
+          "hex": " #9E9C9B"
+        },
+        {
+          "percentage": 17,
+          "hex": " #4F4A44"
+        },
+        {
+          "percentage": 66,
+          "hex": " #C5C4C4"
+        },
+        {
+          "percentage": 7,
+          "hex": " #1D1B19"
+        }
+      ],
+      "colorsWithNormalization": [
+        {
+          "originalHex": "#F1EBEA",
+          "normalizedHex": "#F6ECF3"
+        },
+        {
+          "originalHex": " #7A7673",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #9E9C9B",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #4F4A44",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #C5C4C4",
+          "normalizedHex": "#B5BFCC"
+        },
+        {
+          "originalHex": " #1D1B19",
+          "normalizedHex": "#000000"
+        }
+      ],
+      "normalizedColors": [
+        {
+          "percentage": 66,
+          "hex": "#C0C0C0"
+        },
+        {
+          "percentage": 17,
+          "hex": " #696969"
+        },
+        {
+          "percentage": 7,
+          "hex": " #000000"
+        },
+        {
+          "percentage": 5,
+          "hex": " #A9A9A9"
+        },
+        {
+          "percentage": 2,
+          "hex": " #808080"
+        },
+        {
+          "percentage": 0,
+          "hex": " #FFFAFA"
+        }
+      ],
+      "normalized32Colors": [
+        {
+          "percentage": 66,
+          "hex": "#B5BFCC"
+        },
+        {
+          "percentage": 25,
+          "hex": " #737C84"
+        },
+        {
+          "percentage": 7,
+          "hex": " #000000"
+        },
+        {
+          "percentage": 0,
+          "hex": " #F6ECF3"
+        }
+      ],
+      "materialsThesaurus": [],
+      "techniquesThesaurus": [],
+      "productionPlacesThesaurus": [],
+      "titles": [
+        "Female Weeper Wearing a V-Shaped Bourrelet on her Head, from the Tomb of Isabella of Bourbon (1436-1465)"
+      ],
+      "description": "Het hoofd neigt iets naar voren en naar links; de handen heeft zij tegen zich aan om haar kleed samen te houden, terwijl zij met de rechteronderarm een afhangende siermouw ophoudt. Op een kap een V-vormig gebogen bourrelet met kleinood, die door een doek onder de kin wordt vastgehouden, en waarvan een sluier naar achteren afhangt. Over een dun onderkleed, dat bij de hals even zichtbaar is, een tweede kleed met nauwsluitende mouwen, op de borst samengeregen en aan de rokzoom van een brede bontrand voorzien. Hieroverheen een zeer ruim zittend overkleed met V-vormige halsuitsnijding en korte mouwen, waaruit lange siermouwen afhangen. De korte mouwen en de zoom van het kleed, waarvan een deel voor de voeten ligt, zijn eveneens met bont afgezet.",
+      "labelText": null,
+      "objectTypes": [
+        "tomb figure"
+      ],
+      "objectCollection": [
+        "sculptures"
+      ],
+      "makers": [],
+      "principalMakers": [
+        {
+          "name": "Borman workshop",
+          "unFixedName": "Borman workshop",
+          "placeOfBirth": null,
+          "dateOfBirth": null,
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": null,
+          "dateOfDeathPrecision": null,
+          "placeOfDeath": null,
+          "occupation": [],
+          "roles": [
+            "sculptor"
+          ],
+          "nationality": null,
+          "biography": null,
+          "productionPlaces": [],
+          "qualification": "attributed to",
+          "labelDesc": "attributed to Borman workshop"
+        },
+        {
+          "name": "Renier van Thienen (I)",
+          "unFixedName": "Thienen, Renier van (I)",
+          "placeOfBirth": "Tienen",
+          "dateOfBirth": "1465",
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": "1498-06",
+          "dateOfDeathPrecision": "before",
+          "placeOfDeath": null,
+          "occupation": [
+            "caster",
+            "brazier"
+          ],
+          "roles": [
+            "caster"
+          ],
+          "nationality": "Vlaams",
+          "biography": null,
+          "productionPlaces": [
+            "Brussels"
+          ],
+          "qualification": "attributed to",
+          "labelDesc": "attributed to Renier van Thienen (I) (1465 - before jun-1498), Brussels"
+        }
+      ],
+      "plaqueDescriptionDutch": "In 1465 overleed Isabella van Bourbon, de vrouw van Karel de Stoute, hertog van Bourgondië en heerser over Vlaanderen, Holland, Zeeland, Brabant en Limburg. Hij liet voor haar een praalgraf maken in de Michielsabdij in Antwerpen. Om deze tombe stonden 24 beeldjes van rouwende familieleden en voorouders, zogenoemde pleurants. Ze symboliseerden het belang van de Bourgondische dynastie. Deze tien zijn de enige die bewaard zijn gebleven. ",
+      "plaqueDescriptionEnglish": "Isabella of Bourbon, wife of Charles the Bold, duke of Burgundy, Brabant and Limburg and count of Flanders, Holland and Zeeland, died in 1465. He had a superb tomb made for her at St Michiel’s Abbey in Antwerp. Around it stood 24 figures of grieving relatives and ancestors - called weepers. They reflect the Burgundian dynasty’s sense of importance. These ten are the only surviving figures. ",
+      "principalMaker": "Borman workshop",
+      "artistRole": null,
+      "associations": [],
+      "acquisition": {
+        "method": "loan",
+        "date": "1887-01-01T00:00:00",
+        "creditLine": "On loan from the City of Amsterdam"
+      },
+      "exhibitions": [],
+      "materials": [
+        "bronze (metal)"
+      ],
+      "techniques": [
+        "casting"
+      ],
+      "productionPlaces": [
+        "Brussels"
+      ],
+      "dating": {
+        "presentingDate": "c. 1475 - c. 1476",
+        "sortingDate": 1475,
+        "period": 15,
+        "yearEarly": 1475,
+        "yearLate": 1476
+      },
+      "classification": {
+        "iconClassIdentifier": [
+          "42E224",
+          "46A12",
+          "41D2(+82)"
+        ],
+        "iconClassDescription": [
+          "'pleurants'",
+          "nobility and patriciate; chivalry, knighthood",
+          "clothes, costume (+ women's clothes)"
+        ],
+        "motifs": [],
+        "events": [],
+        "periods": [
+          "14761476"
+        ],
+        "places": [],
+        "people": [
+          "Bourbon, Isabella de"
+        ],
+        "objectNumbers": [
+          "BK-AM-33-H"
+        ]
+      },
+      "hasImage": true,
+      "historicalPersons": [
+        "Bourbon, Isabella de"
+      ],
+      "inscriptions": [],
+      "documentation": [
+        "Frits Scholten, 'Isabella's pleurants : een Bourgondische stamboom in beeld',  Rijksmuseum Kunstkrant 33 (2007), nr. 2, p. 10-13, afb..",
+        "Zie koepelrecord."
+      ],
+      "catRefRPK": [],
+      "principalOrFirstMaker": "Borman workshop, Renier van Thienen (I)",
+      "dimensions": [
+        {
+          "unit": "cm",
+          "type": "height",
+          "precision": null,
+          "part": null,
+          "value": "58"
+        },
+        {
+          "unit": "cm",
+          "type": "width",
+          "precision": null,
+          "part": null,
+          "value": "20.5"
+        },
+        {
+          "unit": "cm",
+          "type": "depth",
+          "precision": null,
+          "part": null,
+          "value": "13.5"
+        }
+      ],
+      "physicalProperties": [],
+      "physicalMedium": "bronze",
+      "longTitle": "Ten weepers from the tomb of Isabella of Bourbon, Borman workshop (attributed to), Renier van Thienen (I) (attributed to), c. 1475 - c. 1476",
+      "subTitle": "h 58cm × w 20.5cm × d 13.5cm",
+      "scLabelLine": "wooden models: attributed to Jan Borman II (active c. 1475–1520), casting: Renier van Thienen (active c. 1465–1498), Brussels, c. 1475-1476, bronze",
+      "label": {
+        "title": "Ten weepers from the tomb of Isabella of Bourbon",
+        "makerLine": "wooden models: attributed to Jan Borman II (active c. 1475–1520), casting: Renier van Thienen (active c. 1465–1498), Brussels, c. 1475-1476, bronze",
+        "description": "Isabella of Bourbon, wife of Charles the Bold, Duke of Burgundy died in 1465. Their daughter Mary built a funeral monument for her in the abbey of Saint Michael in Antwerp. The tomb was surrounded by 24 figures of mourning family members and ancestors, known as weepers (pleurants). They symbolized the importance of the Burgundy dynasty. These ten figures are all that remain.",
+        "notes": "BK-AM-33-A t/m J",
+        "date": "2013-05-02"
+      },
+      "showImage": true,
+      "location": "HG-0.4"
+    },
+    "artObjectPage": {
+      "id": "en-BK-AM-33-H",
+      "similarPages": [],
+      "lang": "en",
+      "objectNumber": "BK-AM-33-H",
+      "tags": [],
+      "plaqueDescription": "Isabella of Bourbon, wife of Charles the Bold, duke of Burgundy, Brabant and Limburg and count of Flanders, Holland and Zeeland, died in 1465. He had a superb tomb made for her at St Michiel’s Abbey in Antwerp. Around it stood 24 figures of grieving relatives and ancestors - called weepers. They reflect the Burgundian dynasty’s sense of importance. These ten are the only surviving figures. ",
+      "audioFile1": null,
+      "audioFileLabel1": null,
+      "audioFileLabel2": null,
+      "createdOn": "2012-09-21T13:05:13.6268877+00:00",
+      "updatedOn": "2012-09-21T13:05:13.6268877+00:00",
+      "adlibOverrides": {
+        "titel": null,
+        "maker": null,
+        "etiketText": null
+      }
+    }
+  },
+  {
+    "elapsedMilliseconds": 384,
+    "artObject": {
+      "links": {
+        "search": "http://www.rijksmuseum.nl/api/nl/collection"
+      },
+      "id": "en-BK-NM-88",
+      "priref": "24311",
+      "objectNumber": "BK-NM-88",
+      "language": "en",
+      "title": "The Meeting of Joachim and Anna",
+      "copyrightHolder": null,
+      "webImage": {
+        "guid": "05ce2b20-89d6-4211-adb3-53343285f609",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 13,
+        "width": 1742,
+        "height": 2500,
+        "url": "https://lh4.ggpht.com/1xfViC0J7t1dY50WCjTTZvLVsKTuSpHGcsCeWOzqa_sR76LoZh3zeRyN0D277PJbc9uKCiPfsEE5aBse70Ohbb8iWA=s0"
+      },
+      "colors": [
+        {
+          "percentage": 1,
+          "hex": "#DDDFDF"
+        },
+        {
+          "percentage": 55,
+          "hex": " #BBB9B4"
+        },
+        {
+          "percentage": 4,
+          "hex": " #23150F"
+        },
+        {
+          "percentage": 15,
+          "hex": " #5E4A34"
+        },
+        {
+          "percentage": 5,
+          "hex": " #A2917A"
+        },
+        {
+          "percentage": 16,
+          "hex": " #80715F"
+        }
+      ],
+      "colorsWithNormalization": [
+        {
+          "originalHex": "#DDDFDF",
+          "normalizedHex": "#F6ECF3"
+        },
+        {
+          "originalHex": " #BBB9B4",
+          "normalizedHex": "#B5BFCC"
+        },
+        {
+          "originalHex": " #23150F",
+          "normalizedHex": "#000000"
+        },
+        {
+          "originalHex": " #5E4A34",
+          "normalizedHex": "#B35A1F"
+        },
+        {
+          "originalHex": " #A2917A",
+          "normalizedHex": "#E0CC91"
+        },
+        {
+          "originalHex": " #80715F",
+          "normalizedHex": "#737C84"
+        }
+      ],
+      "normalizedColors": [
+        {
+          "percentage": 55,
+          "hex": "#C0C0C0"
+        },
+        {
+          "percentage": 32,
+          "hex": " #696969"
+        },
+        {
+          "percentage": 5,
+          "hex": " #D2B48C"
+        },
+        {
+          "percentage": 4,
+          "hex": " #000000"
+        },
+        {
+          "percentage": 1,
+          "hex": " #DCDCDC"
+        }
+      ],
+      "normalized32Colors": [
+        {
+          "percentage": 55,
+          "hex": "#B5BFCC"
+        },
+        {
+          "percentage": 16,
+          "hex": " #737C84"
+        },
+        {
+          "percentage": 15,
+          "hex": " #B35A1F"
+        },
+        {
+          "percentage": 5,
+          "hex": " #E0CC91"
+        },
+        {
+          "percentage": 4,
+          "hex": " #000000"
+        },
+        {
+          "percentage": 1,
+          "hex": " #F6ECF3"
+        }
+      ],
+      "materialsThesaurus": [],
+      "techniquesThesaurus": [],
+      "productionPlacesThesaurus": [],
+      "titles": [
+        "The Meeting of Joachim and Anne"
+      ],
+      "description": "Op een grondje staan Joachim en Anna als gesloten groep iets schuin tegenover elkaar; Joachim met het linkerbeen naar voren, het bovenlichaam naar haar toegewend, Anna rustend op het linkerbeen en het rechter even terzijde. Hij heeft beide armen om Anna's schouders geslagen voor een omhelzing, zij neigt met het hoofd naar hem toe om de kus te ontvangen, terwijl zij met de rechterhand zijn linkerelleboog ondersteunt en de andere vertrouwelijk op zijn rug heeft gelegd. Rimpels op Joachims voorhoofd, bij zijn ogen en mond, evenals aan de hals, wijzen op zijn gevorderde leeftijd. Hij draagt een hoge muts op het golvende haar en een tabbaard, welke met bont is gevoerd en afgezet. Anna's kleed is eveneens met bont gevoerd. Zij draagt een ouderwetse hoofddoek met gefronste rand, waarover een doek is gevouwen, die onder de kin met een speld wordt samengehouden.",
+      "labelText": null,
+      "objectTypes": [
+        "sculpture"
+      ],
+      "objectCollection": [
+        "sculptures"
+      ],
+      "makers": [
+        {
+          "name": "Master of Joachim and Anne",
+          "unFixedName": "Master of Joachim and Anne",
+          "placeOfBirth": null,
+          "dateOfBirth": null,
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": null,
+          "dateOfDeathPrecision": null,
+          "placeOfDeath": null,
+          "occupation": [],
+          "roles": [
+            "sculptor"
+          ],
+          "nationality": null,
+          "biography": null,
+          "productionPlaces": [],
+          "qualification": null,
+          "labelDesc": "Master of Joachim and Anne"
+        }
+      ],
+      "principalMakers": [
+        {
+          "name": "Master of Joachim and Anne",
+          "unFixedName": "Master of Joachim and Anne",
+          "placeOfBirth": null,
+          "dateOfBirth": null,
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": null,
+          "dateOfDeathPrecision": null,
+          "placeOfDeath": null,
+          "occupation": [],
+          "roles": [
+            "sculptor"
+          ],
+          "nationality": null,
+          "biography": null,
+          "productionPlaces": [
+            "Northwest Brabant"
+          ],
+          "qualification": null,
+          "labelDesc": "Master of Joachim and Anne, Northwest Brabant"
+        }
+      ],
+      "plaqueDescriptionDutch": "Joachim en Anna waren lang kinderloos. Totdat Anna’s gebed werd verhoord en zij op wonderbaarlijke wijze in verwachting bleek van Maria. In hun blijdschap om dit nieuws omhelzen zij elkaar teder. Ooit maakte dit intieme en haast tijdloze beeld deel uit van een groot altaar, gewijd aan het leven van Maria.",
+      "plaqueDescriptionEnglish": "Joachim and Anna were childless for many years. Until Anna’s prayers were answered and she miraculously conceived a daughter, Mary. Joyous at the news, they embrace each other tenderly. This intimate, almost timeless scene was once part of a large altar depicting stories about the life of the Virgin Mary.",
+      "principalMaker": "Master of Joachim and Anne",
+      "artistRole": null,
+      "associations": [],
+      "acquisition": {
+        "method": "purchase",
+        "date": "1873-01-01T00:00:00",
+        "creditLine": null
+      },
+      "exhibitions": [],
+      "materials": [
+        "oak (wood)"
+      ],
+      "techniques": [],
+      "productionPlaces": [
+        "Northwest Brabant"
+      ],
+      "dating": {
+        "presentingDate": "c. 1470",
+        "sortingDate": 1470,
+        "period": 15,
+        "yearEarly": 1470,
+        "yearLate": 1470
+      },
+      "classification": {
+        "iconClassIdentifier": [
+          "73A235"
+        ],
+        "iconClassDescription": [
+          "meeting of Anna and Joachim at the Golden Gate; they usually embrace or kiss each other (immaculate conception of Mary)"
+        ],
+        "motifs": [],
+        "events": [],
+        "periods": [],
+        "places": [],
+        "people": [],
+        "objectNumbers": [
+          "BK-NM-88"
+        ]
+      },
+      "hasImage": true,
+      "historicalPersons": [],
+      "inscriptions": [],
+      "documentation": [
+        "A. Schneckenburger-Broschek, 'Ein Niederländer als schwäbisches Genie: Neues zum Ulmer Chorgestühl', Zeitschrift des Deutschen Vereins für Kunstwissenschaft 40 (1986), 1-4, p. 75-83;",
+        "W. Houben, 'Altniederländische Holtzschitzkunst im Deutschen Museum zu Berlin', Pantheon 30 (1942), p. 156, afb. 2.",
+        "A. Liebreich, 'Ergänzende Beobachtungen zur zeitlichen und geographischen Verbreitungen des Kruselers', Zeitschrift für historische Waffen- und Kostümkunde 5 (1935/36), p. 64-65, afb. 2.",
+        "W. Vogelsang, 'De Nederlandsch Beeldhouwkunst ', Elsevier's geïllustreerd Maandschrift 31 (1906), p. 367."
+      ],
+      "catRefRPK": [],
+      "principalOrFirstMaker": "Master of Joachim and Anne",
+      "dimensions": [
+        {
+          "unit": "cm",
+          "type": "height",
+          "precision": null,
+          "part": null,
+          "value": "47"
+        },
+        {
+          "unit": "cm",
+          "type": "width",
+          "precision": null,
+          "part": null,
+          "value": "24.5"
+        },
+        {
+          "unit": "cm",
+          "type": "depth",
+          "precision": null,
+          "part": null,
+          "value": "11"
+        }
+      ],
+      "physicalProperties": [],
+      "physicalMedium": "oak with traces of polychromy",
+      "longTitle": "The Meeting of Joachim and Anna, Master of Joachim and Anne, c. 1470",
+      "subTitle": "h 47cm × w 24.5cm × d 11cm",
+      "scLabelLine": "Master of Joachim and Anna (active c. 1460-1480?), Brabant (Breda?), c. 1470, oak with traces of polychromy",
+      "label": {
+        "title": "The Meeting of Joachim and Anna",
+        "makerLine": "Master of Joachim and Anna (active c. 1460-1480?), Brabant (Breda?), c. 1470, oak with traces of polychromy",
+        "description": "Joachim and Anna had long been childless, until one day Anna’s prayers were answered and she miraculously became pregnant with the Virgin Mary. Overjoyed by this news, the couple embraces each other tenderly. This intimate, almost timeless statue was once part of a large altar dedicated to the life of the Virgin.",
+        "notes": "Multimediatour",
+        "date": "2018-02-22"
+      },
+      "showImage": true,
+      "location": "HG-0.1"
+    },
+    "artObjectPage": {
+      "id": "en-BK-NM-88",
+      "similarPages": [],
+      "lang": "en",
+      "objectNumber": "BK-NM-88",
+      "tags": [],
+      "plaqueDescription": "Joachim and Anna were childless for many years. Until Anna’s prayers were answered and she miraculously conceived a daughter, Mary. Joyous at the news, they embrace each other tenderly. This intimate, almost timeless scene was once part of a large altar depicting stories about the life of the Virgin Mary.",
+      "audioFile1": null,
+      "audioFileLabel1": null,
+      "audioFileLabel2": null,
+      "createdOn": "2012-09-21T12:58:56.5139006+00:00",
+      "updatedOn": "2012-09-21T12:58:56.5139006+00:00",
+      "adlibOverrides": {
+        "titel": null,
+        "maker": null,
+        "etiketText": null
+      }
+    }
+  },
+  {
+    "elapsedMilliseconds": 719,
+    "artObject": {
+      "links": {
+        "search": "http://www.rijksmuseum.nl/api/nl/collection"
+      },
+      "id": "en-BK-17040-A",
+      "priref": "17403",
+      "objectNumber": "BK-17040-A",
+      "language": "en",
+      "title": "Table ornament",
+      "copyrightHolder": null,
+      "webImage": {
+        "guid": "219e43c9-6b48-4861-a0af-9269dba7e7ef",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 27,
+        "width": 1441,
+        "height": 2500,
+        "url": "https://lh6.ggpht.com/9ulJVSDjPC6uiOPm-0Lj44cicGWRmukCmE98Ut3EAn6BhQeo76QZe_YIGiMTTX9rr4k3nqPymTmhrGjZDohEIR5ZrQ=s0"
+      },
+      "colors": [
+        {
+          "percentage": 76,
+          "hex": "#EDEEEA"
+        },
+        {
+          "percentage": 8,
+          "hex": " #CACBC9"
+        },
+        {
+          "percentage": 4,
+          "hex": " #A2A3A1"
+        },
+        {
+          "percentage": 4,
+          "hex": " #64635F"
+        },
+        {
+          "percentage": 2,
+          "hex": " #868581"
+        },
+        {
+          "percentage": 2,
+          "hex": " #3F3E38"
+        },
+        {
+          "percentage": 0,
+          "hex": " #191612"
+        }
+      ],
+      "colorsWithNormalization": [
+        {
+          "originalHex": "#EDEEEA",
+          "normalizedHex": "#FBF6E1"
+        },
+        {
+          "originalHex": " #CACBC9",
+          "normalizedHex": "#B5BFCC"
+        },
+        {
+          "originalHex": " #A2A3A1",
+          "normalizedHex": "#B5BFCC"
+        },
+        {
+          "originalHex": " #64635F",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #868581",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #3F3E38",
+          "normalizedHex": "#2F4F4F"
+        },
+        {
+          "originalHex": " #191612",
+          "normalizedHex": "#000000"
+        }
+      ],
+      "normalizedColors": [
+        {
+          "percentage": 76,
+          "hex": "#F5F5F5"
+        },
+        {
+          "percentage": 8,
+          "hex": " #D3D3D3"
+        },
+        {
+          "percentage": 6,
+          "hex": " #696969"
+        },
+        {
+          "percentage": 4,
+          "hex": " #A9A9A9"
+        },
+        {
+          "percentage": 2,
+          "hex": " #808080"
+        },
+        {
+          "percentage": 0,
+          "hex": " #000000"
+        }
+      ],
+      "normalized32Colors": [
+        {
+          "percentage": 76,
+          "hex": "#FBF6E1"
+        },
+        {
+          "percentage": 13,
+          "hex": " #B5BFCC"
+        },
+        {
+          "percentage": 6,
+          "hex": " #737C84"
+        },
+        {
+          "percentage": 2,
+          "hex": " #2F4F4F"
+        },
+        {
+          "percentage": 0,
+          "hex": " #000000"
+        }
+      ],
+      "materialsThesaurus": [],
+      "techniquesThesaurus": [],
+      "productionPlacesThesaurus": [],
+      "titles": [],
+      "description": "Tafelstuk van grotendeels verguld en geëmailleerd zilver. Op een drielobbig voetstuk, waarop drie schildpadden zijn bevestigd, is een begroeiing van naar de natuur afgegoten gewassen aangebracht. Daaruit rijst, op een platvorm een staande vrouwenfiguur (Moeder Aarde), die met hooggeheven handen de basis van een breed uitstaand bekken ondersteunt, waarvan de buiten- en binnenkant bewerkt zijn met geschilderd renaissanceornament, terwijl om de rand allerlei naturalistisch bladwerk en kronkelende hagedissen om rolwerkbanderolles zijn geslingerd. In het midden van de schaal dragen drie ruggelings geplaatste sirenen een geëmailleerde vaas met bloemtakken.",
+      "labelText": null,
+      "objectTypes": [
+        "table piece"
+      ],
+      "objectCollection": [],
+      "makers": [],
+      "principalMakers": [
+        {
+          "name": "Wenzel Jamnitzer",
+          "unFixedName": "Jamnitzer, Wenzel",
+          "placeOfBirth": "Wenen",
+          "dateOfBirth": "1508",
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": null,
+          "dateOfDeathPrecision": null,
+          "placeOfDeath": "Neurenberg",
+          "occupation": [
+            "print maker"
+          ],
+          "roles": [
+            "maker"
+          ],
+          "nationality": "Duits",
+          "biography": null,
+          "productionPlaces": [],
+          "qualification": null,
+          "labelDesc": "Wenzel Jamnitzer (1508 - ....)"
+        }
+      ],
+      "plaqueDescriptionDutch": "Deze schaal werd bij feestelijke gelegenheden op tafel gezet. Er werd niets opgelegd, daar was hij te mooi voor. De pronkschaal is in 1549 gemaakt door de toen wereldberoemde zilversmid Wenzel Jamnitzer, in opdracht van de stad Neurenberg. Jamnitzer heeft onwaarschijnlijk knap werk geleverd in een nieuwe techniek. Alle twijgjes en bloemetjes, die op het eerste gezicht gewoon gedroogd lijken, zijn stuk voor stuk in zilver gegoten.",
+      "plaqueDescriptionEnglish": "This receptacle stood on the table on special occasions. Although it was never used for food, since it was far too precious. It was made for the city of Nuremberg in 1549 by Wenzel Jamnitzer, then a world-famous silversmith. Jamnitzer produced incredibly intricate work using a new method. All the twigs and flowers that seem to be crafted, were in fact individually cast.",
+      "principalMaker": "Wenzel Jamnitzer",
+      "artistRole": null,
+      "associations": [],
+      "acquisition": {
+        "method": "transfer",
+        "date": "1960-01-01T00:00:00",
+        "creditLine": null
+      },
+      "exhibitions": [],
+      "materials": [
+        "silver (metal)"
+      ],
+      "techniques": [
+        "casting",
+        "etching",
+        "gilding"
+      ],
+      "productionPlaces": [],
+      "dating": {
+        "presentingDate": "1549",
+        "sortingDate": 1549,
+        "period": 16,
+        "yearEarly": 1549,
+        "yearLate": 1549
+      },
+      "classification": {
+        "iconClassIdentifier": [
+          "21B",
+          "92L2",
+          "41A6711",
+          "25F44",
+          "25F41(LIZARD)"
+        ],
+        "iconClassDescription": [
+          "aarde (een van de vier elementen)",
+          "(story of) Cybele, Rhea Cybele, Great Mother of the Gods (Berecynt(h)ia)",
+          "flowers in a vase",
+          "tortoises, turtles",
+          "lizards: lizard"
+        ],
+        "motifs": [],
+        "events": [],
+        "periods": [],
+        "places": [],
+        "people": [],
+        "objectNumbers": [
+          "BK-17040-A"
+        ]
+      },
+      "hasImage": true,
+      "historicalPersons": [],
+      "inscriptions": [],
+      "documentation": [
+        "J. van Bennekom, Q. Lemasson, L. Pichon, B. Moignard and A. Pappot, ‘The Merkel centrepiece by  Wenzel Jamnitzer: proving the existence of a previously unknown inscription using the Aglae pixe mapping system’ in Art Matters, International Journal for Technical Art History 6 (2014), 1-10. http://artmattersjournal.org/images/past_issues/volume_6/01-AM-Bennekom-v2.pdf , 8 maart 2016.",
+        "Ernst Kris, Le Style rustique. Le moulage d’après nature chez Wenzel Jamnitzer et Bernard Palissy, Patricia Falguières éd., Paris, 2005.",
+        "Dora Thornton, 'From Waddesdon to the British Museum. Baron Ferdinand Rothschild and his cabinet collection' in: Journal of the History of Collections, Bd. 13, dl. 2, 2001, p. 191-213.",
+        "Fieke Tissink, 'Uitgelijnd : Tafelstuk', Rijksmuseum Kunstkrant 27 (2001) nr. 4, p. 10-11.",
+        "Hermann Schadt, Goldschmiedekusnt. 5000 Jahre Schmuck und Gerät, Stuttgart 1996, p. 112.",
+        "Klaus Pechstein, 'Zur Nürnberger Goldschmiedekunst der Renaissance', in: cat. tent. Nürnberg 1985, p. 25-36.",
+        "Ernst Kris, '\"Der Stil ‘Rustique\"’. Die Verwendung des Naturabgusses bei Wenzel Jamnitzer und Bernard Palissy', Jahrbuch der Kunsthistorischen Sammlungen in Wien, Neue Folge, I (1926), p. 137-208."
+      ],
+      "catRefRPK": [],
+      "principalOrFirstMaker": "Wenzel Jamnitzer",
+      "dimensions": [
+        {
+          "unit": "cm",
+          "type": "height",
+          "precision": null,
+          "part": null,
+          "value": "99.8"
+        },
+        {
+          "unit": "cm",
+          "type": "diameter",
+          "precision": null,
+          "part": null,
+          "value": "46.0"
+        }
+      ],
+      "physicalProperties": [],
+      "physicalMedium": "casting",
+      "longTitle": "Table ornament, Wenzel Jamnitzer, 1549",
+      "subTitle": "h 99.8cm × d 46.0cm",
+      "scLabelLine": "Wenzel Jamnitzer (1508–1585), Nuremberg, 1549, parcel-gilt silver, enamel",
+      "label": {
+        "title": "Table ornament",
+        "makerLine": "Wenzel Jamnitzer (1508–1585), Nuremberg, 1549, parcel-gilt silver, enamel",
+        "description": "This table ornament is an ode to the Earth and all that it brings forth, as well as an unsurpassed display of artistic and technical skill. The stem of the dish represents Mother Earth. She is surrounded by flowers, herbs and small animals – all cast from specimens collected in the wild. The lives of actual animals were sacrificed to model the young grass snakes and lizards.",
+        "notes": "Multimediatour",
+        "date": "2018-02-27"
+      },
+      "showImage": true,
+      "location": "HG-2.3"
+    },
+    "artObjectPage": {
+      "id": "en-BK-17040-A",
+      "similarPages": [],
+      "lang": "en",
+      "objectNumber": "BK-17040-A",
+      "tags": [],
+      "plaqueDescription": "This receptacle stood on the table on special occasions. Although it was never used for food, since it was far too precious. It was made for the city of Nuremberg in 1549 by Wenzel Jamnitzer, then a world-famous silversmith. Jamnitzer produced incredibly intricate work using a new method. All the twigs and flowers that seem to be crafted, were in fact individually cast.",
+      "audioFile1": null,
+      "audioFileLabel1": null,
+      "audioFileLabel2": null,
+      "createdOn": "2012-08-09T14:24:47.3382371+00:00",
+      "updatedOn": "2012-09-18T14:06:35.8983498+00:00",
+      "adlibOverrides": {
+        "titel": null,
+        "maker": null,
+        "etiketText": null
+      }
+    }
+  },
+  {
+    "elapsedMilliseconds": 893,
+    "artObject": {
+      "links": {
+        "search": "http://www.rijksmuseum.nl/api/nl/collection"
+      },
+      "id": "en-BK-1963-101",
+      "priref": "25449",
+      "objectNumber": "BK-1963-101",
+      "language": "en",
+      "title": "Seated Cupid",
+      "copyrightHolder": null,
+      "webImage": {
+        "guid": "f3578a1c-8560-40cc-b00e-4846d9d14a8c",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 24,
+        "width": 1869,
+        "height": 2500,
+        "url": "https://lh3.googleusercontent.com/i8S7we9zDW-AqUbZvE91O4bqsgVI_MamJhChLz6lE55MIn_kAjrYNoudrM-YEKjZTLUPyXVBgi__m6n1MMWmcbsHMy8=s0"
+      },
+      "colors": [
+        {
+          "percentage": 2,
+          "hex": "#D6D1C5"
+        },
+        {
+          "percentage": 0,
+          "hex": " #F5F4F3"
+        },
+        {
+          "percentage": 17,
+          "hex": " #A49982"
+        },
+        {
+          "percentage": 10,
+          "hex": " #6F6750"
+        },
+        {
+          "percentage": 4,
+          "hex": " #4B4531"
+        },
+        {
+          "percentage": 64,
+          "hex": " #201B10"
+        }
+      ],
+      "colorsWithNormalization": [
+        {
+          "originalHex": "#D6D1C5",
+          "normalizedHex": "#FBF6E1"
+        },
+        {
+          "originalHex": " #F5F4F3",
+          "normalizedHex": "#F6ECF3"
+        },
+        {
+          "originalHex": " #A49982",
+          "normalizedHex": "#E0CC91"
+        },
+        {
+          "originalHex": " #6F6750",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #4B4531",
+          "normalizedHex": "#2F4F4F"
+        },
+        {
+          "originalHex": " #201B10",
+          "normalizedHex": "#000000"
+        }
+      ],
+      "normalizedColors": [
+        {
+          "percentage": 64,
+          "hex": "#000000"
+        },
+        {
+          "percentage": 17,
+          "hex": " #D2B48C"
+        },
+        {
+          "percentage": 14,
+          "hex": " #696969"
+        },
+        {
+          "percentage": 2,
+          "hex": " #D3D3D3"
+        },
+        {
+          "percentage": 0,
+          "hex": " #F5F5F5"
+        }
+      ],
+      "normalized32Colors": [
+        {
+          "percentage": 64,
+          "hex": "#000000"
+        },
+        {
+          "percentage": 17,
+          "hex": " #E0CC91"
+        },
+        {
+          "percentage": 10,
+          "hex": " #737C84"
+        },
+        {
+          "percentage": 4,
+          "hex": " #2F4F4F"
+        },
+        {
+          "percentage": 2,
+          "hex": " #FBF6E1"
+        },
+        {
+          "percentage": 0,
+          "hex": " #F6ECF3"
+        }
+      ],
+      "materialsThesaurus": [],
+      "techniquesThesaurus": [],
+      "productionPlacesThesaurus": [],
+      "titles": [],
+      "description": "Hij zit met gespreide vleugels op een wolk, geplaatst op een ronde plint, en houdt de rechterwijsvinger voor de mond van zijn schalks glimlachende gezicht, terwijl hij met zijn linkerhand grijpt naar een pijl in de koker die naast hem ligt. Zijn linkerbeen is opgetrokken en van het schuin voor zich geplaatste rechter steekt de voet over de ronde plint heen. Naast hem ligt een bloeiende rozentak. De met pijlen gevulde koker vertoont onder andere cannelures, een krans van laurierbladeren en godrons. Het voetstuk, een korte zuil, heeft een geprofileerd basement, versierd met een krans van laurierbladeren, een schacht met gezwenkte cannelures, waarin culots, overgaand in een glad bovendeel, onderbroken door een geprofileerde rand, voorts een geprofileerde met eierlijst versierde, overstekende dekplaat, die draaibaar is door middel van twee koperen knoppen.",
+      "labelText": null,
+      "objectTypes": [
+        "sculpture"
+      ],
+      "objectCollection": [
+        "sculptures"
+      ],
+      "makers": [],
+      "principalMakers": [
+        {
+          "name": "Étienne-Maurice Falconet",
+          "unFixedName": "Falconet, Étienne-Maurice",
+          "placeOfBirth": "Parijs",
+          "dateOfBirth": "1716-12-01",
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": "1791-01-24",
+          "dateOfDeathPrecision": null,
+          "placeOfDeath": "Parijs",
+          "occupation": [
+            "sculptor"
+          ],
+          "roles": [
+            "sculptor"
+          ],
+          "nationality": "Frans",
+          "biography": null,
+          "productionPlaces": [],
+          "qualification": null,
+          "labelDesc": "Étienne-Maurice Falconet (01-dec-1716 - 24-jan-1791)"
+        }
+      ],
+      "plaqueDescriptionDutch": null,
+      "plaqueDescriptionEnglish": "This famous statue already had many nicknames in the 18th century. Perhaps the best known is l’amour menaçant - menacing love. The menace is mainly in the love god’s expression, while his gesture makes us complicit, through silence. The statue was carved for Madame de Pompadour, mistress of Louis XV and a connoisseur of art.",
+      "principalMaker": "Étienne-Maurice Falconet",
+      "artistRole": null,
+      "associations": [],
+      "acquisition": {
+        "method": "loan",
+        "date": "1963-01-01T00:00:00",
+        "creditLine": "On loan from the Koninklijk Kabinet van Schilderijen Mauritshuis"
+      },
+      "exhibitions": [],
+      "materials": [
+        "marble (rock)",
+        "copper (metal)"
+      ],
+      "techniques": [],
+      "productionPlaces": [],
+      "dating": {
+        "presentingDate": "1757",
+        "sortingDate": 1757,
+        "period": 18,
+        "yearEarly": 1757,
+        "yearLate": 1757
+      },
+      "classification": {
+        "iconClassIdentifier": [
+          "92D1",
+          "92D18(ARROW)",
+          "31B623591"
+        ],
+        "iconClassDescription": [
+          "(story of) Cupid, Amor (Eros)",
+          "attributes of Cupid: arrow(s)",
+          "putting a finger to the lips, 'Silentium'; 'Silentio' (Ripa)"
+        ],
+        "motifs": [],
+        "events": [],
+        "periods": [],
+        "places": [],
+        "people": [],
+        "objectNumbers": [
+          "BK-1963-101"
+        ]
+      },
+      "hasImage": true,
+      "historicalPersons": [],
+      "inscriptions": [],
+      "documentation": [
+        "Frits Scholten, 'Displaying the Farnese bull. Adriaen de Vries's revolving pedestal', Nederlands Kunsthistorisch Jaarboek (2015), p. 106, afb. 18.",
+        "A. Teunis, ''Uitgelijnd : Zittende Amor, 'l Amour menaçant', Rijksmuseum Kunstkrant 33 (2007), nr. 5, p. 14, 15, afb.",
+        "F.W.S. van Thienen, \"L'amour menaçant\", Openbaar Kunstbezit 12 (1968) nov., p. 19a-b.",
+        "Verslagen 's Rijks Verzamelingen van Geschiedenis en Kunst (1953), p. 114, afb."
+      ],
+      "catRefRPK": [],
+      "principalOrFirstMaker": "Étienne-Maurice Falconet",
+      "dimensions": [
+        {
+          "unit": "cm",
+          "type": "height",
+          "precision": null,
+          "part": null,
+          "value": "185.0"
+        },
+        {
+          "unit": "cm",
+          "type": "width",
+          "precision": null,
+          "part": null,
+          "value": "47.5"
+        },
+        {
+          "unit": "cm",
+          "type": "depth",
+          "precision": null,
+          "part": null,
+          "value": "68.5"
+        },
+        {
+          "unit": "cm",
+          "type": "diameter",
+          "precision": null,
+          "part": null,
+          "value": "63.5"
+        }
+      ],
+      "physicalProperties": [],
+      "physicalMedium": "marble (rock)",
+      "longTitle": "Seated Cupid, Étienne-Maurice Falconet, 1757",
+      "subTitle": "h 185.0cm × w 47.5cm × d 68.5cm × d 63.5cm",
+      "scLabelLine": "Etienne Maurice Falconet (1716-1791), marble, 1757",
+      "label": {
+        "title": "Seated Cupid",
+        "makerLine": "Etienne Maurice Falconet (1716-1791), marble, 1757",
+        "description": "Already in the 18th century this famous sculpture was known by various nicknames, the best known of which was l’amour menaçant, ‘menacing love’. The threat is most evident in the Cupid’s knowing gaze, while the gesture he makes invokes us to secrecy. The statue was made for Madame de Pompadour, King Louis XV’s art-loving mistress.",
+        "notes": "Multimediatour",
+        "date": "2018-02-03"
+      },
+      "showImage": true,
+      "location": "HG-1.9"
+    },
+    "artObjectPage": {
+      "id": "en-BK-1963-101",
+      "similarPages": [],
+      "lang": "en",
+      "objectNumber": "BK-1963-101",
+      "tags": [],
+      "plaqueDescription": "This famous statue already had many nicknames in the 18th century. Perhaps the best known is l’amour menaçant - menacing love. The menace is mainly in the love god’s expression, while his gesture makes us complicit, through silence. The statue was carved for Madame de Pompadour, mistress of Louis XV and a connoisseur of art.",
+      "audioFile1": null,
+      "audioFileLabel1": null,
+      "audioFileLabel2": null,
+      "createdOn": "0001-01-01T00:00:00",
+      "updatedOn": "2022-10-20T13:16:22.6402444+00:00",
+      "adlibOverrides": {
+        "titel": null,
+        "maker": null,
+        "etiketText": null
+      }
+    }
+  },
+  {
+    "elapsedMilliseconds": 172,
+    "artObject": {
+      "links": {
+        "search": "http://www.rijksmuseum.nl/api/nl/collection"
+      },
+      "id": "en-SK-A-2963",
+      "priref": "8555",
+      "objectNumber": "SK-A-2963",
+      "language": "en",
+      "title": "Portrait of Don Ramón Satué",
+      "copyrightHolder": null,
+      "webImage": {
+        "guid": "b7e78388-9d9f-4d74-9090-e6529fa572c9",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 19,
+        "width": 2131,
+        "height": 2708,
+        "url": "https://lh3.googleusercontent.com/SwwiVAxnwFE_s-k7-bPOZ6jnGfcuVDJoZ-ofLb0Zispb-mJdsfasrE1nTPRcGDPwyEqY0txKpjPcAWaIIltYvvPtDA8=s0"
+      },
+      "colors": [
+        {
+          "percentage": 56,
+          "hex": "#322318"
+        },
+        {
+          "percentage": 36,
+          "hex": " #0F0E09"
+        },
+        {
+          "percentage": 2,
+          "hex": " #573525"
+        },
+        {
+          "percentage": 1,
+          "hex": " #764736"
+        },
+        {
+          "percentage": 1,
+          "hex": " #796956"
+        },
+        {
+          "percentage": 1,
+          "hex": " #9F947C"
+        },
+        {
+          "percentage": 0,
+          "hex": " #BDB89D"
+        }
+      ],
+      "colorsWithNormalization": [
+        {
+          "originalHex": "#322318",
+          "normalizedHex": "#000000"
+        },
+        {
+          "originalHex": " #0F0E09",
+          "normalizedHex": "#000000"
+        },
+        {
+          "originalHex": " #573525",
+          "normalizedHex": "#981313"
+        },
+        {
+          "originalHex": " #764736",
+          "normalizedHex": "#981313"
+        },
+        {
+          "originalHex": " #796956",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #9F947C",
+          "normalizedHex": "#E0CC91"
+        },
+        {
+          "originalHex": " #BDB89D",
+          "normalizedHex": "#E0CC91"
+        }
+      ],
+      "normalizedColors": [
+        {
+          "percentage": 92,
+          "hex": "#000000"
+        },
+        {
+          "percentage": 2,
+          "hex": " #8B4513"
+        },
+        {
+          "percentage": 1,
+          "hex": " #A0522D"
+        },
+        {
+          "percentage": 1,
+          "hex": " #696969"
+        },
+        {
+          "percentage": 1,
+          "hex": " #D2B48C"
+        }
+      ],
+      "normalized32Colors": [
+        {
+          "percentage": 92,
+          "hex": "#000000"
+        },
+        {
+          "percentage": 3,
+          "hex": " #981313"
+        },
+        {
+          "percentage": 1,
+          "hex": " #737C84"
+        },
+        {
+          "percentage": 1,
+          "hex": " #E0CC91"
+        }
+      ],
+      "materialsThesaurus": [],
+      "techniquesThesaurus": [],
+      "productionPlacesThesaurus": [],
+      "titles": [
+        "Portrait of Don Ramón Satué y Allué (1765-1824)",
+        "Don Ramón Satué (1765-1824). Alcalde de Corte (Judge of the Fifth Chamber of the Council of Castile in La Corte)"
+      ],
+      "description": "Portret van Don Ramón Satué. Lid van de Sala de Alcaldes de Corte per la Audiencia Territorial de Madrid. Heupstuk, naar links, staande met de handen in de zakken.",
+      "labelText": null,
+      "objectTypes": [
+        "painting"
+      ],
+      "objectCollection": [
+        "paintings"
+      ],
+      "makers": [],
+      "principalMakers": [
+        {
+          "name": "Francisco de Goya",
+          "unFixedName": "Goya, Francisco de",
+          "placeOfBirth": "Fuentedetodos",
+          "dateOfBirth": "1746-03-30",
+          "dateOfBirthPrecision": null,
+          "dateOfDeath": "1828-04-16",
+          "dateOfDeathPrecision": null,
+          "placeOfDeath": "Bordeaux",
+          "occupation": [
+            "draughtsman",
+            "painter",
+            "print maker"
+          ],
+          "roles": [
+            "painter"
+          ],
+          "nationality": "Spaans",
+          "biography": null,
+          "productionPlaces": [],
+          "qualification": null,
+          "labelDesc": "Francisco de Goya (30-mrt-1746 - 16-apr-1828)"
+        }
+      ],
+      "plaqueDescriptionDutch": "Goya dankt zijn faam aan zijn portretten van het Spaanse hof en zijn eigenaardige prentenkunst. Hij was al 76 jaar oud toen hij dit krachtige portret schilderde. Don Ramón was rechter bij het hoogste gerechtshof van CastiÏië. Door de ontspannen houding en open kraag maakt het portret een informele indruk. Daarom is het te rangschikken onder Goyas portretten van zijn meest intieme vrienden.",
+      "plaqueDescriptionEnglish": "Goya was well-known as a court-painter and for his idiosyncratic prints. He had already turned 76 when he painted this powerful portrait. Don Ramón was a judge in the highest tribunal of Castile. The casual pose and open collar have an informality Goya usually reserves for the portraits of his most intimate friends.",
+      "principalMaker": "Francisco de Goya",
+      "artistRole": null,
+      "associations": [],
+      "acquisition": {
+        "method": "purchase",
+        "date": "1922-01-01T00:00:00",
+        "creditLine": "Purchased with the support of the Vereniging Rembrandt"
+      },
+      "exhibitions": [],
+      "materials": [
+        "canvas",
+        "oil paint (paint)"
+      ],
+      "techniques": [],
+      "productionPlaces": [],
+      "dating": {
+        "presentingDate": "1823",
+        "sortingDate": 1823,
+        "period": 19,
+        "yearEarly": 1823,
+        "yearLate": 1823
+      },
+      "classification": {
+        "iconClassIdentifier": [
+          "61B2(+53)"
+        ],
+        "iconClassDescription": [
+          "historical persons (+ half-length portrait)"
+        ],
+        "motifs": [],
+        "events": [],
+        "periods": [],
+        "places": [],
+        "people": [
+          "Statué, Don Ramón"
+        ],
+        "objectNumbers": [
+          "SK-A-2963"
+        ]
+      },
+      "hasImage": true,
+      "historicalPersons": [
+        "Statué, Don Ramón"
+      ],
+      "inscriptions": [],
+      "documentation": [
+        "D. Bull en A. Krekeler et al., 'An intrusive portrait by Goya', in Burlington Magazine sept.-okt. 2011",
+        "Peter Hecht, 'Een collectie verrijkt : Bijzondere gasten in Museum Boijmans Van Beuningen', Bulletin van de Vereniging Rembrandt 20 (2010) nr. 3, p. 6 (afb.).",
+        "Bulletin van de Vereniging Rembrandt, jrg. 15, nr. 1 (voorjaar 2005), p. 29-31",
+        "I. Montijn, Juwelen van zwerfkeien, Bulletin van de Vereniging Rembrandt, nr. 2 (2000), p. 26-28",
+        "P. Hecht, Kunstschrift, nr. 3 (1996), p. 43",
+        "A. Erftemeijer, Een Eeuw in Beeld, Kunstbeeld, 15e jrg. , nr. 3 (maart 1991), p. 15",
+        "Kunstschrift, nr. 6 (1986), p. 192, 193, afb. 9",
+        "G. Luijten, ''De veelheid en de eelheid' : een Rijksmuseum Schmidt-Degener', Nederlands Kunsthistorisch Jaarboek 35 (1984), p. 352-353, afb. 2.",
+        "J. Guidol, Francisco Goya, Arte Illustrata IV (1971), p. 7",
+        "Antiek, jrg. 5,nr. 2 (1970), p. 84, 86",
+        "V. Bloch, Goya in Paris, Pantheon (1962), p. 179, afb. 3",
+        "E.R. Meyer, Openbaar Kunstbezit IV, nr. 15 (1960)",
+        "R.L. Delevoy, 1954, Pl. 62",
+        "Sánchez Cantón, Goya, (1954), p. 130",
+        "A. de Beruete y Moret, Goya, 1928, p. 84, pl. 33",
+        "A.L. Mayer, Einige Bemerk. zur Gesch. der Entw. des Malers Goya, Zeitschrift für Bild. Kunst (1922), p. 68",
+        "A.L. Mayer, Gesch. der Span. Malerei, 1922, cat.nr. 484",
+        "R. Oertel, F. de Goya, 1907, p. 140",
+        "L. Amandry, The Collection of Dr. Carvallo at Paris II, The Burlington Magazine VI (1904/05), p. 185"
+      ],
+      "catRefRPK": [],
+      "principalOrFirstMaker": "Francisco de Goya",
+      "dimensions": [
+        {
+          "unit": "cm",
+          "type": "height",
+          "precision": null,
+          "part": "support",
+          "value": "107"
+        },
+        {
+          "unit": "cm",
+          "type": "width",
+          "precision": null,
+          "part": "support",
+          "value": "83.5"
+        },
+        {
+          "unit": "cm",
+          "type": "height",
+          "precision": null,
+          "part": "outersize",
+          "value": "135.5"
+        },
+        {
+          "unit": "cm",
+          "type": "width",
+          "precision": null,
+          "part": "outersize",
+          "value": "112"
+        },
+        {
+          "unit": "cm",
+          "type": "depth",
+          "precision": null,
+          "part": "outersize",
+          "value": "7"
+        }
+      ],
+      "physicalProperties": [],
+      "physicalMedium": "oil on canvas",
+      "longTitle": "Portrait of Don Ramón Satué, Francisco de Goya, 1823",
+      "subTitle": "h 107cm × w 83.5cm",
+      "scLabelLine": "Francisco José de Goya y Lucientes (1746-1828), oil on canvas, 1823",
+      "label": {
+        "title": "Portrait of Don Ramón Satué",
+        "makerLine": "Francisco José de Goya y Lucientes (1746-1828), oil on canvas, 1823",
+        "description": "Goya owes his fame to his portraits of the Spanish court and to his idiosyncratic prints. He had already turned 76 when he painted this powerful portrait. Satué was a judge in the highest tribunal of Castile. The casual pose and open collar have an informality that Goya usually reserved for portraits of his most intimate friends.",
+        "notes": "Multimediatour",
+        "date": "2018-02-07"
+      },
+      "showImage": true,
+      "location": "HG-1.13"
+    },
+    "artObjectPage": {
+      "id": "en-SK-A-2963",
+      "similarPages": [],
+      "lang": "en",
+      "objectNumber": "SK-A-2963",
+      "tags": [],
+      "plaqueDescription": "Goya was well-known as a court-painter and for his idiosyncratic prints. He had already turned 76 when he painted this powerful portrait. Don Ramón was a judge in the highest tribunal of Castile. The casual pose and open collar have an informality Goya usually reserves for the portraits of his most intimate friends.",
+      "audioFile1": null,
+      "audioFileLabel1": null,
+      "audioFileLabel2": null,
+      "createdOn": "2012-09-21T14:18:39.5266912+00:00",
+      "updatedOn": "2012-09-21T14:18:39.5266912+00:00",
+      "adlibOverrides": {
+        "titel": null,
+        "maker": null,
+        "etiketText": null
+      }
+    }
+  },
+  {
+    "elapsedMilliseconds": 627,
+    "artObject": {
+      "links": {
+        "search": "http://www.rijksmuseum.nl/api/nl/collection"
+      },
+      "id": "en-SK-A-135",
+      "priref": "8609",
+      "objectNumber": "SK-A-135",
+      "language": "en",
+      "title": "A Militiaman Holding a Berkemeyer, Known as the ‘Merry Drinker’",
+      "copyrightHolder": null,
+      "webImage": {
+        "guid": "447b11f6-7c16-48b5-a04e-8694929bd7ae",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 36,
+        "width": 2254,
+        "height": 2646,
+        "url": "https://lh3.googleusercontent.com/bMCQgUbifzAl-How19Ru06KYgdVuND2pdYzY81zIx3MJ0ld6yqzPnWLVUOu0Aj1JNgK-lFDT2CSjfmQ-erpBdJ6AM4XGAwuQoivxWpJ8=s0"
+      },
+      "colors": [
+        {
+          "percentage": 39,
+          "hex": "#634829"
+        },
+        {
+          "percentage": 18,
+          "hex": " #716442"
+        },
+        {
+          "percentage": 14,
+          "hex": " #947A48"
+        },
+        {
+          "percentage": 14,
+          "hex": " #1F2019"
+        },
+        {
+          "percentage": 7,
+          "hex": " #3D3421"
+        },
+        {
+          "percentage": 2,
+          "hex": " #C9BC97"
+        },
+        {
+          "percentage": 2,
+          "hex": " #B9A370"
+        }
+      ],
+      "colorsWithNormalization": [
+        {
+          "originalHex": "#634829",
+          "normalizedHex": "#B35A1F"
+        },
+        {
+          "originalHex": " #716442",
+          "normalizedHex": "#E0CC91"
+        },
+        {
+          "originalHex": " #947A48",
+          "normalizedHex": "#E09714"
+        },
+        {
+          "originalHex": " #1F2019",
+          "normalizedHex": "#000000"
+        },
+        {
+          "originalHex": " #3D3421",
+          "normalizedHex": "#000000"
+        },
+        {
+          "originalHex": " #C9BC97",
+          "normalizedHex": "#E0CC91"
+        },
+        {
+          "originalHex": " #B9A370",
+          "normalizedHex": "#E0CC91"
+        }
+      ],
+      "normalizedColors": [
+        {
+          "percentage": 39,
+          "hex": "#8B4513"
+        },
+        {
+          "percentage": 18,
+          "hex": " #556B2F"
+        },
+        {
+          "percentage": 14,
+          "hex": " #B8860B"
+        },
+        {
+          "percentage": 14,
+          "hex": " #000000"
+        },
+        {
+          "percentage": 7,
+          "hex": " #696969"
+        },
+        {
+          "percentage": 5,
+          "hex": " #D2B48C"
+        }
+      ],
+      "normalized32Colors": [],
+      "materialsThesaurus": [],
+      "techniquesThesaurus": [],
+      "productionPlacesThesaurus": [],
+      "titles": [
+        "A Civic Guardsman Holding a Berkemeier, known as 'The Merry Drinker'",
+        "The Merry Drinker"
+      ],
+      "description": "De vrolijke drinker. Lachende man met baard en grote zwarte hoed, ten halven lijve, met een berkenmeier in de linkerhand en opgeheven rechterhand. Om de hals een medaillon aan een ketting.",
+      "labelText": null,
+      "objectTypes": [
+        "painting"
+      ],
+      "objectCollection": [
+        "paintings"
+      ],
+      "makers": [],
+      "principalMakers": [
+        {
+          "name": "Frans Hals",
+          "unFixedName": "Hals, Frans",
+          "placeOfBirth": "Antwerpen (stad)",
+          "dateOfBirth": "1583",
+          "dateOfBirthPrecision": "c.",
+          "dateOfDeath": "1666-08-26",
+          "dateOfDeathPrecision": null,
+          "placeOfDeath": "Haarlem",
+          "occupation": [
+            "draughtsman"
+          ],
+          "roles": [
+            "painter"
+          ],
+          "nationality": null,
+          "biography": null,
+          "productionPlaces": [],
+          "qualification": "signed by artist",
+          "labelDesc": "signed by artist Frans Hals (c. 1583 - 26-aug-1666)"
+        }
+      ],
+      "plaqueDescriptionDutch": "Deze jolige man heft het glas alsof hij ons toedrinkt. Hoewel de gangbare stijl in Hals' tijd verfijnd en gedetailleerd was, bracht hij de verf hier met snelle, maar trefzekere streken aan. Door deze schilderwijze lijkt de man echt te bewegen. Bij zijn rechterhand is dat het beste te zien. ",
+      "plaqueDescriptionEnglish": "This cheery young man is raising his glass as if to propose a toast. Although the fashion was then for intricate, detailed paintings, Hals applied his paints with quick, confident strokes. This style of painting gives the subject a real sense of movement. This is most obvious with the right hand. ",
+      "principalMaker": "Frans Hals",
+      "artistRole": null,
+      "associations": [],
+      "acquisition": {
+        "method": "purchase",
+        "date": "1816-01-01T00:00:00",
+        "creditLine": null
+      },
+      "exhibitions": [],
+      "materials": [
+        "canvas",
+        "oil paint (paint)"
+      ],
+      "techniques": [],
+      "productionPlaces": [],
+      "dating": {
+        "presentingDate": "c. 1628 - c. 1630",
+        "sortingDate": 1628,
+        "period": 17,
+        "yearEarly": 1628,
+        "yearLate": 1630
+      },
+      "classification": {
+        "iconClassIdentifier": [
+          "41C323",
+          "41D221(HAT)(+81)",
+          "45(+26)",
+          "41C12",
+          "31B62321"
+        ],
+        "iconClassDescription": [
+          "glass, rummer",
+          "head-gear: hat (+ men's clothes)",
+          "warfare; military affairs (+ citizen soldiery, civil guard, citizen militia)",
+          "drinking",
+          "laughing"
+        ],
+        "motifs": [],
+        "events": [],
+        "periods": [],
+        "places": [],
+        "people": [],
+        "objectNumbers": [
+          "SK-A-135"
+        ]
+      },
+      "hasImage": true,
+      "historicalPersons": [],
+      "inscriptions": [],
+      "documentation": [
+        "F. Desbuissons, A l'enseigne du Bon Bock, in:  La revue de Musée d'Orsay nr. 30 (automne 2010) 48, 14, p. 35, fig. 2",
+        "Rijksmuseum Kunstkrant, Jaargang 33 (sept.-okt. 2007), nr. 5, p. 9",
+        "H. Kaufmann, 'Die Fünfsinne in der Niederlänischen Malerei des 17. Jahrhunderts', in: Kunstgeschichtliche Studien, Breslau 1943, p. 141, afb. 22 (misschien de smaak of meer speciaal de geneugten van het drinken)."
+      ],
+      "catRefRPK": [],
+      "principalOrFirstMaker": "Frans Hals",
+      "dimensions": [
+        {
+          "unit": "cm",
+          "type": "height",
+          "precision": null,
+          "part": "support",
+          "value": "81"
+        },
+        {
+          "unit": "cm",
+          "type": "width",
+          "precision": null,
+          "part": "support",
+          "value": "66.5"
+        }
+      ],
+      "physicalProperties": [],
+      "physicalMedium": "oil on canvas",
+      "longTitle": "A Militiaman Holding a Berkemeyer, Known as the ‘Merry Drinker’, Frans Hals, c. 1628 - c. 1630",
+      "subTitle": "h 81cm × w 66.5cm",
+      "scLabelLine": "Frans Hals (c. 1582–1666), oil on canvas, c. 1628–1630",
+      "label": {
+        "title": "A Militiaman Holding a Berkemeyer, Known as the ‘Merry Drinker’",
+        "makerLine": "Frans Hals (c. 1582–1666), oil on canvas, c. 1628–1630",
+        "description": "This militiaman merrily raises his glass to toast us – who would not wish to join him? The execution is just as free and easy as the sitter himself: the swift, spontaneously applied brushstrokes enhance the portrait’s sense of liveliness and animation. The man actually seems to be moving. This bravura painting style ensured the continued success of Frans Hals.",
+        "notes": "Multimediatour",
+        "date": "2018-02-27"
+      },
+      "showImage": true,
+      "location": null
+    },
+    "artObjectPage": {
+      "id": "en-SK-A-135",
+      "similarPages": [],
+      "lang": "en",
+      "objectNumber": "SK-A-135",
+      "tags": [],
+      "plaqueDescription": "This cheery young man is raising his glass as if to propose a toast. Although the fashion was then for intricate, detailed paintings, Hals applied his paints with quick, confident strokes. This style of painting gives the subject a real sense of movement. This is most obvious with the right hand. ",
+      "audioFile1": null,
+      "audioFileLabel1": null,
+      "audioFileLabel2": null,
+      "createdOn": "2012-08-09T14:36:04.746901+00:00",
+      "updatedOn": "2012-09-18T14:06:02.0290862+00:00",
+      "adlibOverrides": {
+        "titel": null,
+        "maker": null,
+        "etiketText": null
+      }
+    }
+  },
+  {
+    "elapsedMilliseconds": 626,
+    "artObject": {
+      "links": {
+        "search": "http://www.rijksmuseum.nl/api/nl/collection"
+      },
+      "id": "en-SK-A-2099",
+      "priref": "8161",
+      "objectNumber": "SK-A-2099",
+      "language": "en",
+      "title": "Still Life with Asparagus",
+      "copyrightHolder": null,
+      "webImage": {
+        "guid": "d0c3b966-dc1d-4845-bafd-feafcc2a081d",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 2072,
+        "height": 2564,
+        "url": "https://lh3.googleusercontent.com/qEnlrp5MyHgLIVvrQR3HYtMBhQaLsxCmhBB15DCxX07l_rAvKqjKAXgCkgigYYxA2hGls9riG6Xfn_K_V5_GMfd_0bE=s0"
+      },
+      "colors": [
+        {
+          "percentage": 57,
+          "hex": "#110E07"
+        },
+        {
+          "percentage": 25,
+          "hex": " #3F3120"
+        },
+        {
+          "percentage": 4,
+          "hex": " #84755B"
+        },
+        {
+          "percentage": 4,
+          "hex": " #A49C7F"
+        },
+        {
+          "percentage": 3,
+          "hex": " #6A5638"
+        },
+        {
+          "percentage": 3,
+          "hex": " #BDB89E"
+        },
+        {
+          "percentage": 1,
+          "hex": " #D8D5BD"
+        }
+      ],
+      "colorsWithNormalization": [
+        {
+          "originalHex": "#110E07",
+          "normalizedHex": "#000000"
+        },
+        {
+          "originalHex": " #3F3120",
+          "normalizedHex": "#000000"
+        },
+        {
+          "originalHex": " #84755B",
+          "normalizedHex": "#737C84"
+        },
+        {
+          "originalHex": " #A49C7F",
+          "normalizedHex": "#E0CC91"
+        },
+        {
+          "originalHex": " #6A5638",
+          "normalizedHex": "#B35A1F"
+        },
+        {
+          "originalHex": " #BDB89E",
+          "normalizedHex": "#E0CC91"
+        },
+        {
+          "originalHex": " #D8D5BD",
+          "normalizedHex": "#FBF6E1"
+        }
+      ],
+      "normalizedColors": [
+        {
+          "percentage": 57,
+          "hex": "#000000"
+        },
+        {
+          "percentage": 25,
+          "hex": " #696969"
+        },
+        {
+          "percentage": 7,
+          "hex": " #D2B48C"
+        },
+        {
+          "percentage": 4,
+          "hex": " #808080"
+        },
+        {
+          "percentage": 3,
+          "hex": " #8B4513"
+        },
+        {
+          "percentage": 1,
+          "hex": " #F5F5DC"
+        }
+      ],
+      "normalized32Colors": [
+        {
+          "percentage": 82,
+          "hex": "#000000"
+        },
+        {
+          "percentage": 7,
+          "hex": " #E0CC91"
+        },
+        {
+          "percentage": 4,
+          "hex": " #737C84"
+        },
+        {
+          "percentage": 3,
+          "hex": " #B35A1F"
+        },
+        {
+          "percentage": 1,
+          "hex": " #FBF6E1"
+        }
+      ],
+      "materialsThesaurus": [],
+      "techniquesThesaurus": [],
+      "productionPlacesThesaurus": [],
+      "titles": [
+        "Still Life with Asparagus"
+      ],
+      "description": "Stilleven met een bosje asperges.",
+      "labelText": null,
+      "objectTypes": [
+        "painting"
+      ],
+      "objectCollection": [
+        "paintings"
+      ],
+      "makers": [],
+      "principalMakers": [
+        {
+          "name": "Adriaen Coorte",
+          "unFixedName": "Coorte, Adriaen",
+          "placeOfBirth": null,
+          "dateOfBirth": "1665",
+          "dateOfBirthPrecision": "c.",
+          "dateOfDeath": "1710",
+          "dateOfDeathPrecision": "c.",
+          "placeOfDeath": null,
+          "occupation": [
+            "painter"
+          ],
+          "roles": [
+            "painter"
+          ],
+          "nationality": "Nederlands",
+          "biography": null,
+          "productionPlaces": [],
+          "qualification": "mentioned on object",
+          "labelDesc": "mentioned on object Adriaen Coorte (c. 1665 - c. 1710)"
+        }
+      ],
+      "plaqueDescriptionDutch": "Coorte vervaardigde vooral kleine stilleventjes met een intiem karakter. Door hun eenvoudige onderwerpen - asperges of besjes – staken zijn schilderijtjes scherp af tegen de grote pronkstillevens die in de mode waren. Daarop ging het juist om de overdaad aan kostbare spullen en etenswaren, terwijl hier de aandacht uitgaat naar de verfijnde weergave van een enkele groente.",
+      "plaqueDescriptionEnglish": "Most of Coorte’s paintings are small, intimate still lifes. With their simple subjects - asparagus, or berries - his paintings contrast starkly with the magnificent, extravagant still lifes then in vogue. Those pictures are all about the profusion of valuable objects and foods, while here the emphasis is on the meticulous rendering of a single vegetable.",
+      "principalMaker": "Adriaen Coorte",
+      "artistRole": null,
+      "associations": [],
+      "acquisition": {
+        "method": "bequest",
+        "date": "1903-01-01T00:00:00",
+        "creditLine": "A.A. des Tombe Bequest, The Hague"
+      },
+      "exhibitions": [],
+      "materials": [
+        "paper",
+        "panel",
+        "oil paint (paint)"
+      ],
+      "techniques": [],
+      "productionPlaces": [],
+      "dating": {
+        "presentingDate": "1697",
+        "sortingDate": 1697,
+        "period": 17,
+        "yearEarly": 1697,
+        "yearLate": 1697
+      },
+      "classification": {
+        "iconClassIdentifier": [
+          "25G22(ASPARAGUS)",
+          "41C6"
+        ],
+        "iconClassDescription": [
+          "(non-fruit) products of plants or trees: asparagus",
+          "foodstuffs; still life of foodstuffs"
+        ],
+        "motifs": [],
+        "events": [],
+        "periods": [],
+        "places": [],
+        "people": [],
+        "objectNumbers": [
+          "SK-A-2099"
+        ]
+      },
+      "hasImage": true,
+      "historicalPersons": [],
+      "inscriptions": [],
+      "documentation": [
+        "'Galerij stillevens', Oog 3 (2009) nr. 2, p. 26-37, afb. p. 27."
+      ],
+      "catRefRPK": [],
+      "principalOrFirstMaker": "Adriaen Coorte",
+      "dimensions": [
+        {
+          "unit": "cm",
+          "type": "height",
+          "precision": null,
+          "part": null,
+          "value": "25"
+        },
+        {
+          "unit": "cm",
+          "type": "width",
+          "precision": null,
+          "part": null,
+          "value": "20.5"
+        }
+      ],
+      "physicalProperties": [],
+      "physicalMedium": "paper",
+      "longTitle": "Still Life with Asparagus, Adriaen Coorte, 1697",
+      "subTitle": "h 25cm × w 20.5cm",
+      "scLabelLine": "Adriaen Coorte (active c. 1683–1707), oil on paper, laid down on panel, 1697",
+      "label": {
+        "title": "Still Life with Asparagus",
+        "makerLine": "Adriaen Coorte (active c. 1683–1707), oil on paper, laid down on panel, 1697",
+        "description": "Coorte produced mostly small, intimate still lifes. Through their simple subjects – asparagus or berries – these modest paintings stand out in stark contrast to the sumptuous still lifes that were in fashion at the time. While the aim of those works was to present a superabundance of costly objects and foodstuffs, here attention is focused on the refined rendering of a single vegetable.",
+        "notes": "text based on label 2018-02-18",
+        "date": "2020-01-20"
+      },
+      "showImage": true,
+      "location": "HG-2.24"
+    },
+    "artObjectPage": {
+      "id": "en-SK-A-2099",
+      "similarPages": [],
+      "lang": "en",
+      "objectNumber": "SK-A-2099",
+      "tags": [],
+      "plaqueDescription": "Most of Coorte’s paintings are small, intimate still lifes. With their simple subjects - asparagus, or berries - his paintings contrast starkly with the magnificent, extravagant still lifes then in vogue. Those pictures are all about the profusion of valuable objects and foods, while here the emphasis is on the meticulous rendering of a single vegetable.",
+      "audioFile1": null,
+      "audioFileLabel1": null,
+      "audioFileLabel2": null,
+      "createdOn": "0001-01-01T00:00:00",
+      "updatedOn": "2012-09-18T14:06:19.0940447+00:00",
+      "adlibOverrides": {
+        "titel": null,
+        "maker": null,
+        "etiketText": null
+      }
+    }
+  }
+]

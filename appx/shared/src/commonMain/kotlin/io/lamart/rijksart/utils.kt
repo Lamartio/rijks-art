@@ -1,5 +1,7 @@
 package io.lamart.rijksart
 
+import io.lamart.lux.Mutable
+import io.lamart.lux.focus.FocusedLens
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.filterNotNull
@@ -36,4 +38,11 @@ internal fun <I, O : Any> dataFlowOf(
             .onEach { runCatching { set(input, it) } }
 
         flowOf(getting, fetchingAndSetting).flattenConcat()
+    }
+
+fun <S> transaction(block: (focus: FocusedLens<*, S>) -> Unit): (S) -> S =
+    { value ->
+        Mutable(value)
+            .apply { block(lens) }
+            .get()
     }
