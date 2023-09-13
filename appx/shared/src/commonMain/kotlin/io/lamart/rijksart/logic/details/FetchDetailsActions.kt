@@ -8,14 +8,13 @@ import io.lamart.rijksart.dataFlowOf
 import io.lamart.rijksart.get
 import io.lamart.rijksart.logic.RijksDepedencies
 import io.lamart.rijksart.logic.RijksState
-import io.lamart.rijksart.logic.Selection
 import io.lamart.rijksart.network.ArtDetails
 import kotlinx.coroutines.flow.onEach
 
 internal class FetchDetailsActions(deps: RijksDepedencies) : Actions<String> by deps.run({
     focus
         .compose(RijksState.selection)
-        .compose(Selection.fetchingDetails)
+        .compose(RijksState.Selection.fetchingDetails)
         .toStreamActions(
             scope,
             Behavior.switching(flow = dataFlowOf(
@@ -30,7 +29,7 @@ internal class FetchDetailsActions(deps: RijksDepedencies) : Actions<String> by 
                     if (state is Async.Executing || state is Async.Success) {
                         focus
                             .compose(RijksState.selection)
-                            .compose(Selection.details)
+                            .compose(RijksState.Selection.details)
                             .set(result)
                     }
                 }

@@ -4,8 +4,10 @@ import io.ktor.client.call.body
 import io.ktor.client.request.get
 import io.ktor.client.statement.bodyAsText
 import io.ktor.http.HttpStatusCode
+import io.lamart.rijksart.logic.RijksState
 import io.lamart.rijksart.network.ArtDetails
 import io.lamart.rijksart.network.RijksMuseum
+import io.lamart.rijksart.network.httpEngineFactory
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.test.runTest
 import kotlin.test.AfterTest

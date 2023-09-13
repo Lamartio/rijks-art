@@ -1,4 +1,4 @@
-package io.lamart.rijksart.logic
+package io.lamart.rijksart.logic.overview
 
 import ArtCollection
 import io.lamart.lux.Behavior
@@ -7,7 +7,8 @@ import io.lamart.lux.actions.Actions
 import io.lamart.lux.actions.toStreamActions
 import io.lamart.rijksart.dataFlowOf
 import io.lamart.rijksart.get
-import io.lamart.rijksart.logic.model.ArtCollections
+import io.lamart.rijksart.logic.RijksDepedencies
+import io.lamart.rijksart.logic.RijksState
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.drop
 import kotlinx.coroutines.flow.map
@@ -36,7 +37,6 @@ internal class FetchCollectionsActions(deps: RijksDepedencies) : Actions<Int> by
                         if (page != null && collection != null) {
                             focus
                                 .compose(RijksState.collections)
-                                .compose(ArtCollections.value)
                                 .modify { collections ->
                                     collections.plus(page to collection)
                                 }

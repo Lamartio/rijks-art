@@ -25,8 +25,8 @@ class RijksMachine(platform: Platform) : Machine<RijksState, RijksActions>(initi
             state = it {
                 OverviewState(
                     isFetching = fetchingCollection.state is Async.Executing,
-                    selection = this.selection.item?.id,
-                    items = collections.items.map(it {
+                    selection = this.selection.selected?.id,
+                    items = collectionItems.map(it {
                         OverviewState.Item(id, title, headerImage.url)
                     })
                 )
@@ -38,8 +38,8 @@ class RijksMachine(platform: Platform) : Machine<RijksState, RijksActions>(initi
             actions = RijksActions::details,
             state = it {
                 DetailsState(
-                    title = selection.item?.title ?: "",
-                    imageUrl = selection.item?.webImage?.url,
+                    title = selection.selected?.title ?: "",
+                    imageUrl = selection.selected?.webImage?.url,
                     description = selection.details?.artObjectPage?.plaqueDescription ?: "",
                     isFetching = selection.fetchingDetails.state is Async.Executing
                 )

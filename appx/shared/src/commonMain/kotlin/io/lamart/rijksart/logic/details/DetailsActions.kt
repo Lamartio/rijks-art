@@ -2,7 +2,6 @@ package io.lamart.rijksart.logic.details
 
 import io.lamart.rijksart.logic.RijksDepedencies
 import io.lamart.rijksart.logic.RijksState
-import io.lamart.rijksart.logic.Selection
 import io.lamart.rijksart.transaction
 
 class DetailsActions internal constructor(private val deps: RijksDepedencies) {
@@ -10,22 +9,23 @@ class DetailsActions internal constructor(private val deps: RijksDepedencies) {
 
     fun select(id: String?) {
         fetchDetailsActions.stop()
+
         deps.focus.modify(transaction { focus ->
-            val item = focus
-                .compose(RijksState.collections)
+            val selected = focus
+                .compose(RijksState.collectionItems)
                 .get()
-                .items
                 .firstOrNull { it.id == id }
 
             focus
                 .compose(RijksState.selection)
                 .modify { selection ->
-                    if (item == null || item != selection.item)
-                        selection.copy(item = item, details = null)
+                    if (selected == null || selected != selection.selected)
+                        selection.copy(selected = selected, details = null)
                     else
                         selection
                 }
         })
+
         fetchDetails()
     }
 
@@ -34,7 +34,7 @@ class DetailsActions internal constructor(private val deps: RijksDepedencies) {
     fun fetchDetails() {
         deps.focus
             .compose(RijksState.selection)
-            .compose(Selection.item)
+            .compose(RijksState.Selection.item)
             .get()
             ?.objectNumber
             ?.let(fetchDetailsActions::start)

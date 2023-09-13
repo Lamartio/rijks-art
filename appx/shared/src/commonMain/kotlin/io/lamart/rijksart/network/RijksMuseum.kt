@@ -13,10 +13,9 @@ import io.ktor.http.contentType
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 
+class RijksMuseum(httpFactory: HttpClientEngineFactory<*> = httpEngineFactory) {
 
-class RijksMuseum(httpFactory: HttpClientEngineFactory<*>) {
-
-    private val httpClient: HttpClient = httpClientOf(httpFactory)
+    internal val httpClient: HttpClient = httpClientOf(httpFactory)
 
     suspend fun getCollection(
         page: Int,
