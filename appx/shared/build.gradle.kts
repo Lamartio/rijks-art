@@ -29,16 +29,19 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api("io.lamart:lux:0.5.1")
+                api("io.lamart:lux:0.5.2")
                 implementation("com.liftric:kvault:1.10.0")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.2")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
                 implementation("io.ktor:ktor-client-core:2.3.4")
+                implementation("io.ktor:ktor-client-content-negotiation:2.3.4")
+                implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.4")
             }
         }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.2")
             }
         }
 

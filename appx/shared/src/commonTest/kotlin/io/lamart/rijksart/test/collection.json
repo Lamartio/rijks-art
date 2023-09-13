@@ -1,0 +1,36 @@
+{
+  "elapsedMilliseconds": 0,
+  "count": 781267,
+  "countFacets": {
+    "hasimage": 594006,
+    "ondisplay": 8436
+  },
+  "artObjects": [
+    {
+      "links": {
+        "self": "http://www.rijksmuseum.nl/api/en/collection/RP-P-OB-87.351",
+        "web": "http://www.rijksmuseum.nl/en/collection/RP-P-OB-87.351"
+      },
+      "id": "en-RP-P-OB-87.351",
+      "objectNumber": "RP-P-OB-87.351",
+      "title": "Programma van de begrafenisplechtigheid van prinses Louise van Oranje-Nassau, 1819",
+      "hasImage": false,
+      "principalOrFirstMaker": "'s Gravenhaagsche Courant- en Boekdrukkerij",
+      "longTitle": "Programma van de begrafenisplechtigheid van prinses Louise van Oranje-Nassau, 1819, 's Gravenhaagsche Courant- en Boekdrukkerij, 1819",
+      "showImage": false,
+      "permitDownload": true,
+      "webImage": null,
+      "headerImage": {
+        "guid": null,
+        "offsetPercentageX": 0,
+        "offsetPercentageY": 0,
+        "width": 0,
+        "height": 0,
+        "url": null
+      },
+      "productionPlaces": [
+        "The Hague"
+      ]
+    }
+  ]
+}

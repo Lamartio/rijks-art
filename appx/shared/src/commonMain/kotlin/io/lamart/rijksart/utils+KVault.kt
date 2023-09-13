@@ -7,7 +7,7 @@ import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
 @Suppress("UNCHECKED_CAST")
-internal inline fun <reified T : Any> KVault.get(key: String): Entry<T> =
+internal inline operator fun <reified T : Any> KVault.get(key: String): Entry<T> =
     when (T::class) {
         Boolean::class -> factory(key, KVault::bool, KVault::set) as Entry<T>
         Int::class -> factory(key, KVault::int, KVault::set) as Entry<T>

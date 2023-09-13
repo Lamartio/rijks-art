@@ -7,6 +7,7 @@ import kotlinx.coroutines.flow.flattenConcat
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
+import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 
@@ -16,11 +17,15 @@ internal inline fun <reified T> String.decode(): T? =
 internal inline fun <reified T> T.encode(): String? =
     runCatching(Json::encodeToString).getOrNull()
 
+/**
+ * Will first try to return from persistence. Simultaneously it is fetching and persisting latest result and will return that after initial emission.
+ */
+
 @OptIn(ExperimentalCoroutinesApi::class)
 internal fun <I, O : Any> dataFlowOf(
     get: suspend (I) -> O?,
     fetch: suspend (I) -> O,
-    set: suspend (O) -> Unit
+    set: suspend (I, O) -> Unit
 ): (input: I) -> Flow<O> =
     { input ->
         val getting = flowOf(input)
@@ -28,7 +33,7 @@ internal fun <I, O : Any> dataFlowOf(
             .filterNotNull()
         val fetchingAndSetting = flowOf(input)
             .map(fetch)
-            .onEach { runCatching { set(it) } }
+            .onEach { runCatching { set(input, it) } }
 
         flowOf(getting, fetchingAndSetting).flattenConcat()
     }
