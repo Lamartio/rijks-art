@@ -10,7 +10,7 @@ struct AppView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                NavigationLink(destination: ArtDetailsView(machine: machine.details), isActive: $isShowingDetails, label: EmptyView.init).hidden()
+                NavigationLink(destination: ArtDetailsView(machine: machine.details.forView), isActive: $isShowingDetails, label: EmptyView.init).hidden()
                 ArtCollectionView(machine: machine.overview)
             }
         }

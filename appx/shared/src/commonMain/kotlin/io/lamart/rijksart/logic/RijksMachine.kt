@@ -5,7 +5,7 @@ import io.lamart.lux.Mutable
 import io.lamart.rijksart.Platform
 import io.lamart.rijksart.PlatformDependencies
 import io.lamart.rijksart.logic.details.DetailsMachine
-import io.lamart.rijksart.logic.details.toDetailsState
+import io.lamart.rijksart.logic.details.view.toDetailsViewState
 import io.lamart.rijksart.logic.overview.OverviewMachine
 import io.lamart.rijksart.logic.overview.toOverviewState
 import io.lamart.rijksart.network.RijksMuseum
@@ -16,7 +16,8 @@ import kotlinx.coroutines.flow.MutableStateFlow
 
 fun Platform.toMachine(): RijksMachine = RijksMachine(this)
 
-class RijksMachine(platform: Platform) : Machine<RijksState, RijksActions>(initialize(platform)) {
+class RijksMachine internal constructor(platform: Platform) :
+    Machine<RijksState, RijksActions>(initialize(platform)) {
     val overview = this
         .compose(
             state = RijksState::toOverviewState,
@@ -25,7 +26,7 @@ class RijksMachine(platform: Platform) : Machine<RijksState, RijksActions>(initi
         .let(::OverviewMachine)
     val details = this
         .compose(
-            state = { it.selection.toDetailsState() },
+            state = RijksState::details,
             actions = RijksActions::details
         )
         .let(::DetailsMachine)

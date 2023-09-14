@@ -5,10 +5,10 @@ import Kingfisher
 
 struct ArtDetailsView: View {
     
-    let machine: DetailsMachine
-    @State var state: DetailsState
+    let machine: DetailsViewMachine
+    @State var state: DetailsViewState
     
-    init(machine: DetailsMachine) {
+    init(machine: DetailsViewMachine) {
         self.machine = machine
         self.state = machine.value
     }

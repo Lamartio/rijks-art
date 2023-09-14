@@ -36,7 +36,7 @@ class DetailsActions internal constructor( deps: RijksDepedencies): RijksDepeden
     fun fetchDetails() {
         focus
             .compose(RijksState.selection)
-            .compose(Selection.selected)
+            .compose(DetailsState.selected)
             .get()
             ?.objectNumber
             ?.let(fetchDetailsActions::start)

@@ -23,7 +23,7 @@ data class OverviewState internal constructor(
 internal fun RijksState.toOverviewState() =
     OverviewState(
         isFetching = overview.fetchingPage.state is Async.Executing,
-        selection = selection.selected?.id,
+        selection = details.selected?.id,
         items = overview.items.map(it {
             OverviewState.Item(id, title, headerImage.url)
         })
