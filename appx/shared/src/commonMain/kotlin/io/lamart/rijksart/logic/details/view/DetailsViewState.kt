@@ -3,12 +3,12 @@ package io.lamart.rijksart.logic.details.view
 import io.lamart.lux.Async
 import io.lamart.rijksart.logic.details.DetailsState
 
-data class DetailsViewState internal constructor(
-    val title: String,
-    val imageUrl: String?,
-    val description: String,
-    val isFetching: Boolean,
-    val isSelected: Boolean
+data class DetailsViewState(
+    val title: String = "",
+    val imageUrl: String? = null,
+    val description: String = "",
+    val isFetching: Boolean = false,
+    val isSelected: Boolean= true
 )
 
 internal fun DetailsState.toDetailsViewState(): DetailsViewState =

@@ -22,6 +22,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import io.lamart.rijksart.logic.details.view.DetailsViewState
 import io.lamart.rijksart.logic.gallery.view.GalleryViewState
 
 data object GalleryView : View {
@@ -34,8 +35,6 @@ data object GalleryView : View {
 
         if (state.isShowingDetails && stack.size <= 1)
             host.navigate(DetailsView.tag)
-        else if (!state.isShowingDetails && stack == listOf(tag, DetailsView.tag))
-            host.popBackStack(tag, true)
 
         Scaffold(topBar = { RijksTopBar() }) { innerPadding ->
             LazyColumn(modifier = Modifier.padding(innerPadding)) {

@@ -17,12 +17,23 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import io.lamart.rijksart.logic.details.view.DetailsViewState
+import kotlinx.coroutines.flow.filter
 
 data object DetailsView : View {
     @Composable
     override fun invoke() {
         val machine = rijks().machine.details.forView
-        val state by machine.collectAsState()
+        val isSelected by machine
+            .compose(state = DetailsViewState::isSelected)
+            .collectAsState()
+        val state by machine
+            .filter { it.isSelected }
+            .collectAsState(DetailsViewState(title = "Hello")) // Hack so that there is content when transitioning back
+        val (host, stack) = navigation()
+
+        if (!isSelected && stack == listOf(DetailsView.tag))
+            host.popBackStack(tag, true)
 
         Scaffold(topBar = { RijksTopBar(state.title, machine.actions::deselect) }) { innerPadding ->
             Column(
