@@ -1,3 +1,5 @@
+package io.lamart.rijksart.network.model
+
 import kotlinx.serialization.Serializable
 
 @Serializable

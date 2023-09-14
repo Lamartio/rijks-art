@@ -1,6 +1,6 @@
 package io.lamart.rijksart.android
 
-import ArtCollection
+import io.lamart.rijksart.network.model.ArtCollection
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent

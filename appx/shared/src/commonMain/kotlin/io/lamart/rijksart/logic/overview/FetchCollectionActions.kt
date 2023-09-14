@@ -1,6 +1,6 @@
 package io.lamart.rijksart.logic.overview
 
-import ArtCollection
+import io.lamart.rijksart.network.model.ArtCollection
 import io.lamart.lux.Behavior
 import io.lamart.lux.Stream
 import io.lamart.lux.actions.Actions

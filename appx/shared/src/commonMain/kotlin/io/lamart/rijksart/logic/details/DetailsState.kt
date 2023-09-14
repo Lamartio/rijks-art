@@ -1,10 +1,9 @@
 package io.lamart.rijksart.logic.details
 
-import ArtCollection
-import io.lamart.lux.Async
+import io.lamart.rijksart.network.model.ArtCollection
 import io.lamart.lux.Stream
 import io.lamart.lux.focus.lensOf
-import io.lamart.rijksart.network.ArtDetails
+import io.lamart.rijksart.network.model.ArtDetails
 
 data class DetailsState internal constructor(
     val selected: ArtCollection.ArtObject? = null,

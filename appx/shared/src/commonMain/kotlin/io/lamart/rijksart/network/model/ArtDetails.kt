@@ -1,4 +1,4 @@
-package io.lamart.rijksart.network
+package io.lamart.rijksart.network.model
 
 import kotlinx.serialization.Serializable
 

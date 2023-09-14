@@ -1,6 +1,6 @@
 package io.lamart.rijksart.network
 
-import ArtCollection
+import io.lamart.rijksart.network.model.ArtCollection
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.engine.HttpClientEngineFactory
@@ -11,6 +11,7 @@ import io.ktor.client.request.parameter
 import io.ktor.http.ContentType
 import io.ktor.http.contentType
 import io.ktor.serialization.kotlinx.json.json
+import io.lamart.rijksart.network.model.ArtDetails
 import kotlinx.serialization.json.Json
 
 class RijksMuseum(httpFactory: HttpClientEngineFactory<*> = httpEngineFactory) {
