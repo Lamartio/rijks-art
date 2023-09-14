@@ -4,7 +4,6 @@ import io.lamart.lux.Machine
 import io.lamart.lux.Mutable
 import io.lamart.rijksart.Platform
 import io.lamart.rijksart.PlatformDependencies
-import io.lamart.rijksart.httpEngineFactory
 import io.lamart.rijksart.logic.details.DetailsMachine
 import io.lamart.rijksart.logic.details.toDetailsState
 import io.lamart.rijksart.logic.overview.OverviewMachine
@@ -39,7 +38,7 @@ private fun initialize(platform: PlatformDependencies): Machine<RijksState, Rijk
     val deps = object : RijksDepedencies, PlatformDependencies by platform {
         override val focus = mutable.lens
         override val scope = scope
-        override val museum = RijksMuseum(platform.httpEngineFactory)
+        override val museum = RijksMuseum()
     }
     val actions = RijksActions(deps)
 

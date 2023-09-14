@@ -4,13 +4,13 @@ import io.lamart.rijksart.logic.RijksDepedencies
 import io.lamart.rijksart.logic.RijksState
 
 class OverviewActions internal constructor(
-    private val deps: RijksDepedencies,
+    deps: RijksDepedencies,
     val select: (id: String?) -> Unit
-) {
+): RijksDepedencies by deps {
     private val fetchCollectionActions = FetchCollectionActions(deps)
 
     fun loadNextPage() =
-        deps.focus
+        focus
             .compose(RijksState.overview)
             .compose(Overview.pages)
             .get()

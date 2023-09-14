@@ -5,13 +5,13 @@ import io.lamart.rijksart.logic.RijksState
 import io.lamart.rijksart.logic.overview.Overview
 import io.lamart.rijksart.transaction
 
-class DetailsActions internal constructor(private val deps: RijksDepedencies) {
+class DetailsActions internal constructor( deps: RijksDepedencies): RijksDepedencies by deps {
     private val fetchDetailsActions = FetchDetailsActions(deps)
 
     fun select(id: String?) {
         fetchDetailsActions.stop()
 
-        deps.focus.modify(transaction { focus ->
+        focus.modify(transaction { focus ->
             val selected = focus
                 .compose(RijksState.overview)
                 .compose(Overview.items)
@@ -34,7 +34,7 @@ class DetailsActions internal constructor(private val deps: RijksDepedencies) {
     fun deselect() = select(null)
 
     fun fetchDetails() {
-        deps.focus
+        focus
             .compose(RijksState.selection)
             .compose(Selection.selected)
             .get()
