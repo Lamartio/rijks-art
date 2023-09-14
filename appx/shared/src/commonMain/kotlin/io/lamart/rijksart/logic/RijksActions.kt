@@ -1,11 +1,11 @@
 package io.lamart.rijksart.logic
 
 import io.lamart.rijksart.logic.details.DetailsActions
-import io.lamart.rijksart.logic.overview.OverviewActions
+import io.lamart.rijksart.logic.gallery.GalleryActions
 
 class RijksActions internal constructor(deps: RijksDepedencies) {
     internal val details = DetailsActions(deps)
-    internal val overview = OverviewActions(deps, details::select)
+    internal val gallery = GalleryActions(deps, details::select)
 
-    fun initialize() = overview.loadNextPage()
+    fun initialize() = gallery.loadNextPage()
 }

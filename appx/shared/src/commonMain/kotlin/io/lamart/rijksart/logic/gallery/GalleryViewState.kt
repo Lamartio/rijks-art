@@ -1,10 +1,10 @@
-package io.lamart.rijksart.logic.overview
+package io.lamart.rijksart.logic.gallery
 
 import io.lamart.lux.Async
 import io.lamart.rijksart.it
 import io.lamart.rijksart.logic.RijksState
 
-data class OverviewState internal constructor(
+data class GalleryViewState internal constructor(
     val isFetching: Boolean,
     val selection: String?,
     val items: List<Item>
@@ -21,10 +21,10 @@ data class OverviewState internal constructor(
 }
 
 internal fun RijksState.toOverviewState() =
-    OverviewState(
-        isFetching = overview.fetchingPage.state is Async.Executing,
+    GalleryViewState(
+        isFetching = gallery.fetchingPage.state is Async.Executing,
         selection = details.selected?.id,
-        items = overview.items.map(it {
-            OverviewState.Item(id, title, headerImage.url)
+        items = gallery.items.map(it {
+            GalleryViewState.Item(id, title, headerImage.url)
         })
     )

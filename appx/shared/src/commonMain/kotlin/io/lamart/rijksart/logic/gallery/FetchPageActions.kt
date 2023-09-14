@@ -1,4 +1,4 @@
-package io.lamart.rijksart.logic.overview
+package io.lamart.rijksart.logic.gallery
 
 import io.lamart.rijksart.network.model.ArtCollection
 import io.lamart.lux.Behavior
@@ -15,10 +15,10 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.runningFold
 
-internal class FetchCollectionActions(deps: RijksDepedencies) : Actions<Int> by deps.run({
+internal class FetchPageActions(deps: RijksDepedencies) : Actions<Int> by deps.run({
     focus
-        .compose(RijksState.overview)
-        .compose(Overview.fetchingPage)
+        .compose(RijksState.gallery)
+        .compose(GalleryState.fetchingPage)
         .toStreamActions(
             scope,
             Behavior.exhausting(flow = dataFlowOf(
@@ -37,8 +37,8 @@ internal class FetchCollectionActions(deps: RijksDepedencies) : Actions<Int> by 
 
                         if (page != null && collection != null) {
                             focus
-                                .compose(RijksState.overview)
-                                .compose(Overview.pages)
+                                .compose(RijksState.gallery)
+                                .compose(GalleryState.pages)
                                 .modify { it + (page to collection) }
                         }
                     }

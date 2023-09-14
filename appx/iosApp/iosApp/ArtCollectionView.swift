@@ -5,11 +5,11 @@ import Kingfisher
 
 struct ArtCollectionView: View {
     
-    let machine: OverviewMachine
-    @State var state: OverviewState
+    let machine: GalleryMachine
+    @State var state: GalleryViewState
     let selection: Binding<String?>
     
-    init(machine: OverviewMachine) {
+    init(machine: GalleryMachine) {
         self.machine = machine
         self.state = machine.value
         self.selection = Binding(
@@ -39,12 +39,12 @@ struct ArtCollectionView: View {
     }
 }
 
-extension OverviewState.Item : Identifiable {
+extension GalleryViewState.Item : Identifiable {
 }
 
 fileprivate struct ItemView: View {
     
-    let item: OverviewState.Item
+    let item: GalleryViewState.Item
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {

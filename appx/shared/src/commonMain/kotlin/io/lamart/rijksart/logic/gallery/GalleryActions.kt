@@ -1,22 +1,22 @@
-package io.lamart.rijksart.logic.overview
+package io.lamart.rijksart.logic.gallery
 
 import io.lamart.rijksart.logic.RijksDepedencies
 import io.lamart.rijksart.logic.RijksState
 
-class OverviewActions internal constructor(
+class GalleryActions internal constructor(
     deps: RijksDepedencies,
     val select: (id: String?) -> Unit
 ): RijksDepedencies by deps {
-    private val fetchCollectionActions = FetchCollectionActions(deps)
+    private val fetchPage = FetchPageActions(deps)
 
     fun loadNextPage() =
         focus
-            .compose(RijksState.overview)
-            .compose(Overview.pages)
+            .compose(RijksState.gallery)
+            .compose(GalleryState.pages)
             .get()
             .keys
             .maxOrNull()
             .let { it ?: 0 }
             .plus(1)
-            .let(fetchCollectionActions::start)
+            .let(fetchPage::start)
 }

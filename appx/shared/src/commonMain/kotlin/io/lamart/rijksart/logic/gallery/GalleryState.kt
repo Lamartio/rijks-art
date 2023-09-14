@@ -1,11 +1,11 @@
-package io.lamart.rijksart.logic.overview
+package io.lamart.rijksart.logic.gallery
 
 import io.lamart.rijksart.network.model.ArtCollection
 import arrow.optics.Getter
 import io.lamart.lux.Stream
 import io.lamart.lux.focus.lensOf
 
-internal data class Overview(
+internal data class GalleryState(
     internal val pages: Map<Int, ArtCollection> = emptyMap(),
     internal val fetchingPage: Stream<Int, ArtCollection> = Stream(),
 )  {
@@ -17,10 +17,10 @@ internal data class Overview(
             .distinctBy { it.id }
 
     companion object {
-        internal val pages = lensOf(Overview::pages, { copy(pages = it) })
+        internal val pages = lensOf(GalleryState::pages, { copy(pages = it) })
         internal val fetchingPage =
-            lensOf(Overview::fetchingPage, { copy(fetchingPage = it) })
+            lensOf(GalleryState::fetchingPage, { copy(fetchingPage = it) })
 
-        internal val items = Getter(Overview::items)
+        internal val items = Getter(GalleryState::items)
     }
 }

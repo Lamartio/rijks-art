@@ -2,7 +2,7 @@ package io.lamart.rijksart.logic.details
 
 import io.lamart.rijksart.logic.RijksDepedencies
 import io.lamart.rijksart.logic.RijksState
-import io.lamart.rijksart.logic.overview.Overview
+import io.lamart.rijksart.logic.gallery.GalleryState
 import io.lamart.rijksart.transaction
 
 class DetailsActions internal constructor( deps: RijksDepedencies): RijksDepedencies by deps {
@@ -13,8 +13,8 @@ class DetailsActions internal constructor( deps: RijksDepedencies): RijksDepeden
 
         focus.modify(transaction { focus ->
             val selected = focus
-                .compose(RijksState.overview)
-                .compose(Overview.items)
+                .compose(RijksState.gallery)
+                .compose(GalleryState.items)
                 .get()
                 .firstOrNull { it.id == id }
 
