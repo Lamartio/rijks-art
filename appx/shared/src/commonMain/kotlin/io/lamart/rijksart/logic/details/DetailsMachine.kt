@@ -4,6 +4,7 @@ import io.lamart.lux.Machine
 import io.lamart.rijksart.logic.RijksActions
 import io.lamart.rijksart.logic.RijksMachine
 import io.lamart.rijksart.logic.RijksState
+import io.lamart.rijksart.logic.details.view.DetailsViewActions
 import io.lamart.rijksart.logic.details.view.DetailsViewMachine
 import io.lamart.rijksart.logic.details.view.toDetailsViewState
 
@@ -12,6 +13,7 @@ class DetailsMachine internal constructor(parent: RijksMachine) :
 
     val forView = this
         .compose(state = DetailsState::toDetailsViewState)
+        .compose(actions = ::DetailsViewActions)
         .let(::DetailsViewMachine)
 
 }

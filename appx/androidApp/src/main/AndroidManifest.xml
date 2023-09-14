@@ -4,10 +4,10 @@
     <application
         android:allowBackup="false"
         android:supportsRtl="true"
-        android:name=".App"
+        android:name=".RijksApplication"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".RijksActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

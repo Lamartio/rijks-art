@@ -31,8 +31,6 @@ class DetailsActions internal constructor(deps: RijksDepedencies): RijksDepedenc
         fetchDetails()
     }
 
-    fun deselect() = select(null)
-
     fun fetchDetails() {
         focus
             .compose(RijksState.selection)
