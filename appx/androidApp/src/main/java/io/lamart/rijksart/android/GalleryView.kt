@@ -33,7 +33,7 @@ data object GalleryView : View {
         val state by machine.collectAsState()
         val (host, stack) = navigation()
 
-        if (state.isShowingDetails && stack.size <= 1)
+        if (state.isShowingDetails && stack == listOf(tag))
             host.navigate(DetailsView.tag)
 
         Scaffold(topBar = { RijksTopBar() }) { innerPadding ->

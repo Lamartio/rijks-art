@@ -1,11 +1,14 @@
 package io.lamart.rijksart.android
 
+import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Divider
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
@@ -29,7 +32,7 @@ data object DetailsView : View {
             .collectAsState()
         val state by machine
             .filter { it.isSelected }
-            .collectAsState(DetailsViewState(title = "Hello")) // Hack so that there is content when transitioning back
+            .collectAsState(DetailsViewState()) // Hack so that there is content when transitioning back
         val (host, stack) = navigation()
 
         if (!isSelected && stack == listOf(DetailsView.tag))
@@ -37,7 +40,7 @@ data object DetailsView : View {
 
         Scaffold(topBar = { RijksTopBar(state.title, machine.actions::deselect) }) { innerPadding ->
             Column(
-                modifier = Modifier.padding(innerPadding),
+                modifier = Modifier.padding(innerPadding).verticalScroll(rememberScrollState()),
                 verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
                 AsyncImage(
