@@ -12,7 +12,7 @@
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		2C4B832E2AB1AAB6005F284B /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B832D2AB1AAB6005F284B /* utils.swift */; };
 		2C4B83312AB1B113005F284B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2C4B83302AB1B113005F284B /* Kingfisher */; };
-		2C4B83332AB1B120005F284B /* ArtCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B83322AB1B120005F284B /* ArtCollectionView.swift */; };
+		2C4B83332AB1B120005F284B /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B83322AB1B120005F284B /* GalleryView.swift */; };
 		2C4B83352AB1D28B005F284B /* ArtDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B83342AB1D28B005F284B /* ArtDetailsView.swift */; };
 		2C4B83372AB2063C005F284B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B83362AB2063C005F284B /* AppView.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +35,7 @@
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		2C4B832D2AB1AAB6005F284B /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
-		2C4B83322AB1B120005F284B /* ArtCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollectionView.swift; sourceTree = "<group>"; };
+		2C4B83322AB1B120005F284B /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		2C4B83342AB1D28B005F284B /* ArtDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailsView.swift; sourceTree = "<group>"; };
 		2C4B83362AB2063C005F284B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +87,7 @@
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				2C4B832D2AB1AAB6005F284B /* utils.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
-				2C4B83322AB1B120005F284B /* ArtCollectionView.swift */,
+				2C4B83322AB1B120005F284B /* GalleryView.swift */,
 				2C4B83342AB1D28B005F284B /* ArtDetailsView.swift */,
 				2C4B83362AB2063C005F284B /* AppView.swift */,
 			);
@@ -200,7 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4B83352AB1D28B005F284B /* ArtDetailsView.swift in Sources */,
-				2C4B83332AB1B120005F284B /* ArtCollectionView.swift in Sources */,
+				2C4B83332AB1B120005F284B /* GalleryView.swift in Sources */,
 				2C4B832E2AB1AAB6005F284B /* utils.swift in Sources */,
 				2C4B83372AB2063C005F284B /* AppView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,

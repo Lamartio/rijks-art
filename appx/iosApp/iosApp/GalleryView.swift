@@ -3,18 +3,22 @@ import shared
 import Combine
 import Kingfisher
 
-struct ArtCollectionView: View {
+struct GalleryView: View {
     
-    let machine: GalleryMachine
+    let machine: GalleryViewMachine
     @State var state: GalleryViewState
     let selection: Binding<String?>
     
-    init(machine: GalleryMachine) {
+    init(machine: GalleryViewMachine) {
         self.machine = machine
         self.state = machine.value
         self.selection = Binding(
             get: { machine.value.selection },
-            set: machine.actions.select
+            set: {
+                if let id = $0 {
+                    machine.actions.select(id: id)
+                }
+            }
         )
     }
     

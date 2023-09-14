@@ -3,10 +3,7 @@ package io.lamart.rijksart.logic.gallery
 import io.lamart.rijksart.logic.RijksDepedencies
 import io.lamart.rijksart.logic.RijksState
 
-class GalleryActions internal constructor(
-    deps: RijksDepedencies,
-    val select: (id: String?) -> Unit
-): RijksDepedencies by deps {
+class GalleryActions internal constructor(deps: RijksDepedencies): RijksDepedencies by deps {
     private val fetchPage = FetchPageActions(deps)
 
     fun loadNextPage() =

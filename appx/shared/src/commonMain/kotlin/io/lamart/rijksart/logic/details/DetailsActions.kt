@@ -5,7 +5,7 @@ import io.lamart.rijksart.logic.RijksState
 import io.lamart.rijksart.logic.gallery.GalleryState
 import io.lamart.rijksart.transaction
 
-class DetailsActions internal constructor( deps: RijksDepedencies): RijksDepedencies by deps {
+class DetailsActions internal constructor(deps: RijksDepedencies): RijksDepedencies by deps {
     private val fetchDetailsActions = FetchDetailsActions(deps)
 
     fun select(id: String?) {

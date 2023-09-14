@@ -6,7 +6,6 @@ import io.lamart.rijksart.Platform
 import io.lamart.rijksart.PlatformDependencies
 import io.lamart.rijksart.logic.details.DetailsMachine
 import io.lamart.rijksart.logic.gallery.GalleryMachine
-import io.lamart.rijksart.logic.gallery.toOverviewState
 import io.lamart.rijksart.network.RijksMuseum
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -17,18 +16,8 @@ fun Platform.toMachine(): RijksMachine = RijksMachine(this)
 
 class RijksMachine internal constructor(platform: Platform) :
     Machine<RijksState, RijksActions>(initialize(platform)) {
-    val gallery = this
-        .compose(
-            state = RijksState::toOverviewState,
-            actions = RijksActions::gallery
-        )
-        .let(::GalleryMachine)
-    val details = this
-        .compose(
-            state = RijksState::details,
-            actions = RijksActions::details
-        )
-        .let(::DetailsMachine)
+    val gallery = GalleryMachine(this)
+    val details = DetailsMachine(this)
 }
 
 private fun initialize(platform: PlatformDependencies): Machine<RijksState, RijksActions> {

@@ -5,10 +5,10 @@ import arrow.optics.Getter
 import io.lamart.lux.Stream
 import io.lamart.lux.focus.lensOf
 
-internal data class GalleryState(
+data class GalleryState(
     internal val pages: Map<Int, ArtCollection> = emptyMap(),
     internal val fetchingPage: Stream<Int, ArtCollection> = Stream(),
-)  {
+) {
 
     internal val items: List<ArtCollection.ArtObject>
         get() = pages.entries

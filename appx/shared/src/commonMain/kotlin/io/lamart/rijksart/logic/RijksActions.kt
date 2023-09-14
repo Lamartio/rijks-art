@@ -5,7 +5,7 @@ import io.lamart.rijksart.logic.gallery.GalleryActions
 
 class RijksActions internal constructor(deps: RijksDepedencies) {
     internal val details = DetailsActions(deps)
-    internal val gallery = GalleryActions(deps, details::select)
+    internal val gallery = GalleryActions(deps)
 
     fun initialize() = gallery.loadNextPage()
 }

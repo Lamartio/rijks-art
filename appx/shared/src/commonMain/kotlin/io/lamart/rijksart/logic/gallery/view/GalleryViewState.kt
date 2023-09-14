@@ -1,4 +1,4 @@
-package io.lamart.rijksart.logic.gallery
+package io.lamart.rijksart.logic.gallery.view
 
 import io.lamart.lux.Async
 import io.lamart.rijksart.it
@@ -19,12 +19,3 @@ data class GalleryViewState internal constructor(
         val imageUrl: String?
     )
 }
-
-internal fun RijksState.toOverviewState() =
-    GalleryViewState(
-        isFetching = gallery.fetchingPage.state is Async.Executing,
-        selection = details.selected?.id,
-        items = gallery.items.map(it {
-            GalleryViewState.Item(id, title, headerImage.url)
-        })
-    )
