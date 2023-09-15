@@ -6,6 +6,10 @@ import io.lamart.rijksart.logic.RijksState
 class GalleryActions internal constructor(deps: RijksDepedencies): RijksDepedencies by deps {
     private val fetchPage = FetchPageActions(deps)
 
+    /**
+     * Checks what the last downloaded page was, increments that page ordinal and fetches the new page.
+     */
+
     fun loadNextPage() =
         focus
             .compose(RijksState.gallery)

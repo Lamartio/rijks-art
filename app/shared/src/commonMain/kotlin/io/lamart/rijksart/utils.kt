@@ -3,21 +3,10 @@ package io.lamart.rijksart
 import io.lamart.lux.Mutable
 import io.lamart.lux.focus.FocusedLens
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.filterNotNull
-import kotlinx.coroutines.flow.flattenConcat
-import kotlinx.coroutines.flow.flowOf
-import kotlinx.coroutines.flow.map
-import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.flow.*
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
-
-internal inline fun <reified T> String.decode(): T? =
-    runCatching<String, T>(Json::decodeFromString).getOrNull()
-
-internal inline fun <reified T> T.encode(): String? =
-    runCatching(Json::encodeToString).getOrNull()
 
 /**
  * Will first try to return from persistence. Simultaneously it is fetching and persisting latest result and will return that after initial emission.
@@ -40,7 +29,7 @@ internal fun <I, O : Any> dataFlowOf(
         flowOf(getting, fetchingAndSetting).flattenConcat()
     }
 
-fun <S> transaction(block: (focus: FocusedLens<*, S>) -> Unit): (S) -> S =
+internal fun <S> transaction(block: (focus: FocusedLens<*, S>) -> Unit): (S) -> S =
     { value ->
         Mutable(value)
             .apply { block(lens) }
@@ -48,3 +37,9 @@ fun <S> transaction(block: (focus: FocusedLens<*, S>) -> Unit): (S) -> S =
     }
 
 internal fun <T, R> it(transform: T.() -> R): (T) -> R = transform
+
+internal fun <T> Flow<T>.record(initial: T): Flow<Pair<T, T>> =
+    this
+        .map { it to it }
+        .scan(initial to initial) { (_, old), (new) -> old to new }
+        .drop(1)

@@ -6,6 +6,12 @@ import kotlinx.serialization.json.Json
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
+/**
+ * I needed a simple place to cache network responses in a type-safe manner.
+ *
+ * TODO: This is not explicitly threaded, which would like to improve through `Dispatchers.IO.limitedParallelism(1)`
+ */
+
 @Suppress("UNCHECKED_CAST")
 internal inline operator fun <reified T : Any> KVault.get(key: String): Entry<T> =
     when (T::class) {

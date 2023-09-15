@@ -14,6 +14,10 @@ import io.ktor.serialization.kotlinx.json.json
 import io.lamart.rijksart.network.model.ArtDetails
 import kotlinx.serialization.json.Json
 
+/**
+ * Often times a networking interface is suffixed with API. In this case it representing only the functionality of a museum, so I found it more appropriate to call it by its name.
+ */
+
 class RijksMuseum(httpFactory: HttpClientEngineFactory<*> = httpEngineFactory) {
 
     internal val client: HttpClient = httpClientOf(httpFactory)

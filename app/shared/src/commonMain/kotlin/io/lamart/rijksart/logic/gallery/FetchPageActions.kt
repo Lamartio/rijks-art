@@ -9,13 +9,8 @@ import io.lamart.rijksart.dataFlowOf
 import io.lamart.rijksart.get
 import io.lamart.rijksart.logic.RijksDepedencies
 import io.lamart.rijksart.logic.RijksState
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.drop
-import kotlinx.coroutines.flow.map
+import io.lamart.rijksart.record
 import kotlinx.coroutines.flow.onEach
-import kotlinx.coroutines.flow.runningFold
-import kotlinx.coroutines.flow.runningReduce
-import kotlinx.coroutines.flow.scan
 
 internal class FetchPageActions(deps: RijksDepedencies) : Actions<Int> by deps.run({
     focus
@@ -47,15 +42,3 @@ internal class FetchPageActions(deps: RijksDepedencies) : Actions<Int> by deps.r
             }
         )
 })
-
-fun <T> Flow<T>.record(initial: T): Flow<Pair<T, T>> =
-    this
-        .map { it to it }
-        .scan(initial to initial) { (_, old), (new) -> old to new }
-        .drop(1)
-
-fun <T> Flow<T>.record(): Flow<Pair<T, T>> =
-    this
-        .map { it to it }
-        .runningReduce { (_, old), (new) -> old to new }
-        .drop(1)

@@ -14,6 +14,11 @@ import kotlinx.coroutines.flow.MutableStateFlow
 
 fun Platform.toMachine(): RijksMachine = RijksMachine(this)
 
+
+/**
+ * The root of the logic: This class contains all the logic for the application, though it represent it segregated.
+ */
+
 class RijksMachine internal constructor(platform: Platform) :
     Machine<RijksState, RijksActions>(initialize(platform)) {
     val gallery = GalleryMachine(this)
