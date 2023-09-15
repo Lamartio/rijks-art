@@ -11,11 +11,15 @@ data class DetailsViewState(
     val isSelected: Boolean= true
 )
 
-internal fun DetailsState.toDetailsViewState(): DetailsViewState =
-    DetailsViewState(
-        title = selected?.title ?: "",
-        imageUrl = selected?.webImage?.url,
-        description = details?.artObjectPage?.plaqueDescription ?: "",
+internal fun DetailsState.toDetailsViewState(): DetailsViewState {
+    val artObject = fetchingDetails.result?.artObject
+    val artPage = fetchingDetails.result?.artObjectPage
+
+    return DetailsViewState(
+        title =  artObject?.title ?: selected?.title ?: "",
+        imageUrl = artObject?.webImage?.url ?: selected?.webImage?.url,
+        description = artPage?.plaqueDescription ?: artObject?.plaqueDescriptionEnglish ?: "",
         isFetching = fetchingDetails.state is Async.Executing,
         isSelected = selected != null,
     )
+}

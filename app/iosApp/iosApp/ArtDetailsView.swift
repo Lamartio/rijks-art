@@ -34,6 +34,6 @@ struct ArtDetailsView: View {
             action : machine.actions.deselect,
             label: { Image(systemName: "arrow.left") }
         ))
-        .onReceive(publisher(of: machine).filter(\.isSelected), perform: { state = $0 }) // isSelected hack prevents the page turning blank when the selection became nil and app is transitioning back.
+        .onReceive(publisher(of: machine), perform: { state = $0 })
     }
 }

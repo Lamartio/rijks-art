@@ -10,7 +10,7 @@ data class RijksState internal constructor(
 ) {
     companion object {
         internal val gallery = lensOf(RijksState::gallery, { copy(gallery = it) })
-        internal val selection = lensOf(RijksState::details, { copy(details = it) })
+        internal val details = lensOf(RijksState::details, { copy(details = it) })
     }
 }
 

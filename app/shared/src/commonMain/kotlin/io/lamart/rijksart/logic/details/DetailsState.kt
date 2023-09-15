@@ -12,8 +12,6 @@ data class DetailsState internal constructor(
 ) {
     companion object {
         internal val selected = lensOf(DetailsState::selected, { copy(selected = it) })
-        internal val details = lensOf(DetailsState::details, { copy(details = it) })
-        internal val fetchingDetails =
-            lensOf(DetailsState::fetchingDetails, { copy(fetchingDetails = it) })
+        internal val fetchingDetails = lensOf(DetailsState::fetchingDetails, { copy(fetchingDetails = it) })
     }
 }

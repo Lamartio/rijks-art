@@ -22,7 +22,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import io.lamart.rijksart.logic.details.view.DetailsViewState
 import io.lamart.rijksart.logic.gallery.view.GalleryViewState
 
 data object GalleryView : View {
@@ -63,8 +62,7 @@ data object GalleryView : View {
 @Composable
 private fun ItemView(item: GalleryViewState.Item, select: (String) -> Unit) {
     Box(
-        modifier = Modifier
-            .clickable { select(item.id) },
+        modifier = Modifier.clickable { select(item.id) },
         contentAlignment = Alignment.BottomStart,
     ) {
         AsyncImage(

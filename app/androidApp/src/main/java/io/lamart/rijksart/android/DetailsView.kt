@@ -26,15 +26,10 @@ data object DetailsView : View {
     @Composable
     override fun invoke() {
         val machine = rijks().machine.details.forView
-        val isSelected by machine
-            .compose(state = DetailsViewState::isSelected)
-            .collectAsState()
-        val state by machine
-            .filter { it.isSelected }
-            .collectAsState(DetailsViewState()) // Hack so that there is content when transitioning back
+        val state by machine.collectAsState()
         val (host, stack) = navigation()
 
-        if (!isSelected && stack == listOf(DetailsView.tag))
+        if (!state.isSelected && stack == listOf(DetailsView.tag))
             host.popBackStack(tag, true)
 
         Scaffold(topBar = { RijksTopBar(state.title, machine.actions::deselect) }) { innerPadding ->
