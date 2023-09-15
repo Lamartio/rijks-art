@@ -33,6 +33,4 @@ The app relies on platform specific services: network and key-value storage. Bot
 Till now tests are lacking, but I have chosen for a centralized state management approach which I praise for its testability. See [the Lux library](https://github.com/Lamartio/lux) for how-to's.
 
 ## Utilities
-A technique I like to employ to speed up development is quickly move generic functionality to a `utils.kt` file. When this file grows too big, I split it up in more appropiate files. 
-
-This not meant to vex, but I noticed that I spend a lot of time in finding a good name for a utility and end up with 10 files with 1 utility.
+A technique I like to employ to speed up development is quickly move generic functionality to a `utils.kt` file. When this file grows too big, I split it up in more appropiate files. This not meant to vex, but I noticed that I spend a lot of time in finding a good name for a utility and end up with 10 files with 1 utility.
