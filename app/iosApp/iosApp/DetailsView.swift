@@ -3,7 +3,7 @@ import shared
 import Combine
 import Kingfisher
 
-struct ArtDetailsView: View {
+struct DetailsView: View {
     
     let machine: DetailsViewMachine
     @State var state: DetailsViewState

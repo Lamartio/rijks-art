@@ -49,6 +49,7 @@ val enterRight: (AnimatedContentTransitionScope<NavBackStackEntry>.() -> EnterTr
             animationSpec = tween(duration)
         )
     }
+
 val enterLeft: (AnimatedContentTransitionScope<NavBackStackEntry>.() -> EnterTransition?) =
     {
         slideIntoContainer(

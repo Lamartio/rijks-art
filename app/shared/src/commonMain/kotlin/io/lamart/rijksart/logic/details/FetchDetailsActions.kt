@@ -4,7 +4,6 @@ import io.lamart.lux.Behavior
 import io.lamart.lux.actions.Actions
 import io.lamart.lux.actions.toStreamActions
 import io.lamart.rijksart.dataFlowOf
-import io.lamart.rijksart.get
 import io.lamart.rijksart.logic.RijksDepedencies
 import io.lamart.rijksart.logic.RijksState
 import io.lamart.rijksart.network.model.ArtDetails
@@ -16,10 +15,12 @@ internal class FetchDetailsActions(deps: RijksDepedencies) : Actions<String> by 
         .toStreamActions(
             scope,
             Behavior.switching(flow = dataFlowOf(
-                get = { vault.get<ArtDetails>("details_${it}").get() },
+                get = { storage.get<ArtDetails>("details_${it}").get() },
                 fetch = museum::getDetails,
                 set = { objectNumber, item ->
-                    vault.get<ArtDetails>("details_${objectNumber}").set(item)
+                    storage
+                        .get<ArtDetails>("details_${objectNumber}")
+                        .set(item)
                 }
             ))
         )

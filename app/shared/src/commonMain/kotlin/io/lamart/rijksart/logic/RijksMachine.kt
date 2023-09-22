@@ -16,7 +16,7 @@ fun Platform.toMachine(): RijksMachine = RijksMachine(this)
 
 
 /**
- * The root of the logic: This class contains all the logic for the application, though it represent it segregated.
+ * The root of the logic: This class contains all the logic for the application, though represent it segregated.
  */
 
 class RijksMachine internal constructor(platform: Platform) :
@@ -25,7 +25,7 @@ class RijksMachine internal constructor(platform: Platform) :
     val details = DetailsMachine(this)
 }
 
-private fun initialize(platform: PlatformDependencies): Machine<RijksState, RijksActions> {
+private fun initialize(platform: Platform): Machine<RijksState, RijksActions> {
     val scope = CoroutineScope(Dispatchers.Main + SupervisorJob())
     val state = MutableStateFlow(RijksState())
     val mutable = Mutable(get = state::value, set = { state.value = it })

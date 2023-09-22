@@ -1,14 +1,13 @@
 package io.lamart.rijksart.logic.gallery
 
-import io.lamart.rijksart.network.model.ArtCollection
 import io.lamart.lux.Behavior
 import io.lamart.lux.Stream
 import io.lamart.lux.actions.Actions
 import io.lamart.lux.actions.toStreamActions
 import io.lamart.rijksart.dataFlowOf
-import io.lamart.rijksart.get
 import io.lamart.rijksart.logic.RijksDepedencies
 import io.lamart.rijksart.logic.RijksState
+import io.lamart.rijksart.network.model.ArtCollection
 import io.lamart.rijksart.record
 import kotlinx.coroutines.flow.onEach
 
@@ -19,10 +18,10 @@ internal class FetchPageActions(deps: RijksDepedencies) : Actions<Int> by deps.r
         .toStreamActions(
             scope,
             Behavior.exhausting(flow = dataFlowOf(
-                get = { vault.get<ArtCollection>("collection_${it}").get() },
+                get = { storage.get<ArtCollection>("collection_${it}").get() },
                 fetch = museum::getCollection,
                 set = { page, item ->
-                    vault.get<ArtCollection>("collection_${page}").set(item)
+                    storage.get<ArtCollection>("collection_${page}").set(item)
                 }
             )),
             effect = { flow ->
