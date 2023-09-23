@@ -10,7 +10,7 @@ class GalleryActions internal constructor(deps: RijksDepedencies): RijksDepedenc
      * Checks what the last downloaded page was, increments that page ordinal and fetches the new page.
      */
 
-    fun loadNextPage() =
+    internal fun loadNextPage() =
         focus
             .compose(RijksState.gallery)
             .compose(GalleryState.pages)

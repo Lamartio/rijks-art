@@ -19,13 +19,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import io.lamart.rijksart.logic.details.view.DetailsViewState
-import kotlinx.coroutines.flow.filter
 
 data object DetailsView : View {
     @Composable
     override fun invoke() {
-        val machine = rijks().machine.details.forView
+        val machine = rijks().machine.details.viewModel
         val state by machine.collectAsState()
         val (host, stack) = navigation()
 
@@ -34,7 +32,9 @@ data object DetailsView : View {
 
         Scaffold(topBar = { RijksTopBar(state.title, machine.actions::deselect) }) { innerPadding ->
             Column(
-                modifier = Modifier.padding(innerPadding).verticalScroll(rememberScrollState()),
+                modifier = Modifier
+                    .padding(innerPadding)
+                    .verticalScroll(rememberScrollState()),
                 verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
                 AsyncImage(

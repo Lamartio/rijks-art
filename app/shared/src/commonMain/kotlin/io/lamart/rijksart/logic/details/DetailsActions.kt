@@ -16,7 +16,7 @@ class DetailsActions internal constructor(deps: RijksDepedencies) : RijksDepeden
      * After selecting, the new painting's details get fetched.
      */
 
-    fun select(id: String?) {
+    internal fun select(id: String?) {
         fetchDetailsActions.stop()
 
         focus.modify(transaction { focus ->
@@ -35,7 +35,7 @@ class DetailsActions internal constructor(deps: RijksDepedencies) : RijksDepeden
         fetchDetails()
     }
 
-    fun fetchDetails() {
+    internal fun fetchDetails() {
         focus
             .compose(RijksState.details)
             .compose(DetailsState.selected)

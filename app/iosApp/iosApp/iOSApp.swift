@@ -6,7 +6,6 @@ import Combine
 struct iOSApp: App {
     
     private let machine: RijksMachine = Platform().toMachine()
-    @State private var isShowingDetailView = false
     
     init() {
         machine.actions.initialize()
@@ -14,8 +13,7 @@ struct iOSApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AppView()
-            .environment(\.machine, machine)
+            AppView().environment(\.machine, machine)
         }
     }
 }

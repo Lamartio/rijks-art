@@ -2,12 +2,8 @@ package io.lamart.rijksart
 
 import io.lamart.lux.Mutable
 import io.lamart.lux.focus.FocusedLens
-import io.lamart.rijksart.logic.RijksDepedencies
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.*
-import kotlinx.serialization.decodeFromString
-import kotlinx.serialization.encodeToString
-import kotlinx.serialization.json.Json
 
 /**
  * Will first try to return from persistence. Simultaneously it is fetching and persisting latest result and will return that after initial emission.

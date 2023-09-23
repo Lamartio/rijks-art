@@ -11,15 +11,15 @@ struct AppView: View {
         NavigationView {
             ZStack {
                 NavigationLink(
-                    destination: DetailsView(machine: machine.details.forView),
+                    destination: DetailsView(machine: machine.details.viewModel),
                     isActive: $isShowingDetails,
                     label: EmptyView.init
                 ).hidden()
                 
-                GalleryView(machine: machine.gallery.forView)
+                GalleryView(machine: machine.gallery.viewModel)
             }
         }
         .environment(\.machine, machine)
-        .onReceive(publisher(of: machine.gallery.forView).map(\.isShowingDetails), perform: { isShowingDetails = $0 })
+        .onReceive(publisher(of: machine.gallery.viewModel).map(\.isShowingDetails), perform: { isShowingDetails = $0 })
     }
 }

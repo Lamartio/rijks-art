@@ -1,9 +1,9 @@
 package io.lamart.rijksart.logic.gallery
 
-import io.lamart.rijksart.network.model.ArtCollection
 import arrow.optics.Getter
 import io.lamart.lux.Stream
 import io.lamart.lux.focus.lensOf
+import io.lamart.rijksart.network.model.ArtCollection
 
 data class GalleryState(
     internal val pages: Map<Int, ArtCollection> = emptyMap(),

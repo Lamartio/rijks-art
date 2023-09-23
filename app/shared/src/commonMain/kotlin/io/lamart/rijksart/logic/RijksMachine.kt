@@ -12,29 +12,29 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.MutableStateFlow
 
-fun Platform.toMachine(): RijksMachine = RijksMachine(this)
-
-
 /**
- * The root of the logic: This class contains all the logic for the application, though represent it segregated.
+ * The root of the logic: This class contains all the logic for the application, though represents it segregated.
  */
 
-class RijksMachine internal constructor(platform: Platform) :
-    Machine<RijksState, RijksActions>(initialize(platform)) {
+class RijksMachine internal constructor(machine: Machine<RijksState, RijksActions>) :
+    Machine<RijksState, RijksActions>(machine) { // this is a gimmicky way of constructing, but it is necessary for iOS. In iOS it is not handy to have09 kotlin classes with generics.
+
     val gallery = GalleryMachine(this)
     val details = DetailsMachine(this)
+
 }
 
-private fun initialize(platform: Platform): Machine<RijksState, RijksActions> {
+fun Platform.toMachine(): RijksMachine {
     val scope = CoroutineScope(Dispatchers.Main + SupervisorJob())
     val state = MutableStateFlow(RijksState())
     val mutable = Mutable(get = state::value, set = { state.value = it })
-    val deps = object : RijksDepedencies, PlatformDependencies by platform {
+    val deps = object : RijksDepedencies, PlatformDependencies by this {
         override val focus = mutable.lens
         override val scope = scope
         override val museum = RijksMuseum()
     }
     val actions = RijksActions(deps)
+    val machine = Machine(scope, state, actions)
 
-    return Machine(scope, state, actions)
+    return RijksMachine(machine)
 }

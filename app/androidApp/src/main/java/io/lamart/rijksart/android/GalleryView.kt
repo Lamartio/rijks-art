@@ -28,7 +28,7 @@ data object GalleryView : View {
 
     @Composable
     override operator fun invoke() {
-        val machine = rijks().machine.gallery.forView
+        val machine = rijks().machine.gallery.viewModel
         val state by machine.collectAsState()
         val (host, stack) = navigation()
 

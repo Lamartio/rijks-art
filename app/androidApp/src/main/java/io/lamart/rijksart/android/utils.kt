@@ -9,7 +9,7 @@ import kotlin.reflect.KProperty
 
 
 @Composable
-fun rijks() :RijksApplication =
+fun rijks(): RijksApplication =
     LocalContext.current.applicationContext.let { it as RijksApplication }
 
 @Composable
